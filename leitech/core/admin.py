@@ -8,8 +8,14 @@ Criado por Luan Fonseca em 17/06/2013.
 
 from django.contrib import admin
 from django.contrib.auth.models import Permission, Group
+from django.contrib.contenttypes.models import ContentType
 
-from core.models import User
-
-admin.site.register(User)
 admin.site.register(Permission)
+
+# Registrando todas os Models da app na Admin.
+map(lambda x: 
+	admin.site.register(
+		x.model_class()
+	), ContentType.objects.filter(app_label=__package__)
+)
+	

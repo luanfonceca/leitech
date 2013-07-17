@@ -28,7 +28,7 @@ class UserManager(BaseUserManager):
             is_active=True,
             is_superuser=False,
             last_login=_now,
-            date_joined=_now,
+            created_at=_now,
             **extra_fields
         )
         user.set_password(password)
@@ -73,8 +73,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_manager = models.BooleanField(
         default=False,
     )
-    date_joined = models.DateTimeField(
+    created_at = models.DateTimeField(
         auto_now_add=True
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
+        editable=False,
     )
 
     # Django Managers
@@ -118,12 +122,14 @@ class HistoryModel(models.Model):
         related_name='%(app_label)s_%(class)s_created_histories',
         null=True,
         blank=True,
+        editable=False,
     )
     updated_by = models.ForeignKey(
         to='core.User',
         related_name='%(app_label)s_%(class)s_updated_histories',
         null=True,
         blank=True,
+        editable=False,
     )
 
     class Meta:
