@@ -148,9 +148,36 @@ class Address(models.Model):
     )
     
     class Meta:
-        db_table = 'user'
+        db_table = 'address'
         verbose_name = _(u'Address')
-        verbose_name_plural = _(u'Addresss')
+        verbose_name_plural = _(u'Addresses')
 
     def __unicode__(self):
         return u'%s' % self.street
+
+
+class School(models.Model):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+    phone = models.CharField(
+        max_length=150, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'Telefone')
+    )
+    address = models.OneToOneField(
+        to=Address,
+        verbose_name=_(u'Endereço')   
+    )
+    
+    class Meta:
+        db_table = 'school'
+        verbose_name = _(u'School')
+        verbose_name_plural = _(u'Schools')
+
+    def __unicode__(self):
+        return u'%s' % self.name
