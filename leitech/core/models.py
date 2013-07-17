@@ -8,6 +8,7 @@ Criado por Luan Fonseca em 17/06/2013.
 
 from django.db import models
 from django.utils.translation import ugettext as _
+from django_localflavor_br.br_states import STATE_CHOICES as BR_STATE_CHOICES
 from django.contrib.auth.models import (AbstractBaseUser,
                                         BaseUserManager,
                                         PermissionsMixin)
@@ -99,3 +100,57 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def email_user(self, subject, message, from_email=None):
         send_mail(subject, message, from_email, [self.email])
+
+
+class Address(models.Model):
+    state = models.CharField(
+        max_length=3, 
+        null=True, 
+        blank=True, 
+        choices=BR_STATE_CHOICES,
+        verbose_name=_(u'UF')
+    )
+    city = models.CharField(
+        max_length=60, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'Cidade')
+    )
+    neighborhood = models.CharField(
+        max_length=60, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'Bairro')
+    )
+    zipcode = models.CharField(
+        max_length=8, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'CEP')
+    )
+    street = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Rua')
+    )
+    complement = models.CharField(
+        max_length=150, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'Complemento')
+    )
+    number = models.CharField(
+        max_length=10, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'Número')
+    )
+    
+    class Meta:
+        db_table = 'user'
+        verbose_name = _(u'Address')
+        verbose_name_plural = _(u'Addresss')
+
+    def __unicode__(self):
+        return u'%s' % self.street

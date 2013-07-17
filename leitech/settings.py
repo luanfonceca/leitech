@@ -124,6 +124,11 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 
+    # Aplicações externas
+    'django_localflavor_br',
+    'django_extensions',
+    'south',
+
     # Aplicações internas
     'core',
 )
