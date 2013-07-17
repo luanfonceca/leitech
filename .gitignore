@@ -1,6 +1,6 @@
 *.py[cod]
 *.db
-settings_local.py
+leitech/settings_local.py
 
 # C extensions
 *.so
