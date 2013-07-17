@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
 # Django settings for leitech project.
 
 DEBUG = True
@@ -119,6 +122,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+
+    # Aplicações internas
+    'core',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -149,6 +155,14 @@ LOGGING = {
         }
     },
 }
+
+# Django BaseUser Models
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_USER_EMAIL_FIELD = 'email'
+AUTH_USER_MODEL = 'core.User'
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
 
 try:
     from settings_local import *
