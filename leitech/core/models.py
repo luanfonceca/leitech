@@ -86,8 +86,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     class Meta:
         db_table = 'user'
-        verbose_name = _(u'Profile')
-        verbose_name_plural = _(u'Profiles')
+        verbose_name = _(u'Perfil')
+        verbose_name_plural = _(u'Perfis')
 
     def __unicode__(self):
         return self.email
@@ -177,8 +177,8 @@ class Address(HistoryModel):
     
     class Meta:
         db_table = 'address'
-        verbose_name = _(u'Address')
-        verbose_name_plural = _(u'Addresses')
+        verbose_name = _(u'Endereço')
+        verbose_name_plural = _(u'Endereços')
 
     def __unicode__(self):
         return u'%s' % self.street
@@ -197,6 +197,8 @@ class School(HistoryModel):
         blank=True, 
         verbose_name=_(u'Telefone')
     )
+
+    # Relations
     address = models.OneToOneField(
         to=Address,
         verbose_name=_(u'Endereço')   
@@ -204,8 +206,51 @@ class School(HistoryModel):
     
     class Meta:
         db_table = 'school'
-        verbose_name = _(u'School')
-        verbose_name_plural = _(u'Schools')
+        verbose_name = _(u'Escola')
+        verbose_name_plural = _(u'Escolas')
 
     def __unicode__(self):
         return u'%s' % self.name
+
+
+class PoliceCar(models.Model):
+    ident = models.CharField(
+        max_length=50, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Identificador')
+    )
+
+    class Meta:
+        verbose_name = _(u'Viatura')
+        verbose_name_plural = _(u'Viaturas')
+
+    def __unicode__(self):
+        return u'%s' % self.ident
+    
+
+class Police(models.Model):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+
+    # Relations
+    police_car = models.ForeignKey(
+        to=PoliceCar, 
+        null=True, 
+        blank=True, 
+        related_name='polices', 
+        on_delete=models.CASCADE,
+        verbose_name=_(u'Viatura')   
+    )
+
+    class Meta:
+        verbose_name = _(u'Policial')
+        verbose_name_plural = _(u'Policiais')
+
+    def __unicode__(self):
+        return u'%s' % self.name
+    
