@@ -70,7 +70,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         default=True,
     )
     is_manager = models.BooleanField(
-        default=True,
+        default=False,
     )
     date_joined = models.DateTimeField(
         auto_now_add=True
