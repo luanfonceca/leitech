@@ -228,6 +228,7 @@ class PoliceCar(models.Model):
     )
 
     class Meta:
+        db_table='police_car'
         verbose_name = _(u'Viatura')
         verbose_name_plural = _(u'Viaturas')
 
@@ -254,6 +255,7 @@ class Police(models.Model):
     )
 
     class Meta:
+        db_table='police'
         verbose_name = _(u'Policial')
         verbose_name_plural = _(u'Policiais')
 
