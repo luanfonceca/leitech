@@ -102,7 +102,35 @@ class User(AbstractBaseUser, PermissionsMixin):
         send_mail(subject, message, from_email, [self.email])
 
 
-class Address(models.Model):
+class HistoryModel(models.Model):
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        editable=False,
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
+        editable=False,
+    )
+
+    # Relations
+    created_by = models.ForeignKey(
+        to='core.User',
+        related_name='%(app_label)s_%(class)s_created_histories',
+        null=True,
+        blank=True,
+    )
+    updated_by = models.ForeignKey(
+        to='core.User',
+        related_name='%(app_label)s_%(class)s_updated_histories',
+        null=True,
+        blank=True,
+    )
+
+    class Meta:
+        abstract = True    
+
+
+class Address(HistoryModel):
     state = models.CharField(
         max_length=3, 
         null=True, 
@@ -156,7 +184,7 @@ class Address(models.Model):
         return u'%s' % self.street
 
 
-class School(models.Model):
+class School(HistoryModel):
     name = models.CharField(
         max_length=150, 
         null=False, 
