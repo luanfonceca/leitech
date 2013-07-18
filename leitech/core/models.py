@@ -253,7 +253,7 @@ class Police(models.Model):
         on_delete=models.CASCADE,
         verbose_name=_(u'Viatura')   
     )
-
+    
     class Meta:
         db_table='police'
         verbose_name = _(u'Policial')
@@ -261,4 +261,162 @@ class Police(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.name
+
+
+class OccurrenceStatus(models.Model):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+
+    class Meta:
+        db_table='occurrence_status'
+        verbose_name = _(u'Status da Ocorrência')
+        verbose_name_plural = _(u'Status das Ocorrências')
+
+    def __unicode__(self):
+        return u'%s' % self.name
+    
+    
+class OccurrenceType(models.Model):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+
+    class Meta:
+        db_table='occurrence_type'
+        verbose_name = _(u'Tipo da Ocorrência')
+        verbose_name_plural = _(u'Tipos da Ocorrências')
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+
+class SeizedMaterialType(models.Model):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+
+    class Meta:
+        db_table='seized_material_type'
+        verbose_name = _(u'Tipo do Material')
+        verbose_name_plural = _(u'Tipos dos Materias')
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+
+class SeizedMaterial(models.Model):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+
+    # relations
+    type = models.ForeignKey(
+        to=SeizedMaterialType, 
+        null=True, 
+        blank=True, 
+        related_name='seized_materials', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Tipo do Material')   
+    )
+
+    class Meta:
+        db_table='seized_material'
+        verbose_name = _(u'Material Apreendido')
+        verbose_name_plural = _(u'Materiais Apreendidos')
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+
+class Occurrence(HistoryModel):
+    nature = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Natureza da Ocorrência')
+    )
+    relevant_information = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Dados Relevante')
+    )
+    attended_public = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Público Atendido')
+    )
+    accident_report = models.CharField(
+        max_length=50, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Boletim de Ocorrência')
+    )
+    description = models.TextField(
+        blank=True,
+        verbose_name=_(u'Descrição')
+    )
+
+    # relations
+    police_car = models.ForeignKey(
+        to=PoliceCar, 
+        null=False, 
+        blank=False, 
+        related_name='occurrences', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Viatura')   
+    )
+    school = models.ForeignKey(
+        to=School, 
+        null=False, 
+        blank=False, 
+        related_name='occurrences', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Escola')   
+    )
+    status = models.ForeignKey(
+        to=OccurrenceStatus, 
+        null=True, 
+        blank=True, 
+        related_name='occurrences', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Status')   
+    )
+    type = models.ForeignKey(
+        to=OccurrenceType, 
+        null=True, 
+        blank=True, 
+        related_name='occurrences', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Tipo')   
+    )
+    seized_materials = models.ManyToManyField(
+        to=SeizedMaterial, 
+        null=True, 
+        blank=True, 
+        related_name='occurrences',
+        verbose_name=_(u'Materiais Apreendidos')   
+    )
+
+    class Meta:
+        db_table='occurrence'
+        verbose_name = _(u'Ocorrência')
+        verbose_name_plural = _(u'Ocorrências')
+
+    def __unicode__(self):
+        return u'%s...' % self.description[:10]
     
