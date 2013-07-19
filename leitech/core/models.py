@@ -219,7 +219,7 @@ class School(HistoryModel):
         return u'%s' % self.name
 
 
-class PoliceCar(models.Model):
+class PoliceCar(HistoryModel):
     ident = models.CharField(
         max_length=50, 
         null=False, 
@@ -236,7 +236,7 @@ class PoliceCar(models.Model):
         return u'%s' % self.ident
     
 
-class Police(models.Model):
+class Police(HistoryModel):
     name = models.CharField(
         max_length=150, 
         null=False, 
@@ -263,7 +263,7 @@ class Police(models.Model):
         return u'%s' % self.name
 
 
-class OccurrenceStatus(models.Model):
+class OccurrenceStatus(HistoryModel):
     name = models.CharField(
         max_length=150, 
         null=False, 
@@ -280,7 +280,7 @@ class OccurrenceStatus(models.Model):
         return u'%s' % self.name
     
     
-class OccurrenceType(models.Model):
+class OccurrenceType(HistoryModel):
     name = models.CharField(
         max_length=150, 
         null=False, 
@@ -297,7 +297,7 @@ class OccurrenceType(models.Model):
         return u'%s' % self.name
 
 
-class SeizedMaterialType(models.Model):
+class SeizedMaterialType(HistoryModel):
     name = models.CharField(
         max_length=150, 
         null=False, 
@@ -314,7 +314,7 @@ class SeizedMaterialType(models.Model):
         return u'%s' % self.name
 
 
-class SeizedMaterial(models.Model):
+class SeizedMaterial(HistoryModel):
     name = models.CharField(
         max_length=150, 
         null=False, 

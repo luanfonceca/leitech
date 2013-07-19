@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'django_localflavor_br',
     'django_extensions',
     'south',
+    'bootstrap_toolkit',
 
     # Aplicações internas
     'core',

@@ -1,0 +1,29 @@
+{% if objects.paginator.num_pages > 1 %}
+	<div class="pagination pagination-centered pagination-medium">
+		<ul>
+			{% if objects.has_previous %}
+				<li>
+					<a href="?page={{ objects.previous_page_number }}">
+						Anterior
+					</a>
+				</li>
+			{% endif %}
+			{% for page in objects.paginator.page_range %}
+				{% if not page > objects.number|add:3 and page > objects.number|add:-3 %}
+					<li {% if page == objects.number %}class="active"{% endif %}>
+						<a href="?page={{ page }}">
+							{{ page }}
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+			{% if objects.has_next %}
+				<li>
+					<a href="?page={{ objects.next_page_number }}">
+						Próximo
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+	</div>
+{% endif %}
