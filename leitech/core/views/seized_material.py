@@ -9,10 +9,12 @@ Criado por Luan Fonseca em 18/06/2013.
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
+from django.contrib.auth.decorators import login_required
 
 from core.forms import SeizedMaterialForm
 from core.models import SeizedMaterial
 
+@login_required
 def list(request):
     paginator = Paginator(SeizedMaterial.objects.all(), 10)
     try:
@@ -32,6 +34,7 @@ def list(request):
         dictionary=template_context
     )
 
+@login_required
 def add(request):
     seized_material_form = SeizedMaterialForm(
         data=request.POST or None
@@ -50,6 +53,7 @@ def add(request):
         dictionary=template_context
     )
 
+@login_required
 def edit(request, seized_material_pk):
     seized_material = get_object_or_404(
         klass=SeizedMaterial, 
@@ -74,6 +78,7 @@ def edit(request, seized_material_pk):
         dictionary=template_context
     )
 
+@login_required
 def delete(request, seized_material_pk):
     seized_material = get_object_or_404(
         klass=SeizedMaterial, 
