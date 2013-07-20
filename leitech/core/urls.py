@@ -118,4 +118,26 @@ urlpatterns = patterns('core.views',
         view='seized_material_type.delete', 
         name='seized_material_type_delete'
     ),
+
+    # School
+    url(
+        regex=r'^schools/?$', 
+        view='school.list', 
+        name='school_list'
+    ),
+    url(
+        regex=r'^school/add/?$', 
+        view='school.add', 
+        name='school_add'
+    ),
+    url(
+        regex=r'^school/edit/(?P<pk>[a-z\d]+)?$',
+        view='school.edit', 
+        name='school_edit'
+    ),
+    url(
+        regex=r'^school/delete/(?P<pk>[a-z\d]+)?$',
+        view='school.delete', 
+        name='school_delete'
+    ),
 )
