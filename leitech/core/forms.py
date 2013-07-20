@@ -33,6 +33,11 @@ class PoliceCarForm(HistoryModelForm):
         model = PoliceCar
 
 
+class PoliceForm(HistoryModelForm):
+    class Meta:
+        model = Police
+
+
 class OccurrenceTypeForm(HistoryModelForm):
     class Meta:
         model = OccurrenceType

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Listagem de Policial
+{% endblock title %}
+
+{% block subtitle %}
+	Página de listagem de todos os policiais apreendidos nas suas operações
+{% endblock subtitle %}
+
+{% block breadcrumbs %}
+	<div class="breadcrumb-button blue">
+    <a href="/">
+    	<span class="breadcrumb-label">
+	    	<i class="icon-home"></i> Home
+	    </span>
+	    <span class="breadcrumb-arrow"><span></span></span>
+	  </a>
+  </div>
+
+  <div class="breadcrumb-button">
+		<a href="">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Policiais
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<div class="container-fluid padded">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="box">
+					<div class="box-header">
+						<span class="title">
+							Listagem de todos os Policiais cadastrados
+						</span>
+						<ul class="box-toolbar">
+							<li>
+								<a href="{% url 'police_add' %}">
+									Adicionar novo Policial
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="box-content">
+					<table class="table table-normal">
+						<thead>
+						<tr>
+							<td>Nome</td>
+							<td>Tipo</td>
+							<td style="width: 40px;"/>
+						</tr>
+					</thead>
+					<tbody>
+						{% for police in polices.object_list %}
+							<tr class="status-pending">
+								<td>
+									{{ police.name }}
+								</td>
+								<td>
+									{{ police.type|default:'-' }}
+								</td>
+								<td>
+									<a href="{% url 'police_edit' police.pk %}">
+										<span class="icon">
+											<i class="icon-edit"></i>
+										</span>
+									</a>
+									<a href="{% url 'police_delete' police.pk %}">
+										<span class="icon">
+											<i class="icon-remove"></i>
+										</span>
+									</a>
+								</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+
+				{% include "pagination.html" with objects=polices %}
+			</div>
+		</div>
+	</div>
+{% endblock content %}
