@@ -74,4 +74,26 @@ urlpatterns = patterns('core.views',
         view='police_car.delete', 
         name='police_car_delete'
     ),
+
+    # OccurrenceType
+    url(
+        regex=r'^occurrence/types/?$', 
+        view='occurrence_type.list', 
+        name='occurrence_type_list'
+    ),
+    url(
+        regex=r'^occurrence/type/add/?$', 
+        view='occurrence_type.add', 
+        name='occurrence_type_add'
+    ),
+    url(
+        regex=r'^occurrence/type/edit/(?P<pk>[a-z\d]+)?$',
+        view='occurrence_type.edit', 
+        name='occurrence_type_edit'
+    ),
+    url(
+        regex=r'^occurrence/type/delete/(?P<pk>[a-z\d]+)?$',
+        view='occurrence_type.delete', 
+        name='occurrence_type_delete'
+    ),
 )
