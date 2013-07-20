@@ -1,0 +1,47 @@
+[
+{
+    "pk": 1, 
+    "model": "core.policecar", 
+    "fields": {
+        "created_at": "2013-07-19T20:56:00.212", 
+        "ident": "10\u00baBPM-I da 6\u00ba Cia viatura 01", 
+        "updated_at": "2013-07-19T22:52:31.409", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "core.policecar", 
+    "fields": {
+        "created_at": "2013-07-19T22:49:46.074", 
+        "ident": "10\u00baBPM-I da 6\u00ba Cia viatura 02", 
+        "updated_at": "2013-07-19T22:52:36.230", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "core.policecar", 
+    "fields": {
+        "created_at": "2013-07-19T22:49:49.849", 
+        "ident": "10\u00baBPM-I da 6\u00ba Cia viatura 03", 
+        "updated_at": "2013-07-19T22:52:40.953", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+}
+]

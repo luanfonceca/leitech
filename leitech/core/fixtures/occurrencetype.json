@@ -1,0 +1,47 @@
+[
+{
+    "pk": 1, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Briga da Gang", 
+        "created_at": "2013-07-19T21:05:39.830", 
+        "updated_at": "2013-07-19T21:05:39.830", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Furto", 
+        "created_at": "2013-07-19T22:57:17.906", 
+        "updated_at": "2013-07-19T22:57:17.906", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Briga entre escolas", 
+        "created_at": "2013-07-19T22:57:32.814", 
+        "updated_at": "2013-07-19T22:57:32.814", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+}
+]
