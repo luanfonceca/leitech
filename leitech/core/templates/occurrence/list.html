@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Listagem de Ocorrência
+{% endblock title %}
+
+{% block subtitle %}
+	Página de listagem de todos os ocorrência
+{% endblock subtitle %}
+
+{% block breadcrumbs %}
+	<div class="breadcrumb-button blue">
+    <a href="/">
+    	<span class="breadcrumb-label">
+	    	<i class="icon-home"></i> Home
+	    </span>
+	    <span class="breadcrumb-arrow"><span></span></span>
+	  </a>
+  </div>
+
+  <div class="breadcrumb-button">
+		<a href="">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Ocorrências
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<div class="container-fluid padded">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="box">
+					<div class="box-header">
+						<span class="title">
+							Listagem de todos os Ocorrências cadastrados
+						</span>
+						<ul class="box-toolbar">
+							<li>
+								<a href="{% url 'occurrence_add' %}">
+									Adicionar novo Ocorrência
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="box-content">
+					<table class="table table-normal">
+						<thead>
+						<tr>
+							<td>Nome</td>
+							<td>Tipo</td>
+							<td style="width: 40px;"/>
+						</tr>
+					</thead>
+					<tbody>
+						{% for occurrence in occurrences.object_list %}
+							<tr class="status-pending">
+								<td>
+									{{ occurrence.name }}
+								</td>
+								<td>
+									{{ occurrence.type|default:'-' }}
+								</td>
+								<td>
+									<a href="{% url 'occurrence_edit' occurrence.pk %}">
+										<span class="icon">
+											<i class="icon-edit"></i>
+										</span>
+									</a>
+									<a href="{% url 'occurrence_delete' occurrence.pk %}">
+										<span class="icon">
+											<i class="icon-remove"></i>
+										</span>
+									</a>
+								</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+
+				{% include "pagination.html" with objects=occurrences %}
+			</div>
+		</div>
+	</div>
+{% endblock content %}

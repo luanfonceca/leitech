@@ -140,4 +140,26 @@ urlpatterns = patterns('core.views',
         view='school.delete', 
         name='school_delete'
     ),
+
+    # Occurrence
+    url(
+        regex=r'^occurrences/?$', 
+        view='occurrence.list', 
+        name='occurrence_list'
+    ),
+    url(
+        regex=r'^occurrence/add/?$', 
+        view='occurrence.add', 
+        name='occurrence_add'
+    ),
+    url(
+        regex=r'^occurrence/edit/(?P<pk>[a-z\d]+)?$',
+        view='occurrence.edit', 
+        name='occurrence_edit'
+    ),
+    url(
+        regex=r'^occurrence/delete/(?P<pk>[a-z\d]+)?$',
+        view='occurrence.delete', 
+        name='occurrence_delete'
+    ),
 )

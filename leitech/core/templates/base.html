@@ -168,6 +168,34 @@
 
         </li>
 
+        <li class="dark-nav ">
+          <span class="glow"></span>
+          <a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_occurrence">
+            <i class="icon-beaker icon-2x"></i>
+              <span>
+                Ocorrência
+                <i class="icon-caret-down"></i>
+              </span>
+          </a>
+
+          <ul id="dropdown_occurrence" class="collapse ">
+        
+            <li class="">
+              <a href="{% url 'occurrence_add' %}">
+                <i class="icon-hand-up"></i> Adicionar
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="{% url 'occurrence_list' %}">
+                <i class="icon-hand-up"></i> Listar
+              </a>
+            </li>
+        
+          </ul>
+
+        </li>
+
       </ul>
     </div>
 

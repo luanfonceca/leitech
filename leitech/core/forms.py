@@ -42,7 +42,13 @@ class OccurrenceTypeForm(HistoryModelForm):
     class Meta:
         model = OccurrenceType
 
+
 class SchoolForm(HistoryModelForm):
     class Meta:
         model = School
+
+
+class OccurrenceForm(HistoryModelForm):
+    class Meta:
+        model = Occurrence
 
