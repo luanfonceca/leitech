@@ -52,4 +52,26 @@ urlpatterns = patterns('core.views',
         view='seized_material_type.delete', 
         name='seized_material_type_delete'
     ),
+
+    # PoliceCar
+    url(
+        regex=r'^police/cars/?$', 
+        view='police_car.list', 
+        name='police_car_list'
+    ),
+    url(
+        regex=r'^police/car/add/?$', 
+        view='police_car.add', 
+        name='police_car_add'
+    ),
+    url(
+        regex=r'^police/car/edit/(?P<pk>[a-z\d]+)?$',
+        view='police_car.edit', 
+        name='police_car_edit'
+    ),
+    url(
+        regex=r'^police/car/delete/(?P<pk>[a-z\d]+)?$',
+        view='police_car.delete', 
+        name='police_car_delete'
+    ),
 )

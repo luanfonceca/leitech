@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block title %}
+	Remoção de Material
+{% endblock title %}
+
+{% block subtitle %}
+	Página de remoção das Viaturas apreendidos nas suas operações.
+	<br>
+	Perceba que você só poderá remover um material quando ele não fizer mais parte de nenhuma ocorrência.
+{% endblock subtitle %}
+
+{% block breadcrumbs %}
+	<div class="breadcrumb-button blue">
+		<a href="/">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Home
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+
+	<div class="breadcrumb-button blue">
+		<a href="{% url 'police_car_list' %}">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Viaturas
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+	
+	<div class="breadcrumb-button">
+		<a href="">
+			<span class="breadcrumb-label">
+				<i class="icon-dashboard"></i> Remoção
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<div class="container-fluid padded">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="box">
+					<div class="box-header">
+						<span class="title">
+							Remoção de Viatura
+						</span>
+					</div>
+
+					<div class="box-content">
+						<form class="form-horizontal fill-up" method="POST">
+							{% csrf_token %}
+							
+							<div class="padded">
+								<div class="alert alert-block">
+									<h4>Cuidado!</h4>
+									Você está prestes a remover o material <big>"{{ police_car }}"</big>, caso realmente tenha certeza que é isso que você deseja, clique em "Confirmar" logo abaixo.
+								</div>
+							</div>
+							
+							<div class="form-actions">
+								<button type="submit" class="btn btn-blue">
+									Confirmar
+								</button>
+								<a href="{% url 'police_car_list' %}" class="btn btn-default">
+									Cancel
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

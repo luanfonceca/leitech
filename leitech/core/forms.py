@@ -27,3 +27,8 @@ class SeizedMaterialTypeForm(HistoryModelForm):
     class Meta:
         model = SeizedMaterialType
 
+
+class PoliceCarForm(HistoryModelForm):
+    class Meta:
+        model = PoliceCar
+
