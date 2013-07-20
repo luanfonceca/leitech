@@ -22,3 +22,8 @@ class SeizedMaterialForm(HistoryModelForm):
     class Meta:
         model = SeizedMaterial
 
+
+class SeizedMaterialTypeForm(HistoryModelForm):
+    class Meta:
+        model = SeizedMaterialType
+

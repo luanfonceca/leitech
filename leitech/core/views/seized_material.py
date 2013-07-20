@@ -54,10 +54,10 @@ def add(request):
     )
 
 @login_required
-def edit(request, seized_material_pk):
+def edit(request, pk):
     seized_material = get_object_or_404(
         klass=SeizedMaterial, 
-        pk=seized_material_pk
+        pk=pk
     )
     seized_material_form = SeizedMaterialForm(
         data=request.POST or None,
@@ -79,10 +79,10 @@ def edit(request, seized_material_pk):
     )
 
 @login_required
-def delete(request, seized_material_pk):
+def delete(request, pk):
     seized_material = get_object_or_404(
         klass=SeizedMaterial, 
-        pk=seized_material_pk
+        pk=pk
     )
     if request.method == 'POST':
         seized_material.delete()

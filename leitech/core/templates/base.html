@@ -81,15 +81,41 @@
             </form>
 
             <ul class="nav pull-right">
-              <li class="active"><a href="#" title="Go home"><i class="icon-home"></i> Home</a></li>
-              <li><a href="#" title="Manage users"><i class="icon-user"></i> Users</a></li>
+              <li class="active">
+                <a href="#" title="Go home">
+                  <i class="icon-home"></i> Home
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Manage users">
+                  <i class="icon-user"></i> Users
+                </a>
+              </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Configurações <b class="caret"></b>
+                </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Some link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li>
+                    <a href="{% url 'seized_material_type_list' %}">
+                      Tipos de Materiais
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Some link
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      One more separated link
+                    </a>
+                  </li>
                 </ul>
               </li>
 
