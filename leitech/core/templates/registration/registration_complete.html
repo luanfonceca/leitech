@@ -1,0 +1,16 @@
+{% extends "external_base.html" %}
+{% load i18n %}
+
+{% block title %}
+	{% trans "Register status." %}
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="alert alert-success">
+				{% trans "You are now registered. Activation email sent." %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

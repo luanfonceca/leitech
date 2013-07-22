@@ -1,0 +1,27 @@
+{% extends "external_base.html" %}
+{% load bootstrap_toolkit %}
+{% load i18n %}
+
+{% block title %}
+	Login
+{% endblock title %}
+
+{% block content %}
+	<form class="form-vertical fill-up" method="POST">
+		{% csrf_token %}
+
+		{{ form|as_bootstrap }}
+	
+		<input type="submit" class="btn btn btn-blue btn-block" value="{% trans 'Log in' %}" />
+		<input type="hidden" name="next" value="{{ next }}" />
+	</form>
+	<hr>
+
+	<p>
+		{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!
+	</p>
+	<p>
+		{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!
+	</p>
+
+{% endblock %}
