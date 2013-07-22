@@ -6,7 +6,7 @@ __init__.py
 Criado por Luan Fonseca em 20/06/2013.
 """
 
-from django.conf.urls.defaults import patterns, url, include
+from django.conf.urls import patterns, url, include
 
 urlpatterns = patterns('',
 	url(r'^', include('core.urls.occurrence_type')),

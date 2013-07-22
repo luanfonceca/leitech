@@ -6,7 +6,7 @@ school.py
 Criado por Luan Fonseca em 20/06/2013.
 """
 
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns('core.views.school',
 	url(
