@@ -1,245 +1,245 @@
 <!doctype html>
 <html>
-  <head>
+	<head>
 
-    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
-
-
-    <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Projeto Leitech</title>
-
-    <link href="{{ STATIC_URL }}stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <!--[if lt IE 9]>
-    <script src="{{ STATIC_URL }}javascripts/vendor/html5shiv.js" type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}javascripts/vendor/excanvas.js" type="text/javascript"></script>
-    <![endif]-->
-
-    <script src="{{ STATIC_URL }}javascripts/application.js" type="text/javascript"></script>
-  </head>
-
-  <body>
-    <div class="navbar navbar-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-
-          <a class="brand" href="#">Leitech</a>
-
-          <!-- the new toggle buttons -->
-
-          <ul class="nav pull-right">
-
-            <li class="toggle-primary-sidebar hidden-desktop" data-toggle="collapse" data-target=".nav-collapse-primary"><button type="button" class="btn btn-navbar"><i class="icon-th-list"></i></button></li>
-
-            <li class="hidden-desktop" data-toggle="collapse" data-target=".nav-collapse-top"><button type="button" class="btn btn-navbar"><i class="icon-align-justify"></i></button></li>
-
-          </ul>
-          <div class="nav-collapse nav-collapse-top collapse">
-
-            <ul class="nav full pull-right">
-              <li class="dropdown user-avatar">
-
-                <!-- the dropdown has a custom user-avatar class, this is the small avatar with the badge -->
-
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span>
-                    <img class="menu-avatar" src="images/avatars/avatar1.jpg" /> <span>John Smith <i class="icon-caret-down"></i></span>
-                    <span class="badge badge-dark-red">5</span>
-                  </span>
-                </a>
-
-                <ul class="dropdown-menu">
-
-                  <!-- the first element is the one with the big avatar, add a with-image class to it -->
-
-                  <li class="with-image">
-                    <div class="avatar">
-                      <img src="images/avatars/avatar1.jpg" />
-                    </div>
-                    <span>John Smith</span>
-                  </li>
-
-                  <li class="divider"></li>
-
-                  <li><a href="#"><i class="icon-user"></i> <span>Profile</span></a></li>
-                  <li><a href="#"><i class="icon-cog"></i> <span>Settings</span></a></li>
-                  <li><a href="#"><i class="icon-envelope"></i> <span>Messages</span> <span class="label label-dark-red pull-right">5</span></a></li>
-                  <li><a href="#"><i class="icon-off"></i> <span>Logout</span></a></li>
-                </ul>
-              </li>
-            </ul>
-
-            <form class="navbar-search pull-right">
-              <input type="text" class="search-query animated" placeholder="Search">
-              <i class="icon-search"></i>
-            </form>
-
-            <ul class="nav pull-right">
-              <li class="active">
-                <a href="#" title="Go home">
-                  <i class="icon-home"></i> Home
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Manage users">
-                  <i class="icon-user"></i> Users
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  Configurações <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="{% url 'seized_material_type_list' %}">
-                      Tipos de Materiais
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'police_car_list' %}">
-                      Viaturas
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'police_list' %}">
-                      Policiais
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'occurrence_type_list' %}">
-                      Tipos de Ocorrência
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{% url 'school_list' %}">
-                      Escolas
-                    </a>
-                  </li>
-                </ul>
-              </li>
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
 
 
-            </ul>
+		<meta charset="utf-8">
 
-          </div>
-        </div>
-      </div>
-    </div>
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <div class="sidebar-background">
-      <div class="primary-sidebar-background"></div>
-    </div>
+		<!-- Use title if it's in the page YAML frontmatter -->
+		<title>Projeto Leitech</title>
 
-    <div class="primary-sidebar">
+		<link href="{{ STATIC_URL }}stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
 
-      <!-- Main nav -->
-      <ul class="nav nav-collapse collapse nav-collapse-primary">
-        <li class="dark-nav ">
-          <span class="glow"></span>
-          <a class="accordion-toggle collapsed " data-toggle="collapse" href="#3hzyGPtrSk">
-            <i class="icon-beaker icon-2x"></i>
-              <span>
-                Material
-                <i class="icon-caret-down"></i>
-              </span>
-          </a>
+		<!--[if lt IE 9]>
+		<script src="{{ STATIC_URL }}javascripts/vendor/html5shiv.js" type="text/javascript"></script>
+		<script src="{{ STATIC_URL }}javascripts/vendor/excanvas.js" type="text/javascript"></script>
+		<![endif]-->
 
-          <ul id="3hzyGPtrSk" class="collapse ">
-        
-            <li class="">
-              <a href="{% url 'seized_material_add' %}">
-                <i class="icon-hand-up"></i> Adicionar
-              </a>
-            </li>
-        
-            <li class="">
-              <a href="{% url 'seized_material_list' %}">
-                <i class="icon-hand-up"></i> Listar
-              </a>
-            </li>
-        
-          </ul>
+		<script src="{{ STATIC_URL }}javascripts/application.js" type="text/javascript"></script>
+	</head>
 
-        </li>
+	<body>
+		<div class="navbar navbar-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container-fluid">
 
-        <li class="dark-nav ">
-          <span class="glow"></span>
-          <a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_occurrence">
-            <i class="icon-beaker icon-2x"></i>
-              <span>
-                Ocorrência
-                <i class="icon-caret-down"></i>
-              </span>
-          </a>
+					<a class="brand" href="#">Leitech</a>
 
-          <ul id="dropdown_occurrence" class="collapse ">
-        
-            <li class="">
-              <a href="{% url 'occurrence_add' %}">
-                <i class="icon-hand-up"></i> Adicionar
-              </a>
-            </li>
-        
-            <li class="">
-              <a href="{% url 'occurrence_list' %}">
-                <i class="icon-hand-up"></i> Listar
-              </a>
-            </li>
-        
-          </ul>
+					<!-- the new toggle buttons -->
 
-        </li>
+					<ul class="nav pull-right">
 
-      </ul>
-    </div>
+						<li class="toggle-primary-sidebar hidden-desktop" data-toggle="collapse" data-target=".nav-collapse-primary"><button type="button" class="btn btn-navbar"><i class="icon-th-list"></i></button></li>
 
-    <div class="main-content">
-      <div class="container-fluid">
-        <div class="row-fluid">
+						<li class="hidden-desktop" data-toggle="collapse" data-target=".nav-collapse-top"><button type="button" class="btn btn-navbar"><i class="icon-align-justify"></i></button></li>
 
-          <div class="area-top clearfix">
-            <div class="pull-left header">
-              <h3 class="title">
-                {% block title %}{% endblock title %}
-              </h3>
-              <h5>
-                {% block subtitle %}{% endblock subtitle %}
-              </h5>
-            </div>
+					</ul>
+					<div class="nav-collapse nav-collapse-top collapse">
 
-            <ul class="inline pull-right sparkline-box">
-              {% block sparkline %}{% endblock sparkline %}
-            </ul>
-          </div>
-        </div>
-      </div>
+						<ul class="nav full pull-right">
+							<li class="dropdown user-avatar">
 
-      <div class="container-fluid padded">
-        <div class="row-fluid">
+								<!-- the dropdown has a custom user-avatar class, this is the small avatar with the badge -->
 
-          {% for m in messages %}
-            <div class="alert alert-{{ m.tags }}">
-              <button type="button" class="close" data-dismiss="alert">×</button>
-              {{ m }}
-            </div>
-          {% endfor %}
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<span>
+										<img class="menu-avatar" src="images/avatars/avatar1.jpg" /> <span>John Smith <i class="icon-caret-down"></i></span>
+										<span class="badge badge-dark-red">5</span>
+									</span>
+								</a>
 
-          <!-- Breadcrumb line -->
+								<ul class="dropdown-menu">
 
-          <div id="breadcrumbs">
-            {% block breadcrumbs %}{% endblock breadcrumbs %}
-          </div>
-        </div>
-      </div>
-      {% block content %}
-        
-      {% endblock content %}
-    </div>
-  </body>
+									<!-- the first element is the one with the big avatar, add a with-image class to it -->
+
+									<li class="with-image">
+										<div class="avatar">
+											<img src="images/avatars/avatar1.jpg" />
+										</div>
+										<span>John Smith</span>
+									</li>
+
+									<li class="divider"></li>
+
+									<li><a href="#"><i class="icon-user"></i> <span>Profile</span></a></li>
+									<li><a href="#"><i class="icon-cog"></i> <span>Settings</span></a></li>
+									<li><a href="#"><i class="icon-envelope"></i> <span>Messages</span> <span class="label label-dark-red pull-right">5</span></a></li>
+									<li><a href="#"><i class="icon-off"></i> <span>Logout</span></a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<form class="navbar-search pull-right">
+							<input type="text" class="search-query animated" placeholder="Search">
+							<i class="icon-search"></i>
+						</form>
+
+						<ul class="nav pull-right">
+							<li class="active">
+								<a href="#" title="Go home">
+									<i class="icon-home"></i> Home
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Manage users">
+									<i class="icon-user"></i> Users
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Configurações <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="{% url 'seized_material_type_list' %}">
+											Tipos de Materiais
+										</a>
+									</li>
+									<li>
+										<a href="{% url 'police_car_list' %}">
+											Viaturas
+										</a>
+									</li>
+									<li>
+										<a href="{% url 'police_list' %}">
+											Policiais
+										</a>
+									</li>
+									<li>
+										<a href="{% url 'occurrence_type_list' %}">
+											Tipos de Ocorrência
+										</a>
+									</li>
+									<li>
+										<a href="{% url 'school_list' %}">
+											Escolas
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sidebar-background">
+			<div class="primary-sidebar-background"></div>
+		</div>
+
+		<div class="primary-sidebar">
+
+			<!-- Main nav -->
+			<ul class="nav nav-collapse collapse nav-collapse-primary">
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#3hzyGPtrSk">
+						<i class="icon-beaker icon-2x"></i>
+							<span>
+								Material
+								<i class="icon-caret-down"></i>
+							</span>
+					</a>
+
+					<ul id="3hzyGPtrSk" class="collapse ">
+				
+						<li class="">
+							<a href="{% url 'seized_material_add' %}">
+								<i class="icon-hand-up"></i> Adicionar
+							</a>
+						</li>
+				
+						<li class="">
+							<a href="{% url 'seized_material_list' %}">
+								<i class="icon-hand-up"></i> Listar
+							</a>
+						</li>
+				
+					</ul>
+
+				</li>
+
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_occurrence">
+						<i class="icon-beaker icon-2x"></i>
+							<span>
+								Ocorrência
+								<i class="icon-caret-down"></i>
+							</span>
+					</a>
+
+					<ul id="dropdown_occurrence" class="collapse ">
+				
+						<li class="">
+							<a href="{% url 'occurrence_add' %}">
+								<i class="icon-hand-up"></i> Adicionar
+							</a>
+						</li>
+				
+						<li class="">
+							<a href="{% url 'occurrence_list' %}">
+								<i class="icon-hand-up"></i> Listar
+							</a>
+						</li>
+				
+					</ul>
+
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="container-fluid">
+				<div class="row-fluid">
+
+					<div class="area-top clearfix">
+						<div class="pull-left header">
+							<h3 class="title">
+								{% block title %}{% endblock title %}
+							</h3>
+							<h5>
+								{% block subtitle %}{% endblock subtitle %}
+							</h5>
+						</div>
+
+						<ul class="inline pull-right sparkline-box">
+							{% block sparkline %}{% endblock sparkline %}
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid padded">
+				<div class="row-fluid">
+
+					{% for m in messages %}
+						<div class="alert alert-{{ m.tags }}">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							{{ m }}
+						</div>
+					{% endfor %}
+
+					<!-- Breadcrumb line -->
+
+					<div id="breadcrumbs">
+						{% block breadcrumbs %}{% endblock breadcrumbs %}
+					</div>
+				</div>
+			</div>
+			{% block content %}
+				
+			{% endblock content %}
+		</div>
+	</body>
 </html>
