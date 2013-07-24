@@ -11,8 +11,8 @@ Como Instalar e Configurar
 4. Instale as dependências do projeto;
     - `$ pip install -r requirements.txt`
 5. Copie o `.sample`, para o seu:
-    - `cp local_settings.py.sample local_settings.py`
-6. Configure o `DATABASES`, dentro do arquivo [local_settings](https://github.com/Leitech/leitech/blob/master/leitech/settings_local.py.sample#L20) file.
+    - `cp settings_local.py.sample settings_local.py`
+6. Configure o `DATABASES`, dentro do arquivo [settings_local](https://github.com/Leitech/leitech/blob/master/leitech/settings_local.py.sample#L20) file.
 7. Sincronize o seu banco, com os Models e as Aplicações externas:
     - ```python manage.py syncdb```
 8. Migre as tabelas do seu banco, com os Models e as Aplicações externas:
