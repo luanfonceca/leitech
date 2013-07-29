@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block title %}
+	Adição de Usuário
+{% endblock title %}
+
+{% block subtitle %}
+	Página de criação de novas usuários
+{% endblock subtitle %}
+
+{% block breadcrumbs %}
+	<div class="breadcrumb-button blue">
+	<a href="/">
+		<span class="breadcrumb-label">
+			<i class="icon-home"></i> Home
+		</span>
+		<span class="breadcrumb-arrow"><span></span></span>
+	  </a>
+  </div>
+	
+	<div class="breadcrumb-button blue">
+		<a href="{% url 'user_list' %}">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Usuário
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+	
+	<div class="breadcrumb-button">
+		<a href="">
+		<span class="breadcrumb-label">
+		  <i class="icon-dashboard"></i> Adição
+		</span>
+		<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+  </div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<div class="container-fluid padded">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="box">
+					<div class="box-header">
+						<span class="title">
+							Preencha corretamente todas as informações antes de salvar.
+						</span>
+					</div>
+
+					<div class="box-content">
+						<form class="form-horizontal fill-up" method="POST">
+							{% csrf_token %}
+
+							<div class="padded">
+								{{ user_form|as_bootstrap }}
+							</div>
+
+							<div class="form-actions">
+								<button type="submit" class="btn btn-blue">
+									Salvar
+								</button>
+								<a href="{% url 'user_list' %}" class="btn btn-default">
+									Cancel
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

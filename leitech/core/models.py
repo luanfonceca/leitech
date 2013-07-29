@@ -82,12 +82,14 @@ class User(HistoryModel, AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(
         null=True,
         blank=True,
-        max_length=50
+        max_length=50,
+        verbose_name=u'Nome'
     )
     last_name = models.CharField(
         null=True,
         blank=True,
         max_length=50,
+        verbose_name=u'Sobrenome'
     )
     email = models.EmailField(
         max_length=255,
@@ -102,6 +104,7 @@ class User(HistoryModel, AbstractBaseUser, PermissionsMixin):
     )
     is_manager = models.BooleanField(
         default=False,
+        verbose_name=u'Marque caso este usuário seja um Gestor.'
     )
 
     # Django Managers

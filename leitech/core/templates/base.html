@@ -3,7 +3,7 @@
 	<head>
 
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800"> -->
 
 
 		<meta charset="utf-8">
@@ -103,7 +103,7 @@
 						<ul class="nav pull-right">
 							{% if request.user.is_manager %}
 								<li>
-									<a href="#" title="Gerencie Usuarios">
+									<a href="{% url 'user_list' %}" title="Gerencie Usuarios">
 										<i class="icon-user"></i> Usuarios
 									</a>
 								</li>

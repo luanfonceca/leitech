@@ -16,4 +16,5 @@ urlpatterns = patterns('',
 	url(r'^', include('core.urls.school')),
 	url(r'^', include('core.urls.seized_material')),
 	url(r'^', include('core.urls.seized_material_type')),
+	url(r'^', include('core.urls.user')),
 )
