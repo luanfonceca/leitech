@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 
 {% block title %}
-	Listagem de Material
+	Listagem de Usuário
 {% endblock title %}
 
 {% block subtitle %}
-	Página de listagem de todos os Tipos de Materiais apreendidos nas suas operações
+	Página de listagem de todos os usuário
 {% endblock subtitle %}
 
 {% block breadcrumbs %}
 	<div class="breadcrumb-button blue">
-	<a href="/">
-		<span class="breadcrumb-label">
-			<i class="icon-home"></i> Home
-		</span>
-		<span class="breadcrumb-arrow"><span></span></span>
-	  </a>
-  </div>
+		<a href="/">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Home
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
 
-  <div class="breadcrumb-button">
+	<div class="breadcrumb-button">
 		<a href="">
 			<span class="breadcrumb-label">
-				<i class="icon-home"></i> Tipos de Materiais
+				<i class="icon-home"></i> Usuários
 			</span>
 			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
@@ -35,12 +35,12 @@
 				<div class="box">
 					<div class="box-header">
 						<span class="title">
-							Listagem de todos os Tipos de Materiais cadastrados
+							Listagem de todos os Usuários cadastrados
 						</span>
 						<ul class="box-toolbar">
 							<li>
-								<a href="{% url 'seized_material_type_add' %}">
-									Adicionar novo Material
+								<a href="{% url 'user_add' %}">
+									Adicionar novo Usuário
 								</a>
 							</li>
 						</ul>
@@ -54,18 +54,18 @@
 						</tr>
 					</thead>
 					<tbody>
-						{% for seized_material_type in seized_material_types.object_list %}
+						{% for user in users.object_list %}
 							<tr class="status-pending">
 								<td>
-									{{ seized_material_type.name }}
+									{{ user.full_name }}
 								</td>
 								<td>
-									<a href="{% url 'seized_material_type_edit' seized_material_type.pk %}">
+									<a href="{% url 'user_edit' user.pk %}">
 										<span class="icon">
 											<i class="icon-edit"></i>
 										</span>
 									</a>
-									<a href="{% url 'seized_material_type_delete' seized_material_type.pk %}">
+									<a href="{% url 'user_delete' user.pk %}">
 										<span class="icon">
 											<i class="icon-remove"></i>
 										</span>
@@ -76,7 +76,7 @@
 					</tbody>
 				</table>
 
-				{% include "pagination.html" with objects=seized_material_types %}
+				{% include "pagination.html" with objects=users %}
 			</div>
 		</div>
 	</div>

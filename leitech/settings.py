@@ -3,6 +3,8 @@
 
 # Django settings for leitech project.
 
+import os
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -93,6 +95,17 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
+    # os.path.join(os.path.dirname(__file__), "templates")
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -118,20 +131,21 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'suit', # Django Admin Suite Theme
-    # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
 
+    
     # Aplicações externas
     'django_localflavor_br',
     'django_extensions',
     'south',
     'bootstrap_toolkit',
+    'registration',
 
     # Aplicações internas
     'core',
+    
+    # Django Admin Tema
+    'suit', 
+    'django.contrib.admin',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -168,8 +182,9 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_USER_EMAIL_FIELD = 'email'
 AUTH_USER_MODEL = 'core.User'
-LOGIN_URL = '/admin/login/'
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+
 
 try:
     from settings_local import *

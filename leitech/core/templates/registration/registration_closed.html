@@ -1,0 +1,16 @@
+{% extends "external_base.html" %}
+{% load i18n %}
+
+{% block title %}
+	{% trans "Register status." %}
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="alert alert-warning">
+				{% trans "Registration is currently closed." %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

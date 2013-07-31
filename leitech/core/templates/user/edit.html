@@ -2,27 +2,27 @@
 {% load bootstrap_toolkit %}
 
 {% block title %}
-	Adição de Viatura
+	Edição de Usuário
 {% endblock title %}
 
 {% block subtitle %}
-	Página de criação de novas Vitaturas usadas nas suas operações
+	Página de edição das usuários
 {% endblock subtitle %}
 
 {% block breadcrumbs %}
 	<div class="breadcrumb-button blue">
-	<a href="/">
-		<span class="breadcrumb-label">
-			<i class="icon-home"></i> Home
-		</span>
-		<span class="breadcrumb-arrow"><span></span></span>
+		<a href="/">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Home
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
 	</div>
-	
+
 	<div class="breadcrumb-button blue">
-		<a href="{% url 'police_car_list' %}">
+		<a href="{% url 'user_list' %}">
 			<span class="breadcrumb-label">
-				<i class="icon-home"></i> Vitaturas
+				<i class="icon-home"></i> Usuários
 			</span>
 			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
@@ -30,10 +30,10 @@
 	
 	<div class="breadcrumb-button">
 		<a href="">
-		<span class="breadcrumb-label">
-			<i class="icon-dashboard"></i> Adição
-		</span>
-		<span class="breadcrumb-arrow"><span></span></span>
+			<span class="breadcrumb-label">
+				<i class="icon-dashboard"></i> Edição
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
 	</div>
 {% endblock breadcrumbs %}
@@ -54,14 +54,14 @@
 							{% csrf_token %}
 
 							<div class="padded">
-								{{ police_car_form|as_bootstrap }}
+								{{ user_form|as_bootstrap }}
 							</div>
 
 							<div class="form-actions">
 								<button type="submit" class="btn btn-blue">
 									Salvar
 								</button>
-								<a href="{% url 'police_car_list' %}" class="btn btn-default">
+								<a href="{% url 'user_list' %}" class="btn btn-default">
 									Cancel
 								</a>
 							</div>

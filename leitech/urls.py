@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
 
 # Uncomment the next two lines to enable the admin:
@@ -20,7 +20,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     # Aplicações
-    url(r'^$', TemplateView.as_view(template_name="base.html")),
+    url(r'^$', TemplateView.as_view(template_name="base.html"), name="dashboard"),
     
     url(r'^', include('core.urls')),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
 )

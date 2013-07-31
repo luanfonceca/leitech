@@ -16,6 +16,36 @@ from django.contrib.auth.models import (AbstractBaseUser,
 from utils import now, send_mail
 
 
+class HistoryModel(models.Model):
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        editable=False,
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
+        editable=False,
+    )
+
+    # Relations
+    created_by = models.ForeignKey(
+        to='core.User',
+        related_name='%(app_label)s_%(class)s_created_histories',
+        null=True,
+        blank=True,
+        editable=False,
+    )
+    updated_by = models.ForeignKey(
+        to='core.User',
+        related_name='%(app_label)s_%(class)s_updated_histories',
+        null=True,
+        blank=True,
+        editable=False,
+    )
+
+    class Meta:
+        abstract = True    
+
+
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         _now = now()
@@ -48,16 +78,18 @@ class UserManager(BaseUserManager):
         return user
 
 
-class User(AbstractBaseUser, PermissionsMixin):
+class User(HistoryModel, AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(
         null=True,
         blank=True,
-        max_length=50
+        max_length=50,
+        verbose_name=u'Nome'
     )
     last_name = models.CharField(
         null=True,
         blank=True,
         max_length=50,
+        verbose_name=u'Sobrenome'
     )
     email = models.EmailField(
         max_length=255,
@@ -72,13 +104,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     is_manager = models.BooleanField(
         default=False,
-    )
-    created_at = models.DateTimeField(
-        auto_now_add=True
-    )
-    updated_at = models.DateTimeField(
-        auto_now=True,
-        editable=False,
+        verbose_name=u'Marque caso este usuário seja um Gestor.'
     )
 
     # Django Managers
@@ -105,36 +131,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     def email_user(self, subject, message, from_email=None):
         send_mail(subject, message, from_email, [self.email])
 
-
-class HistoryModel(models.Model):
-    created_at = models.DateTimeField(
-        auto_now_add=True,
-        editable=False,
-    )
-    updated_at = models.DateTimeField(
-        auto_now=True,
-        editable=False,
-    )
-
-    # Relations
-    created_by = models.ForeignKey(
-        to='core.User',
-        related_name='%(app_label)s_%(class)s_created_histories',
-        null=True,
-        blank=True,
-        editable=False,
-    )
-    updated_by = models.ForeignKey(
-        to='core.User',
-        related_name='%(app_label)s_%(class)s_updated_histories',
-        null=True,
-        blank=True,
-        editable=False,
-    )
-
-    class Meta:
-        abstract = True    
-
+    @property
+    def full_name(self):
+        return u"%s %s" % (self.first_name, self.last_name)
+    
 
 class Address(HistoryModel):
     state = models.CharField(

@@ -2,27 +2,27 @@
 {% load bootstrap_toolkit %}
 
 {% block title %}
-	Adição de Viatura
+	Remoção de Usuário
 {% endblock title %}
 
 {% block subtitle %}
-	Página de criação de novas Vitaturas usadas nas suas operações
+	Página de remoção dos usuários do sistema.
 {% endblock subtitle %}
 
 {% block breadcrumbs %}
 	<div class="breadcrumb-button blue">
-	<a href="/">
-		<span class="breadcrumb-label">
-			<i class="icon-home"></i> Home
-		</span>
-		<span class="breadcrumb-arrow"><span></span></span>
+		<a href="/">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Home
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
 	</div>
-	
+
 	<div class="breadcrumb-button blue">
-		<a href="{% url 'police_car_list' %}">
+		<a href="{% url 'user_list' %}">
 			<span class="breadcrumb-label">
-				<i class="icon-home"></i> Vitaturas
+				<i class="icon-home"></i> Usuários
 			</span>
 			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
@@ -30,10 +30,10 @@
 	
 	<div class="breadcrumb-button">
 		<a href="">
-		<span class="breadcrumb-label">
-			<i class="icon-dashboard"></i> Adição
-		</span>
-		<span class="breadcrumb-arrow"><span></span></span>
+			<span class="breadcrumb-label">
+				<i class="icon-dashboard"></i> Remoção
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
 	</div>
 {% endblock breadcrumbs %}
@@ -45,23 +45,26 @@
 				<div class="box">
 					<div class="box-header">
 						<span class="title">
-							Preencha corretamente todas as informações antes de salvar.
+							Remoção de Usuário
 						</span>
 					</div>
 
 					<div class="box-content">
 						<form class="form-horizontal fill-up" method="POST">
 							{% csrf_token %}
-
+							
 							<div class="padded">
-								{{ police_car_form|as_bootstrap }}
+								<div class="alert alert-block">
+									<h4>Cuidado!</h4>
+									Você está prestes a remover o material <big>"{{ user }}"</big>, caso realmente tenha certeza que é isso que você deseja, clique em "Confirmar" logo abaixo.
+								</div>
 							</div>
-
+							
 							<div class="form-actions">
 								<button type="submit" class="btn btn-blue">
-									Salvar
+									Confirmar
 								</button>
-								<a href="{% url 'police_car_list' %}" class="btn btn-default">
+								<a href="{% url 'user_list' %}" class="btn btn-default">
 									Cancel
 								</a>
 							</div>

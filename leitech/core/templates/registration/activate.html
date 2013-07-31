@@ -1,0 +1,25 @@
+{% extends "external_base.html" %}
+{% load i18n %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			{% if account %}
+				<div class="alert alert-success">
+					{% trans "Account successfully activated" %}
+				</div>
+				<hr>
+
+				<p>
+					<a href="{% url 'auth_login' %}">
+						{% trans "Log in" %}
+					</a>
+				</p>
+			{% else %}
+				<div class="alert alert-error">
+					{% trans "Account activation failed" %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}

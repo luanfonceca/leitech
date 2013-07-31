@@ -8,23 +8,21 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Deleting field 'User.date_joined'
-        db.delete_column('user', 'date_joined')
-
-        # Adding field 'User.updated_at'
-        db.add_column('user', 'updated_at',
-                      self.gf('django.db.models.fields.DateTimeField')(auto_now=True, default=datetime.datetime(2013, 7, 17, 0, 0), blank=True),
-                      keep_default=False)
+        # Adding model 'PoliceCar'
+        db.create_table('police_car', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('created_at', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
+            ('updated_at', self.gf('django.db.models.fields.DateTimeField')(auto_now=True, blank=True)),
+            ('created_by', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name=u'core_policecar_created_histories', null=True, to=orm['core.User'])),
+            ('updated_by', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name=u'core_policecar_updated_histories', null=True, to=orm['core.User'])),
+            ('ident', self.gf('django.db.models.fields.CharField')(max_length=50)),
+        ))
+        db.send_create_signal(u'core', ['PoliceCar'])
 
 
     def backwards(self, orm):
-        # Adding field 'User.date_joined'
-        db.add_column('user', 'date_joined',
-                      self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, default=datetime.datetime(2013, 7, 17, 0, 0), blank=True),
-                      keep_default=False)
-
-        # Deleting field 'User.updated_at'
-        db.delete_column('user', 'updated_at')
+        # Deleting model 'PoliceCar'
+        db.delete_table('police_car')
 
 
     models = {
@@ -63,16 +61,14 @@ class Migration(SchemaMigration):
             'updated_by': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "u'core_address_updated_histories'", 'null': 'True', 'to': u"orm['core.User']"}),
             'zipcode': ('django.db.models.fields.CharField', [], {'max_length': '8', 'null': 'True', 'blank': 'True'})
         },
-        u'core.police': {
-            'Meta': {'object_name': 'Police'},
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'name': ('django.db.models.fields.CharField', [], {'max_length': '150'}),
-            'police_car': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'polices'", 'null': 'True', 'to': u"orm['core.PoliceCar']"})
-        },
         u'core.policecar': {
-            'Meta': {'object_name': 'PoliceCar'},
+            'Meta': {'object_name': 'PoliceCar', 'db_table': "'police_car'"},
+            'created_at': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'created_by': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "u'core_policecar_created_histories'", 'null': 'True', 'to': u"orm['core.User']"}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'ident': ('django.db.models.fields.CharField', [], {'max_length': '50'})
+            'ident': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'updated_at': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
+            'updated_by': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "u'core_policecar_updated_histories'", 'null': 'True', 'to': u"orm['core.User']"})
         },
         u'core.school': {
             'Meta': {'object_name': 'School', 'db_table': "'school'"},
@@ -88,6 +84,7 @@ class Migration(SchemaMigration):
         u'core.user': {
             'Meta': {'object_name': 'User', 'db_table': "'user'"},
             'created_at': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'created_by': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "u'core_user_created_histories'", 'null': 'True', 'to': u"orm['core.User']"}),
             'email': ('django.db.models.fields.EmailField', [], {'unique': 'True', 'max_length': '255', 'db_index': 'True'}),
             'first_name': ('django.db.models.fields.CharField', [], {'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'groups': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['auth.Group']", 'symmetrical': 'False', 'blank': 'True'}),
@@ -100,6 +97,7 @@ class Migration(SchemaMigration):
             'last_name': ('django.db.models.fields.CharField', [], {'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'password': ('django.db.models.fields.CharField', [], {'max_length': '128'}),
             'updated_at': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
+            'updated_by': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "u'core_user_updated_histories'", 'null': 'True', 'to': u"orm['core.User']"}),
             'user_permissions': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['auth.Permission']", 'symmetrical': 'False', 'blank': 'True'})
         }
     }

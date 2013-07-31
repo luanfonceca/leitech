@@ -1,0 +1,17 @@
+{% extends "external_base.html" %}
+{% load bootstrap_toolkit %}
+{% load i18n %}
+
+{% block title %}
+	{% trans 'Register' %}
+{% endblock title %}
+
+{% block content %}
+	<form class="form-vertical fill-up" method="POST">
+		{% csrf_token %}
+
+		{{ form|as_bootstrap }}
+		
+		<input type="submit" class="btn btn btn-blue btn-block" value="{% trans 'Submit' %}" />
+	</form>
+{% endblock %}
