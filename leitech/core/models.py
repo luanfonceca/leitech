@@ -314,6 +314,23 @@ class SeizedMaterialType(HistoryModel):
         return u'%s' % self.name
 
 
+class AttendedPublic(HistoryModel):
+    name = models.CharField(
+        max_length=150, 
+        null=False, 
+        blank=False, 
+        verbose_name=_(u'Nome')
+    )
+
+    class Meta:
+        db_table='attended_public'
+        verbose_name = _(u'Público Atendido')
+        verbose_name_plural = _(u'Público Atendido')
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+
 class SeizedMaterial(HistoryModel):
     name = models.CharField(
         max_length=150, 
@@ -353,12 +370,6 @@ class Occurrence(HistoryModel):
         null=False, 
         blank=False, 
         verbose_name=_(u'Dados Relevante')
-    )
-    attended_public = models.CharField(
-        max_length=150, 
-        null=False, 
-        blank=False, 
-        verbose_name=_(u'Público Atendido')
     )
     accident_report = models.CharField(
         max_length=50, 
@@ -403,6 +414,14 @@ class Occurrence(HistoryModel):
         related_name='occurrences', 
         on_delete=models.PROTECT,
         verbose_name=_(u'Tipo')   
+    )
+    attended_public = models.ForeignKey(
+        to=AttendedPublic, 
+        null=False, 
+        blank=False, 
+        related_name='occurrences', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Público Atendido')   
     )
     seized_materials = models.ManyToManyField(
         to=SeizedMaterial, 

@@ -84,3 +84,8 @@ class UserEditPasswordForm(PasswordChangeForm):
 class UserResetPasswordForm(SetPasswordForm):
     class Meta:
         model = User
+
+
+class AttendedPublicForm(HistoryModelForm):
+    class Meta:
+        model = AttendedPublic
