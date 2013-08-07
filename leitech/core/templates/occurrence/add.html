@@ -55,6 +55,60 @@
 
 							<div class="padded">
 								{{ occurrence_form|as_bootstrap }}
+
+								<div class="control-group">
+									<label class="control-label">Materiais Apreendidos</label>
+									<div class="controls">
+										{{ osm_formset.management_form }}
+										<table class="table table-bordered table-formset">
+											{% for osm_form in osm_formset.forms %}
+												{% if forloop.first %}
+													<thead>
+														<tr>
+															{% for field in osm_form.visible_fields %}
+																<th>
+																	<label>
+																		{{ field.label|title }}
+																	</label>
+																</th>
+															{% endfor %}
+															<th>
+																<label>Ações</label>
+															</th>
+														</tr>
+													</thead>
+												{% endif %}
+												<tbody>
+													<tr>
+														{% for field in osm_form.visible_fields %}
+															<td>{{ field }}</td>
+															{% if forloop.last %}
+																<td>
+																	<a href="javascript:;" class="btn btn-danger del-formset">
+																		<i class="icon-trash icon-white"></i>
+																		Apagar
+																	</a>
+																</td>
+															{% endif %}
+														{% endfor %}
+													</tr>
+												</tbody>
+												{% if forloop.last %}
+													<tfoot>
+														<tr class="actions-formset">
+															<td colspan="3">
+																<a href="javascript:;" class="btn btn-green add-formset">
+																	<i class="icon-plus"></i>
+																	Adicionar outro
+																</a>
+															</td>
+														</tr>
+													</tfoot>
+												{% endif %}
+											{% endfor %}
+										</table>
+									</div>
+								</div>
 							</div>
 
 							<div class="form-actions">
@@ -72,3 +126,7 @@
 		</div>
 	</div>
 {% endblock content %}
+
+{% block extra_js %}
+	<script src="{{ STATIC_URL }}javascripts/occurrence.js" type="text/javascript"></script>
+{% endblock extra_js %}

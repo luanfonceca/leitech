@@ -425,6 +425,7 @@ class Occurrence(HistoryModel):
     )
     seized_materials = models.ManyToManyField(
         to=SeizedMaterial, 
+        through='core.OccurrenceSeizedMaterial',
         null=True, 
         blank=True, 
         related_name='occurrences',
@@ -439,3 +440,31 @@ class Occurrence(HistoryModel):
     def __unicode__(self):
         return u'%s...' % self.description[:10]
     
+
+class OccurrenceSeizedMaterial(HistoryModel):
+    amount = models.CharField(
+        max_length=150, 
+        null=True, 
+        blank=True, 
+        verbose_name=_(u'Quantidade ou Valor')
+    )
+
+    # relations 
+    occurrence = models.ForeignKey(
+        to=Occurrence,
+        related_name='occurrence_seized_material', 
+        verbose_name=u'Ocorrência',
+    )
+    seized_material = models.ForeignKey(
+        to=SeizedMaterial,
+        related_name='occurrence_seized_material', 
+        verbose_name=u'Material Apreendido',
+    )
+    
+    class Meta:
+        db_table='occurrence_seized_material'
+        verbose_name = _(u'Material Apreendido na Ocorrência')
+        verbose_name_plural = _(u'Materiais Apreendidos na Ocorrência')
+
+    def __unicode__(self):
+        return u'%s' % self.name

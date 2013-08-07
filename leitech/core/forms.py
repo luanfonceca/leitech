@@ -7,7 +7,7 @@ Criado por Luan Fonseca em 18/06/2013.
 """
 
 from django import forms
-
+from django.forms.models import inlineformset_factory
 from django.contrib.auth.forms import (UserCreationForm, 
                                        PasswordChangeForm, 
                                        SetPasswordForm)
@@ -57,6 +57,7 @@ class SchoolForm(HistoryModelForm):
 class OccurrenceForm(HistoryModelForm):
     class Meta:
         model = Occurrence
+        exclude = ['seized_materials']
 
 
 class UserForm(UserCreationForm):
@@ -89,3 +90,8 @@ class UserResetPasswordForm(SetPasswordForm):
 class AttendedPublicForm(HistoryModelForm):
     class Meta:
         model = AttendedPublic
+
+OSMFormSet = inlineformset_factory(
+    Occurrence, OccurrenceSeizedMaterial,
+    extra=1, can_delete=False,
+)

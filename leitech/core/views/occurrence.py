@@ -11,7 +11,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
-from core.forms import OccurrenceForm
+from core.forms import OccurrenceForm, OSMFormSet
 from core.models import Occurrence
 
 @login_required
@@ -36,6 +36,10 @@ def list(request):
 
 @login_required
 def add(request):
+    osm_formset = OSMFormSet(
+        data=request.POST or None, 
+        instance=Occurrence()
+    )
     occurrence_form = OccurrenceForm(
         data=request.POST or None
     )
@@ -46,6 +50,7 @@ def add(request):
     
     template_context = {
         'occurrence_form': occurrence_form,
+        'osm_formset': osm_formset,
     }
     return render(
         request=request,
