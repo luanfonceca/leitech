@@ -95,3 +95,7 @@ OSMFormSet = inlineformset_factory(
     Occurrence, OccurrenceSeizedMaterial,
     extra=1, can_delete=False,
 )
+
+class AddressForm(HistoryModelForm):
+    class Meta:
+        model = Address

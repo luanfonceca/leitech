@@ -18,4 +18,5 @@ urlpatterns = patterns('',
 	url(r'^', include('core.urls.seized_material_type')),
 	url(r'^', include('core.urls.user')),
 	url(r'^', include('core.urls.attended_public')),
+	url(r'^', include('core.urls.address')),
 )
