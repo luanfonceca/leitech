@@ -3,12 +3,12 @@
 u"""
 user.py
 
-Criado por Luan Fonseca em 29/07/2013.
+Criado por Luan Fonseca em 08/08/2013.
 """
 
 from django.conf.urls import patterns, url
 
-urlpatterns = patterns('core.views.user',
+urlpatterns = patterns('accounts.views',
 	url(
         regex=r'^users/?$', 
         view='list', 

@@ -142,6 +142,7 @@ INSTALLED_APPS = (
 
     # Aplicações internas
     'core',
+    'accounts',
     
     # Django Admin Tema
     'suit', 
@@ -181,7 +182,7 @@ LOGGING = {
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_USER_EMAIL_FIELD = 'email'
-AUTH_USER_MODEL = 'core.User'
+AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 

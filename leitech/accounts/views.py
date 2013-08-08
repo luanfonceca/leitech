@@ -3,7 +3,7 @@
 u"""
 user.py
 
-Criado por Luan Fonseca em 29/07/2013.
+Criado por Luan Fonseca em 08/08/2013.
 """
 
 from django.shortcuts import render, redirect, get_object_or_404
@@ -11,8 +11,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
-from core.forms import UserForm, UserEditForm
-from core.models import User
+from accounts.forms import UserForm, UserEditForm
+from accounts.models import User
 
 @login_required
 def list(request):
@@ -30,7 +30,7 @@ def list(request):
     }
     return render(
         request=request,
-        template_name='user/list.html',
+        template_name='list.html',
         dictionary=template_context
     )
 
@@ -49,7 +49,7 @@ def add(request):
     }
     return render(
         request=request,
-        template_name='user/add.html',
+        template_name='add.html',
         dictionary=template_context
     )
 
@@ -74,7 +74,7 @@ def edit(request, pk):
     }
     return render(
         request=request,
-        template_name='user/edit.html',
+        template_name='edit.html',
         dictionary=template_context
     )
 
@@ -94,6 +94,6 @@ def delete(request, pk):
     }
     return render(
         request=request,
-        template_name='user/delete.html',
+        template_name='delete.html',
         dictionary=template_context
     )

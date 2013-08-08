@@ -1,7 +1,7 @@
 [
 {
     "pk": 1, 
-    "model": "core.user", 
+    "model": "accounts.user", 
     "fields": {
         "first_name": null, 
         "last_name": null, 
@@ -20,7 +20,7 @@
 },
 {
     "pk": 2, 
-    "model": "core.user", 
+    "model": "accounts.user", 
     "fields": {
         "first_name": null, 
         "last_name": null, 
