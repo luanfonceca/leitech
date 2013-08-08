@@ -91,9 +91,25 @@ class AttendedPublicForm(HistoryModelForm):
     class Meta:
         model = AttendedPublic
 
+
+class OccurrenceSeizedMaterialForm(forms.ModelForm):
+    class Meta:
+        model = OccurrenceSeizedMaterial
+
+    def __init__(self, *args, **kwargs):
+        super(OccurrenceSeizedMaterialForm, self).__init__(*args, **kwargs)
+        self.fields.keyOrder = [
+            'seized_material', 
+            'amount',
+        ]
+    
+
 OSMFormSet = inlineformset_factory(
-    Occurrence, OccurrenceSeizedMaterial,
-    extra=1, can_delete=False,
+    parent_model=Occurrence, 
+    model=OccurrenceSeizedMaterial,
+    form=OccurrenceSeizedMaterialForm,
+    can_delete=False,
+    extra=1, 
 )
 
 class AddressForm(HistoryModelForm):

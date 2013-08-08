@@ -467,4 +467,4 @@ class OccurrenceSeizedMaterial(HistoryModel):
         verbose_name_plural = _(u'Materiais Apreendidos na Ocorrência')
 
     def __unicode__(self):
-        return u'%s' % self.name
+        return u'%s' % self.seized_material.name

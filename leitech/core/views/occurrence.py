@@ -36,6 +36,8 @@ def list(request):
 
 @login_required
 def add(request):
+    import ipdb; ipdb.set_trace()
+    
     osm_formset = OSMFormSet(
         data=request.POST or None, 
         instance=Occurrence()
@@ -43,8 +45,10 @@ def add(request):
     occurrence_form = OccurrenceForm(
         data=request.POST or None
     )
-    if occurrence_form.is_valid():
-        occurrence_form.save(auth.get_user(request))
+    if occurrence_form.is_valid() and osm_formset.is_valid():
+        occurrence = occurrence_form.save(auth.get_user(request))
+        osm_formset.instance = occurrence
+        osm_formset.save()
         messages.success(request, u"Material salvo com sucesso.")
         return redirect('occurrence_list')
     
@@ -64,6 +68,10 @@ def edit(request, pk):
         klass=Occurrence, 
         pk=pk
     )
+    osm_formset = OSMFormSet(
+        data=request.POST or None, 
+        instance=occurrence
+    )
     occurrence_form = OccurrenceForm(
         data=request.POST or None,
         instance=occurrence
@@ -76,6 +84,7 @@ def edit(request, pk):
     template_context = {
         'occurrence': occurrence,
         'occurrence_form': occurrence_form,
+        'osm_formset': osm_formset,
     }
     return render(
         request=request,
