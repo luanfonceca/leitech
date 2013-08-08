@@ -11,7 +11,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
-from core.forms import OccurrenceForm, OSMFormSet
+from materials.forms import OSMFormSet
+from core.forms import OccurrenceForm
 from core.models import Occurrence
 
 @login_required

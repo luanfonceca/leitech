@@ -3,14 +3,11 @@
 u"""
 models.py
 
-Criado por Luan Fonseca em 17/06/2013.
+Criado por Luan Fonseca em 08/08/2013.
 """
 
 from django.contrib import admin
-from django.contrib.auth.models import Permission, Group
 from django.contrib.contenttypes.models import ContentType
-
-admin.site.register(Permission)
 
 # Registrando todas os Models da app na Admin.
 map(lambda x:

@@ -3,7 +3,7 @@
 u"""
 seized_material_type.py
 
-Criado por Luan Fonseca em 18/06/2013.
+Criado por Luan Fonseca em 08/08/2013.
 """
 
 from django.shortcuts import render, redirect, get_object_or_404
@@ -11,8 +11,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
-from core.forms import SeizedMaterialTypeForm
-from core.models import SeizedMaterialType
+from materials.forms import SeizedMaterialTypeForm
+from materials.models import SeizedMaterialType
 
 @login_required
 def list(request):

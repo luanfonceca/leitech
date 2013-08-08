@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name="base.html"), name="dashboard"),
     url(r'^', include('core.urls')),
     url(r'^accounts/', include('accounts.urls')),
+    url(r'^', include('materials.urls')),
 
     url(r'^accounts/', include('registration.backends.simple.urls')),
 )

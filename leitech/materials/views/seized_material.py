@@ -11,8 +11,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
-from core.forms import SeizedMaterialForm
-from core.models import SeizedMaterial
+from materials.forms import SeizedMaterialForm
+from materials.models import SeizedMaterial
 
 @login_required
 def list(request):
