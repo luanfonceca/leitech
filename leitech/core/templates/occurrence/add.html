@@ -62,6 +62,7 @@
 										{{ osm_formset.management_form }}
 										<table class="table table-bordered table-formset">
 											{% for osm_form in osm_formset.forms %}
+												{{ osm_form.id }}
 												{% if forloop.first %}
 													<thead>
 														<tr>

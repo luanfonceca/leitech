@@ -37,8 +37,6 @@ def list(request):
 
 @login_required
 def add(request):
-    import ipdb; ipdb.set_trace()
-    
     osm_formset = OSMFormSet(
         data=request.POST or None, 
         instance=Occurrence()
@@ -49,7 +47,7 @@ def add(request):
     if occurrence_form.is_valid() and osm_formset.is_valid():
         occurrence = occurrence_form.save(auth.get_user(request))
         osm_formset.instance = occurrence
-        osm_formset.save()
+        osm_formset.save(auth.get_user(request))
         messages.success(request, u"Material salvo com sucesso.")
         return redirect('occurrence_list')
     

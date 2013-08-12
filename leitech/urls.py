@@ -24,6 +24,7 @@ urlpatterns = patterns('',
     url(r'^', include('core.urls')),
     url(r'^accounts/', include('accounts.urls')),
     url(r'^', include('materials.urls')),
+    url(r'^', include('folks.urls')),
 
     url(r'^accounts/', include('registration.backends.simple.urls')),
 )

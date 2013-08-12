@@ -1,0 +1,1225 @@
+[
+{
+    "pk": 1, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Briga da Gang", 
+        "created_at": "2013-07-19T21:05:39.830", 
+        "updated_at": "2013-07-19T21:05:39.830", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Furto", 
+        "created_at": "2013-07-19T22:57:17.906", 
+        "updated_at": "2013-07-19T22:57:17.906", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Briga entre escolas", 
+        "created_at": "2013-07-19T22:57:32.814", 
+        "updated_at": "2013-07-19T22:57:32.814", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 1, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Abordagem \u00e0 ve\u00edculo", 
+        "created_at": "2013-08-08T23:13:09.528", 
+        "updated_at": "2013-08-08T23:13:09.528", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Agress\u00e3o", 
+        "created_at": "2013-08-08T23:13:09.531", 
+        "updated_at": "2013-08-08T23:13:09.531", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Aliciamento de menor", 
+        "created_at": "2013-08-08T23:13:09.533", 
+        "updated_at": "2013-08-08T23:13:09.533", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 4, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Amea\u00e7a", 
+        "created_at": "2013-08-08T23:13:09.535", 
+        "updated_at": "2013-08-08T23:13:09.535", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 5, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Apoio policial", 
+        "created_at": "2013-08-08T23:13:09.537", 
+        "updated_at": "2013-08-08T23:13:09.537", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 6, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Assist\u00eancia policial", 
+        "created_at": "2013-08-08T23:13:09.539", 
+        "updated_at": "2013-08-08T23:13:09.539", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 7, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Ato de suspei\u00e7\u00e3o", 
+        "created_at": "2013-08-08T23:13:09.541", 
+        "updated_at": "2013-08-08T23:13:09.541", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 8, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Atos libidinosos", 
+        "created_at": "2013-08-08T23:13:09.543", 
+        "updated_at": "2013-08-08T23:13:09.543", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 9, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Atrito verbal", 
+        "created_at": "2013-08-08T23:13:09.545", 
+        "updated_at": "2013-08-08T23:13:09.545", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 10, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Condu\u00e7\u00e3o de aluno at\u00e9 a resid\u00eancia", 
+        "created_at": "2013-08-08T23:13:09.547", 
+        "updated_at": "2013-08-08T23:13:09.547", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 11, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Consumo de entorpecentes", 
+        "created_at": "2013-08-08T23:13:09.549", 
+        "updated_at": "2013-08-08T23:13:09.549", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 12, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Danos ao patrim\u00f4nio p\u00fablico", 
+        "created_at": "2013-08-08T23:13:09.551", 
+        "updated_at": "2013-08-08T23:13:09.551", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 13, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Desordem", 
+        "created_at": "2013-08-08T23:13:09.553", 
+        "updated_at": "2013-08-08T23:13:09.553", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 14, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Estupro", 
+        "created_at": "2013-08-08T23:13:09.555", 
+        "updated_at": "2013-08-08T23:13:09.555", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 15, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Falsidade ideol\u00f3gica", 
+        "created_at": "2013-08-08T23:13:09.557", 
+        "updated_at": "2013-08-08T23:13:09.557", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 16, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Furto", 
+        "created_at": "2013-08-08T23:13:09.559", 
+        "updated_at": "2013-08-08T23:13:09.559", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 17, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Homic\u00eddio", 
+        "created_at": "2013-08-08T23:13:09.561", 
+        "updated_at": "2013-08-08T23:13:09.561", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 18, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Les\u00e3o corporal", 
+        "created_at": "2013-08-08T23:13:09.563", 
+        "updated_at": "2013-08-08T23:13:09.563", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 19, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Ocorr\u00eancia de tr\u00e2nsito", 
+        "created_at": "2013-08-08T23:13:09.566", 
+        "updated_at": "2013-08-08T23:13:09.566", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 20, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Porte Ilegal de arma", 
+        "created_at": "2013-08-08T23:13:09.568", 
+        "updated_at": "2013-08-08T23:13:09.568", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 21, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Presta\u00e7\u00e3o de socorro", 
+        "created_at": "2013-08-08T23:13:09.570", 
+        "updated_at": "2013-08-08T23:13:09.570", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 22, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Roubo", 
+        "created_at": "2013-08-08T23:13:09.572", 
+        "updated_at": "2013-08-08T23:13:09.572", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 23, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Solicita\u00e7\u00e3o de policiamento", 
+        "created_at": "2013-08-08T23:13:09.574", 
+        "updated_at": "2013-08-08T23:13:09.574", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 24, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de Assalto", 
+        "created_at": "2013-08-08T23:13:09.576", 
+        "updated_at": "2013-08-08T23:13:09.576", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 25, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de estupro", 
+        "created_at": "2013-08-08T23:13:09.578", 
+        "updated_at": "2013-08-08T23:13:09.578", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 26, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de Homic\u00eddio", 
+        "created_at": "2013-08-08T23:13:09.581", 
+        "updated_at": "2013-08-08T23:13:09.581", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 27, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tr\u00e1fico", 
+        "created_at": "2013-08-08T23:13:09.583", 
+        "updated_at": "2013-08-08T23:13:09.583", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 28, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Vandalismo", 
+        "created_at": "2013-08-08T23:13:09.585", 
+        "updated_at": "2013-08-08T23:13:09.585", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 29, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Vias de fato", 
+        "created_at": "2013-08-08T23:13:09.587", 
+        "updated_at": "2013-08-08T23:13:09.587", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 1, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Abordagem \u00e0 ve\u00edculo", 
+        "created_at": "2013-08-08T23:13:09.528", 
+        "updated_at": "2013-08-08T23:13:09.528", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Agress\u00e3o", 
+        "created_at": "2013-08-08T23:13:09.531", 
+        "updated_at": "2013-08-08T23:13:09.531", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Aliciamento de menor", 
+        "created_at": "2013-08-08T23:13:09.533", 
+        "updated_at": "2013-08-08T23:13:09.533", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 4, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Amea\u00e7a", 
+        "created_at": "2013-08-08T23:13:09.535", 
+        "updated_at": "2013-08-08T23:13:09.535", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 5, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Apoio policial", 
+        "created_at": "2013-08-08T23:13:09.537", 
+        "updated_at": "2013-08-08T23:13:09.537", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 6, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Assist\u00eancia policial", 
+        "created_at": "2013-08-08T23:13:09.539", 
+        "updated_at": "2013-08-08T23:13:09.539", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 7, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Ato de suspei\u00e7\u00e3o", 
+        "created_at": "2013-08-08T23:13:09.541", 
+        "updated_at": "2013-08-08T23:13:09.541", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 8, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Atos libidinosos", 
+        "created_at": "2013-08-08T23:13:09.543", 
+        "updated_at": "2013-08-08T23:13:09.543", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 9, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Atrito verbal", 
+        "created_at": "2013-08-08T23:13:09.545", 
+        "updated_at": "2013-08-08T23:13:09.545", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 10, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Condu\u00e7\u00e3o de aluno at\u00e9 a resid\u00eancia", 
+        "created_at": "2013-08-08T23:13:09.547", 
+        "updated_at": "2013-08-08T23:13:09.547", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 11, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Consumo de entorpecentes", 
+        "created_at": "2013-08-08T23:13:09.549", 
+        "updated_at": "2013-08-08T23:13:09.549", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 12, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Danos ao patrim\u00f4nio p\u00fablico", 
+        "created_at": "2013-08-08T23:13:09.551", 
+        "updated_at": "2013-08-08T23:13:09.551", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 13, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Desordem", 
+        "created_at": "2013-08-08T23:13:09.553", 
+        "updated_at": "2013-08-08T23:13:09.553", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 14, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Estupro", 
+        "created_at": "2013-08-08T23:13:09.555", 
+        "updated_at": "2013-08-08T23:13:09.555", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 15, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Falsidade ideol\u00f3gica", 
+        "created_at": "2013-08-08T23:13:09.557", 
+        "updated_at": "2013-08-08T23:13:09.557", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 16, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Furto", 
+        "created_at": "2013-08-08T23:13:09.559", 
+        "updated_at": "2013-08-08T23:13:09.559", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 17, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Homic\u00eddio", 
+        "created_at": "2013-08-08T23:13:09.561", 
+        "updated_at": "2013-08-08T23:13:09.561", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 18, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Les\u00e3o corporal", 
+        "created_at": "2013-08-08T23:13:09.563", 
+        "updated_at": "2013-08-08T23:13:09.563", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 19, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Ocorr\u00eancia de tr\u00e2nsito", 
+        "created_at": "2013-08-08T23:13:09.566", 
+        "updated_at": "2013-08-08T23:13:09.566", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 20, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Porte Ilegal de arma", 
+        "created_at": "2013-08-08T23:13:09.568", 
+        "updated_at": "2013-08-08T23:13:09.568", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 21, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Presta\u00e7\u00e3o de socorro", 
+        "created_at": "2013-08-08T23:13:09.570", 
+        "updated_at": "2013-08-08T23:13:09.570", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 22, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Roubo", 
+        "created_at": "2013-08-08T23:13:09.572", 
+        "updated_at": "2013-08-08T23:13:09.572", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 23, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Solicita\u00e7\u00e3o de policiamento", 
+        "created_at": "2013-08-08T23:13:09.574", 
+        "updated_at": "2013-08-08T23:13:09.574", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 24, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de Assalto", 
+        "created_at": "2013-08-08T23:13:09.576", 
+        "updated_at": "2013-08-08T23:13:09.576", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 25, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de estupro", 
+        "created_at": "2013-08-08T23:13:09.578", 
+        "updated_at": "2013-08-08T23:13:09.578", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 26, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de Homic\u00eddio", 
+        "created_at": "2013-08-08T23:13:09.581", 
+        "updated_at": "2013-08-08T23:13:09.581", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 27, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tr\u00e1fico", 
+        "created_at": "2013-08-08T23:13:09.583", 
+        "updated_at": "2013-08-08T23:13:09.583", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 28, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Vandalismo", 
+        "created_at": "2013-08-08T23:13:09.585", 
+        "updated_at": "2013-08-08T23:13:09.585", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 29, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Vias de fato", 
+        "created_at": "2013-08-08T23:13:09.587", 
+        "updated_at": "2013-08-08T23:13:09.587", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "updated_by": [
+            "admin@admin.com"
+        ]
+    }
+},
+{
+    "pk": 30, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Abordagem \u00e0 ve\u00edculo", 
+        "created_at": "2013-08-08T23:38:57.950", 
+        "updated_at": "2013-08-08T23:38:57.950", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 31, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Agress\u00e3o", 
+        "created_at": "2013-08-08T23:38:57.955", 
+        "updated_at": "2013-08-08T23:38:57.955", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 32, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Aliciamento de menor", 
+        "created_at": "2013-08-08T23:38:57.957", 
+        "updated_at": "2013-08-08T23:38:57.957", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 33, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Amea\u00e7a", 
+        "created_at": "2013-08-08T23:38:57.959", 
+        "updated_at": "2013-08-08T23:38:57.959", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 34, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Apoio policial", 
+        "created_at": "2013-08-08T23:38:57.961", 
+        "updated_at": "2013-08-08T23:38:57.961", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 35, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Assist\u00eancia policial", 
+        "created_at": "2013-08-08T23:38:57.963", 
+        "updated_at": "2013-08-08T23:38:57.963", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 36, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Ato de suspei\u00e7\u00e3o", 
+        "created_at": "2013-08-08T23:38:57.966", 
+        "updated_at": "2013-08-08T23:38:57.966", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 37, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Atos libidinosos 3 Atrito verbal", 
+        "created_at": "2013-08-08T23:38:57.968", 
+        "updated_at": "2013-08-08T23:38:57.968", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 38, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Condu\u00e7\u00e3o de aluno at\u00e9 a resid\u00eancia", 
+        "created_at": "2013-08-08T23:38:57.970", 
+        "updated_at": "2013-08-08T23:38:57.970", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 39, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Consumo de entorpecentes", 
+        "created_at": "2013-08-08T23:38:57.972", 
+        "updated_at": "2013-08-08T23:38:57.972", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 40, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Danos ao patrim\u00f4nio p\u00fablico", 
+        "created_at": "2013-08-08T23:38:57.975", 
+        "updated_at": "2013-08-08T23:38:57.975", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 41, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Desordem", 
+        "created_at": "2013-08-08T23:38:57.977", 
+        "updated_at": "2013-08-08T23:38:57.977", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 42, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Estupro", 
+        "created_at": "2013-08-08T23:38:57.979", 
+        "updated_at": "2013-08-08T23:38:57.979", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 43, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Falsidade ideol\u00f3gica", 
+        "created_at": "2013-08-08T23:38:57.982", 
+        "updated_at": "2013-08-08T23:38:57.982", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 44, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Furto", 
+        "created_at": "2013-08-08T23:38:57.984", 
+        "updated_at": "2013-08-08T23:38:57.984", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 45, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Homic\u00eddio", 
+        "created_at": "2013-08-08T23:38:57.987", 
+        "updated_at": "2013-08-08T23:38:57.987", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 46, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Les\u00e3o corporal", 
+        "created_at": "2013-08-08T23:38:57.989", 
+        "updated_at": "2013-08-08T23:38:57.989", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 47, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Ocorr\u00eancia de tr\u00e2nsito", 
+        "created_at": "2013-08-08T23:38:57.992", 
+        "updated_at": "2013-08-08T23:38:57.992", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 48, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Porte Ilegal de arma", 
+        "created_at": "2013-08-08T23:38:57.994", 
+        "updated_at": "2013-08-08T23:38:57.994", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 49, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Presta\u00e7\u00e3o de socorro", 
+        "created_at": "2013-08-08T23:38:57.996", 
+        "updated_at": "2013-08-08T23:38:57.996", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 50, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Roubo", 
+        "created_at": "2013-08-08T23:38:57.999", 
+        "updated_at": "2013-08-08T23:38:57.999", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 51, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Solicita\u00e7\u00e3o de policiamento", 
+        "created_at": "2013-08-08T23:38:58.001", 
+        "updated_at": "2013-08-08T23:38:58.001", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 52, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de Assalto", 
+        "created_at": "2013-08-08T23:38:58.003", 
+        "updated_at": "2013-08-08T23:38:58.003", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 53, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de estupro", 
+        "created_at": "2013-08-08T23:38:58.006", 
+        "updated_at": "2013-08-08T23:38:58.006", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 54, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tentativa de Homic\u00eddio", 
+        "created_at": "2013-08-08T23:38:58.009", 
+        "updated_at": "2013-08-08T23:38:58.009", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 55, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Tr\u00e1fico", 
+        "created_at": "2013-08-08T23:38:58.011", 
+        "updated_at": "2013-08-08T23:38:58.011", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 56, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Vandalismo", 
+        "created_at": "2013-08-08T23:38:58.013", 
+        "updated_at": "2013-08-08T23:38:58.013", 
+        "created_by": null, 
+        "updated_by": null
+    }
+},
+{
+    "pk": 57, 
+    "model": "core.occurrencetype", 
+    "fields": {
+        "name": "Vias de fato", 
+        "created_at": "2013-08-08T23:38:58.015", 
+        "updated_at": "2013-08-08T23:38:58.015", 
+        "created_by": null, 
+        "updated_by": null
+    }
+}
+]
