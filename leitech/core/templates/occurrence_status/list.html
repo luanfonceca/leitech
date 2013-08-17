@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Listagem de Status da Ocorrência
+{% endblock title %}
+
+{% block subtitle %}
+	Página de listagem de todos os materiais apreendidos nas suas operações
+{% endblock subtitle %}
+
+{% block breadcrumbs %}
+	<div class="breadcrumb-button blue">
+		<a href="/">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Home
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+
+	<div class="breadcrumb-button">
+		<a href="">
+			<span class="breadcrumb-label">
+				<i class="icon-home"></i> Status da Ocorrência
+			</span>
+			<span class="breadcrumb-arrow"><span></span></span>
+		</a>
+	</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<div class="container-fluid padded">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="box">
+					<div class="box-header">
+						<span class="title">
+							Listagem de todos os Status da Ocorrência cadastrados
+						</span>
+						<ul class="box-toolbar">
+							<li>
+								<a href="{% url 'occurrence_status_add' %}">
+									Adicionar novo Status da Ocorrência
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="box-content">
+					<table class="table table-normal">
+						<thead>
+						<tr>
+							<td>Nome</td>
+							<td>Tipo</td>
+							<td style="width: 40px;"/>
+						</tr>
+					</thead>
+					<tbody>
+						{% for occurrence_status in occurrence_status.object_list %}
+							<tr class="status-pending">
+								<td>
+									{{ occurrence_status.name }}
+								</td>
+								<td>
+									{{ occurrence_status.type|default:'-' }}
+								</td>
+								<td>
+									<a href="{% url 'occurrence_status_edit' occurrence_status.pk %}">
+										<span class="icon">
+											<i class="icon-edit"></i>
+										</span>
+									</a>
+									<a href="{% url 'occurrence_status_delete' occurrence_status.pk %}">
+										<span class="icon">
+											<i class="icon-remove"></i>
+										</span>
+									</a>
+								</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+
+				{% include "pagination.html" with objects=occurrence_status %}
+			</div>
+		</div>
+	</div>
+{% endblock content %}

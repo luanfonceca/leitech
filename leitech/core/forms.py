@@ -16,6 +16,11 @@ class OccurrenceTypeForm(HistoryModelForm):
         model = OccurrenceType
 
 
+class OccurrenceStatusForm(HistoryModelForm):
+    class Meta:
+        model = OccurrenceStatus
+
+
 class OccurrenceForm(HistoryModelForm):
     class Meta:
         model = Occurrence

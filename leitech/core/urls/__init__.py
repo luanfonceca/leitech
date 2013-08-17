@@ -10,5 +10,6 @@ from django.conf.urls import patterns, url, include
 
 urlpatterns = patterns('',
 	url(r'^', include('core.urls.occurrence_type')),
+	url(r'^', include('core.urls.occurrence_status')),
 	url(r'^', include('core.urls.occurrence')),
 )
