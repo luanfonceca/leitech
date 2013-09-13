@@ -20,6 +20,21 @@ From github.com:Leitech/leitech
 Already up-to-date.
 ```
 Isso quer dizer que não há nenhum código novo no servidor, caso contrário ele irá atualizar e dizer os arquivos alterados.
+Segue um exemplo de um `pull` com arquivos no servidor:
+```bash
+$ git pull origin master
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0)
+Unpacking objects: 100% (4/4), done.
+From github.com:Leitech/leitech
+ * branch            master     -> FETCH_HEAD
+Updating 6ac7362..dbe4374
+Fast-forward
+ docs/how_to_code.md |   51 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 51 insertions(+)
+ create mode 100644 docs/how_to_code.md
+```
 
 
 ## Commitando
