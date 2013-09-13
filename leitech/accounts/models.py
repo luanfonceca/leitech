@@ -102,4 +102,7 @@ class User(HistoryModel, AbstractBaseUser, PermissionsMixin):
 
     @property
     def full_name(self):
-        return u"%s %s" % (self.first_name, self.last_name)
+        if self.first_name and last_name:
+            return u"%s %s" % (self.first_name, self.last_name)
+        else:
+            return u"%s" % self.email.split("@")[0]

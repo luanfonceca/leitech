@@ -49,7 +49,7 @@
 
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<span>
-										<img class="menu-avatar" src="images/avatars/avatar1.jpg" /> <span>{{ request.user.full_name }} <i class="icon-caret-down"></i></span>
+										<img class="menu-avatar" src="{{ STATIC_URL }}images/avatars/avatar1.jpg" /> <span>{{ request.user.full_name }} <i class="icon-caret-down"></i></span>
 										<span class="badge badge-dark-red">5</span>
 									</span>
 								</a>
@@ -60,7 +60,7 @@
 
 									<li class="with-image">
 										<div class="avatar">
-											<img src="images/avatars/avatar1.jpg" />
+											<img src="{{ STATIC_URL }}images/avatars/avatar1.jpg" />
 										</div>
 										<span>{{ request.user.full_name }}</span>
 									</li>
