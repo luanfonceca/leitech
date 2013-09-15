@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block title %}
-	Listagem de Material
+	Listagem de Ocorrência
 {% endblock title %}
 
 {% block subtitle %}
-	Página de listagem de todos os materiais apreendidos nas suas operações
+	Página de listagem de todas as ocorrências
 {% endblock subtitle %}
 
 {% block breadcrumbs %}
@@ -21,7 +21,7 @@
 	<div class="breadcrumb-button">
 		<a href="">
 			<span class="breadcrumb-label">
-				<i class="icon-home"></i> Materiais
+				<i class="icon-home"></i> Ocorrências
 			</span>
 			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
@@ -35,12 +35,12 @@
 				<div class="box">
 					<div class="box-header">
 						<span class="title">
-							Listagem de todos os Materiais cadastrados
+							Listagem de todas as Ocorrências cadastradas
 						</span>
 						<ul class="box-toolbar">
 							<li>
 								<a href="{% url 'occurrence_type_add' %}">
-									Adicionar novo Material
+									Adicionar nova Ocorrência
 								</a>
 							</li>
 						</ul>
