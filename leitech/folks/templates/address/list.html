@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block title %}
-	Listagem de Escola
+	Listagem de Endereço
 {% endblock title %}
 
 {% block subtitle %}
-	Página de listagem de todos os escolas apreendidos nas suas operações
+	Página de listagem de todos os endereços cadastrados
 {% endblock subtitle %}
 
 {% block breadcrumbs %}
@@ -21,7 +21,7 @@
   <div class="breadcrumb-button">
 		<a href="">
 			<span class="breadcrumb-label">
-				<i class="icon-home"></i> Escolas
+				<i class="icon-home"></i> Endereços
 			</span>
 			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
@@ -35,12 +35,12 @@
 				<div class="box">
 					<div class="box-header">
 						<span class="title">
-							Listagem de todos os Escolas cadastrados
+							Listagem de todos os Endereços cadastrados
 						</span>
 						<ul class="box-toolbar">
 							<li>
 								<a href="{% url 'address_add' %}">
-									Adicionar novo Escola
+									Adicionar novo Endereço
 								</a>
 							</li>
 						</ul>
