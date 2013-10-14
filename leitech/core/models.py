@@ -128,11 +128,19 @@ class Occurrence(HistoryModel):
     )
     school = models.ForeignKey(
         to='folks.School', 
-        null=False, 
-        blank=False, 
+        null=True, 
+        blank=True, 
         related_name='occurrences', 
         on_delete=models.PROTECT,
         verbose_name=_(u'Escola')   
+    )
+    address = models.ForeignKey(
+        to='folks.Address', 
+        null=True, 
+        blank=True, 
+        related_name='occurrences', 
+        on_delete=models.PROTECT,
+        verbose_name=_(u'Endereço')
     )
     attended_public = models.ForeignKey(
         to='folks.AttendedPublic', 
