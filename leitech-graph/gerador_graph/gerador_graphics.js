@@ -75,7 +75,7 @@ function selectHandler() {
    
      ]);*/
      
-     var json1 = {
+     var json21 = {
          cols: [
                 
                 {id: '', label: 'Ocorências', type: 'string'},
@@ -92,10 +92,10 @@ function selectHandler() {
          
                  
      };
-     var json2 = {
+     var json22 = {
         cols: [
                 {id: '', label: 'Bairros', type: 'string'},
-                {id: '', label: 'Ocorrências', type: 'number',f:'RED'}],
+                {id: '', label: 'Ocorrências', type: 'number'}],
            rows: [
               {c:[{v: 'Via Pública'}, {v: 39}]},
               {c:[{v: 'Federal'}, {v: 0}]},
@@ -104,12 +104,40 @@ function selectHandler() {
               {c:[{v: 'Estadual'}, {v: 32}]}
              ]
             } ;
+     
+     var json31 = {
+         cols: [
+                
+                {id: '', label: 'Ocorências', type: 'string'},
+                {id: '', label: 'Oeste', type: 'number'},
+                {id: '', label: 'Leste', type: 'number'},                
+                {id: '', label: 'Sul', type: 'number'},
+                {id: '', label: 'Norte', type: 'number'}
+                ],
+         rows: [
+               {
+                   c:[{v:'Ocorrências'},{v:18},{v:36},{v:16},{v:20}]} 
+               ]
+         
                  
+     };
+     var json32 = {
+        cols: [
+                {id: '', label: 'Região', type: 'string'},
+                {id: '', label: 'Ocorrências', type: 'number'}],
+           rows: [
+              {c:[{v: 'Oeste'}, {v: 18}]},
+              {c:[{v: 'Leste'}, {v: 36}]},
+              {c:[{v: 'Sul'}, {v: 16}]},
+              {c:[{v: 'Norte'}, {v: 20}]}
+             ]
+            } ;            
      
-     
-     var data1 = new google.visualization.DataTable(json1);
-     var data2 = new google.visualization.DataTable(json2);
-     
+     var data21 = new google.visualization.DataTable(json21);
+     var data22 = new google.visualization.DataTable(json22);
+     var data31 = new google.visualization.DataTable(json31);
+     var data32 = new google.visualization.DataTable(json32);
+
      /*
      var data3 = google.visualization.arrayToDataTable([
           ['Ocorrência', 'Via Pública', 'Federal', 'Particular', 'Municipal', 'Estadual'],
@@ -123,14 +151,17 @@ function selectHandler() {
            };
         // Create and draw the visualization.
          var chart = new google.visualization.BarChart(document.getElementById('bar_horz1'));
-            chart.draw(data1,options);
+            chart.draw(data21,options);
   
          var chart2 = new google.visualization.BarChart(document.getElementById('bar_horz2'));
-           chart2.draw(data2,options); 
+           chart2.draw(data22,options); 
            
-          
+         var chart3 = new google.visualization.BarChart(document.getElementById('bar_G031'));
+           chart3.draw(data31,options);
+         var chart3 = new google.visualization.BarChart(document.getElementById('bar_G032'));
+           chart3.draw(data32,options);   
       }
       
-
+//Executa chamada para execução da função drawVisualization e carregamento dos graficos 
 google.setOnLoadCallback(drawVisualization);
 
