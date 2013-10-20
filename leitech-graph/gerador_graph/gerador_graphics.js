@@ -87,14 +87,14 @@ function selectHandler() {
                 ],
          rows: [
                {
-                   c:[{v:'Ocorrência'},{v:39},{v:0},{v:13},{v:6},{v:32}]} 
+                   c:[{v:'Público Atendido'},{v:39},{v:0},{v:13},{v:6},{v:32}]} 
                ]
          
                  
      };
      var json22 = {
         cols: [
-                {id: '', label: 'Bairros', type: 'string'},
+                {id: '', label: 'Público Atendido', type: 'string'},
                 {id: '', label: 'Ocorrências', type: 'number'}],
            rows: [
               {c:[{v: 'Via Pública'}, {v: 39}]},
