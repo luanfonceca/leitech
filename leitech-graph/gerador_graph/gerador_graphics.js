@@ -150,16 +150,16 @@ function selectHandler() {
                   hAxis: {title: "Número de assaltos"}
            };
         // Create and draw the visualization.
-         var chart = new google.visualization.BarChart(document.getElementById('bar_horz1'));
-            chart.draw(data21,options);
+         var chart21 = new google.visualization.BarChart(document.getElementById('bar_G021'));
+            chart21.draw(data21,options);
   
-         var chart2 = new google.visualization.BarChart(document.getElementById('bar_horz2'));
-           chart2.draw(data22,options); 
+         var chart22 = new google.visualization.BarChart(document.getElementById('bar_G022'));
+           chart22.draw(data22,options); 
            
-         var chart3 = new google.visualization.BarChart(document.getElementById('bar_G031'));
-           chart3.draw(data31,options);
-         var chart3 = new google.visualization.BarChart(document.getElementById('bar_G032'));
-           chart3.draw(data32,options);   
+         var chart31 = new google.visualization.BarChart(document.getElementById('bar_G031'));
+           chart31.draw(data31,options);
+         var chart32 = new google.visualization.BarChart(document.getElementById('bar_G032'));
+           chart32.draw(data32,options);   
       }
       
 //Executa chamada para execução da função drawVisualization e carregamento dos graficos 
