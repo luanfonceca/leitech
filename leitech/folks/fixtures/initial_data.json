@@ -80,15 +80,84 @@
     "fields": {
         "city": "Natal", 
         "neighborhood": "Soledade", 
-        "updated_by": null, 
+        "updated_by": [
+            "admin@admin.com"
+        ], 
         "created_at": "2013-08-08T23:02:24.786", 
-        "updated_at": "2013-08-08T23:02:24.786", 
+        "updated_at": "2013-10-21T22:21:04.696", 
         "created_by": null, 
         "zipcode": "3890-303", 
         "state": "RN", 
         "street": "Rua Planalto Baiano, 1161", 
         "number": "378393", 
+        "region": "norte", 
         "complement": "complemento"
+    }
+},
+{
+    "pk": 2, 
+    "model": "folks.address", 
+    "fields": {
+        "city": "Natal", 
+        "neighborhood": "Pitimbu", 
+        "updated_by": [
+            "admin@admin.com"
+        ], 
+        "created_at": "2013-10-21T22:23:28.524", 
+        "updated_at": "2013-10-21T22:23:28.524", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "zipcode": "38793093", 
+        "state": "RN", 
+        "street": "Rua do Ing\u00e1", 
+        "number": "11324", 
+        "region": "sul", 
+        "complement": "Cidade Sat\u00e9lite"
+    }
+},
+{
+    "pk": 3, 
+    "model": "folks.address", 
+    "fields": {
+        "city": "Natal", 
+        "neighborhood": "Cidade da Esperan\u00e7a", 
+        "updated_by": [
+            "admin@admin.com"
+        ], 
+        "created_at": "2013-10-21T22:31:13.116", 
+        "updated_at": "2013-10-21T22:31:13.116", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "zipcode": "37398093", 
+        "state": "RN", 
+        "street": "Avenida Paraiba", 
+        "number": "385", 
+        "region": "oeste", 
+        "complement": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "folks.address", 
+    "fields": {
+        "city": "Natal", 
+        "neighborhood": "Alecrim", 
+        "updated_by": [
+            "admin@admin.com"
+        ], 
+        "created_at": "2013-10-21T22:35:04.344", 
+        "updated_at": "2013-10-21T22:35:04.344", 
+        "created_by": [
+            "admin@admin.com"
+        ], 
+        "zipcode": "3890-303", 
+        "state": "RN", 
+        "street": "Rua dos Canind\u00e9s", 
+        "number": "1101", 
+        "region": "leste", 
+        "complement": ""
     }
 },
 {

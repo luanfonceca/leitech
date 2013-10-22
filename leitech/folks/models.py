@@ -57,7 +57,19 @@ class Address(HistoryModel):
         blank=True, 
         verbose_name=_(u'Número')
     )
-    
+    region = models.CharField(
+        max_length=10, 
+        null=True, 
+        blank=False, 
+        verbose_name=_(u'Região'),
+        choices=[
+            ('norte', 'Norte'),
+            ('sul', 'Sul'),
+            ('leste', 'Leste'),
+            ('oeste', 'Oeste'),
+        ],
+    )
+
     class Meta:
         db_table = 'address'
         verbose_name = _(u'Endereço')
