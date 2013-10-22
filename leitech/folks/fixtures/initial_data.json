@@ -79,12 +79,12 @@
     "model": "folks.address", 
     "fields": {
         "city": "Natal", 
-        "neighborhood": "Soledade", 
+        "neighborhood": "potengi", 
         "updated_by": [
             "admin@admin.com"
         ], 
         "created_at": "2013-08-08T23:02:24.786", 
-        "updated_at": "2013-10-21T22:21:04.696", 
+        "updated_at": "2013-10-21T23:07:04.179", 
         "created_by": null, 
         "zipcode": "3890-303", 
         "state": "RN", 
@@ -99,12 +99,12 @@
     "model": "folks.address", 
     "fields": {
         "city": "Natal", 
-        "neighborhood": "Pitimbu", 
+        "neighborhood": "pitimbu", 
         "updated_by": [
             "admin@admin.com"
         ], 
         "created_at": "2013-10-21T22:23:28.524", 
-        "updated_at": "2013-10-21T22:23:28.524", 
+        "updated_at": "2013-10-21T23:06:38.584", 
         "created_by": [
             "admin@admin.com"
         ], 
@@ -121,12 +121,12 @@
     "model": "folks.address", 
     "fields": {
         "city": "Natal", 
-        "neighborhood": "Cidade da Esperan\u00e7a", 
+        "neighborhood": "cidade da esperan\u00e7a", 
         "updated_by": [
             "admin@admin.com"
         ], 
         "created_at": "2013-10-21T22:31:13.116", 
-        "updated_at": "2013-10-21T22:31:13.116", 
+        "updated_at": "2013-10-21T23:06:46.099", 
         "created_by": [
             "admin@admin.com"
         ], 
@@ -143,12 +143,12 @@
     "model": "folks.address", 
     "fields": {
         "city": "Natal", 
-        "neighborhood": "Alecrim", 
+        "neighborhood": "alecrim", 
         "updated_by": [
             "admin@admin.com"
         ], 
         "created_at": "2013-10-21T22:35:04.344", 
-        "updated_at": "2013-10-21T22:35:04.344", 
+        "updated_at": "2013-10-21T23:06:51.285", 
         "created_by": [
             "admin@admin.com"
         ], 
