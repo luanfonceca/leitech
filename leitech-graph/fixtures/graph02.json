@@ -1,0 +1,1002 @@
+[
+{
+    "pk": 1, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "ozmGOgsqDQJIpwemLQMukxqrMpkLZaWWIqzIGbyQHyJamijItHuzkEdQiYTOAjFHUPoViuUBBhdxnAlUddhktXaYYuIlKbolmLUIvNkyveTlVLHcZYAsYyUxjnRmKHaVQGijOkjBFyfOXTjArjOnzT", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "vnMNcZRaUONCiSSfPIPZvsDXIHTdHgzdHvVCjsWXOwuPekaAJkjWDQhhcGXgureTeDQkugYoNXvdDGhaxkcxzfBvFtSbnbasXbribWTwXxCIioxiwIiYNPdoxnSzjCqlfCRtPLTKoCzNKgZirppcPD", 
+        "created_at": "2013-10-21T17:19:16.971", 
+        "updated_at": "2013-10-21T17:19:16.971", 
+        "created_by": null, 
+        "accident_report": "JMSzgllVZBzjRRLLxSqSGPdGtcXKxcSBOWBGLZoLTbXGcqjInn", 
+        "police_car": 6, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "seuulAQyGZPOQnOZzRYDzohQtNywXTZdJiPahHJDDecKoXrRaBkTvbBglmRQiZrxLRoesHrzLdYfEoAAVezmTggVLqvakhOpoDjcuHhvciCxerjrLBnmkXjPszgaUPpFkkAgFsRvFRBrAvIAQljqYz", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "QSBTpPZYwXCKTEsAjfQODMEQRRPHGGbHlkVWXdVQyjxfkekVgZoJjOtCQUqCplDAKnVLYMVnVRAZbfXUiiLVLaSnlBeWFTuMENlbHEKxMIKUlOGZcjdYoMkAtfxrGiFgCIkOBcAazesoQXCbWBQBcS", 
+        "created_at": "2013-10-21T17:19:16.975", 
+        "updated_at": "2013-10-21T17:19:16.975", 
+        "created_by": null, 
+        "accident_report": "okCuIPeSigPOCpLJjkDUGaBEfgxKNyMAqGPDddcQNhfSzwxvWT", 
+        "police_car": 7, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "ylUldYNqGrNiQvmVwBqQgpdAyUZwKTZQWAceFmuwAgUsODiOPwDYWqzTAlsZIDwokZTMOwnIhTsOQAxhWPNoFtthNUqLYysHHZzKCMGgDlJDXgNtgsXGFSVGMSIbOOTZLUCqFQCApVIxTpJVDRgfZK", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "hUzZtYnpIEmTvGeAlViimEhRdVaCOiRdewVNHOaMPbGWmFmxhvOzIdAGrSrDbVGZvddiHhqiorOyUVrMcPfsczaOpDiGEBLDDwykMYvNkVIUZjoVjONmReOFKMSTgOYilTNlMsEmaKjSujJxutlACv", 
+        "created_at": "2013-10-21T17:19:16.980", 
+        "updated_at": "2013-10-21T17:19:16.980", 
+        "created_by": null, 
+        "accident_report": "wdSXOpaVrAIjUWDDFIAFCrwdCMQYQzHkXIjeszMVamtYRaRqOe", 
+        "police_car": 8, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "McwCdGGoAxuuSkwArKkKnopCZBDIHsvCIcYbJbrzPhzfoyXpWOqgGPHeoqUEnuNzeNnLbAHKhxbFntYjVjdnIsIyTmRPaFEvzYpKXtOYdZcCCCEYQBYdPMrXVcOuyIEhHYIoVvrcQhRVlodXrPiSWT", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "LzWotowQQnwpcdXukFLgFSjHmleaVvQDGzFBeheDJJkYaFOPDwVsQZbtgMfGrLwfqoVEvhdYAqGNYFRYShKuYBYabkeoTubKfzGWdPAzlOOyhWUwFYXWHCtxTDUIhXOEgcEZqOZfeZHDiJeToSDjub", 
+        "created_at": "2013-10-21T17:19:16.985", 
+        "updated_at": "2013-10-21T17:19:16.985", 
+        "created_by": null, 
+        "accident_report": "rLAjLluXHDsvrOuKXiDvKnjsoKPXLWqFqdjIwTlQXgKziWmhjy", 
+        "police_car": 9, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 5, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "HBlfcdUtVhfZCASoCfzkogsANeypOJvbNhZrMKCpkmhDkdzGktfFlLLGpUIdkdMtxVmXxuhzgQRiASYdDVKdNvaXRjLCDnhBNaBaLsjLuFHHmenHplPfrhFwoULlnxNLElGCvgpPhxycGXMfUCJhDG", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "XVBJCaalTMbXmvwUsItHZQbJsRHjVCaBlEVfyHqRYSVsGfdDsGRJRxwAyzOkXPDqkaXziWbVSafXKYQshyEffjrjHNsJKXqzAnZeyHfgOVMXYhSjfDupuETLBLShxhONlbBIISHWGouMVwFuNSWndQ", 
+        "created_at": "2013-10-21T17:19:16.989", 
+        "updated_at": "2013-10-21T17:19:16.989", 
+        "created_by": null, 
+        "accident_report": "hcBXjYjGCAioIOpktYPWTnhjtjpeAGZLVjCQLzjXjVeIgudCyb", 
+        "police_car": 10, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "ElDnUbwXwCMKyhZZcGirVoIswtFzKpyZhGdjRmSABrXMVbPHcdJVvQZeygVqoSwDCyIzOFeAgjaRtqLShoHpFmEeXoNjGgFcqCDEKLySgEdBgMBySeIRkXLkgtYYstIIuYUDhFqBsTeKlEUnkLBGKT", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "ORdkywNMenupTsHrFApapCaWmaPPXWJBisHvYZaAIjZTvmCdtsUHHNxtzbSEnmhHXRRHyEJSCdhuPeUtAzBNGQBgAHUWMXecXIhuIDxQbcxnFfwqlJUfHvOjrJmoduEAGBaWrYVQSzHKKCCgZqsivM", 
+        "created_at": "2013-10-21T17:19:16.994", 
+        "updated_at": "2013-10-21T17:19:16.994", 
+        "created_by": null, 
+        "accident_report": "ILLkdfwlkshCCUzCUdOFKKpftXxkWONDOiPUbxcXnCiWOthoaT", 
+        "police_car": 11, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 7, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "CYfbhqvLEjfuINXVAdnnLkyChqLYVJbWODGPgRbpwKfnJWVHffzfeeBVCgvqXEvqlndOxGJLGbxNrJeyNtzNcqoPmGYbFJNyVZGvcRwVgbOyCPaPyryGtbIksNEBzfyQXqlrYpPcLzctNJkFNQnkkX", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "THnBrkxJmloUAytzLkbPLnQDGkZrtgnPGarqOpJEGIVxiehzjpkbkdkeCmJcjIXBxRylGLgIniWjmZztsPChezdcCdEebyiGbUXwiiVMlaHTzycIXqqLMQfNrFrsXnPqPLfbxoAsmeUTpHuYVYMrUR", 
+        "created_at": "2013-10-21T17:19:16.999", 
+        "updated_at": "2013-10-21T17:19:16.999", 
+        "created_by": null, 
+        "accident_report": "bolOSqMUSqrBPdTeZSeDLIEsULudlGSWGCycItnpCGWBXJbcrx", 
+        "police_car": 12, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 8, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "bwhKcwWmApTrIlcDqOSplHQKJwQqWNYmzMVlMcPymSWKwNQGSouYVkcdtcXPuBvsDfBfWhYDIqLPdxBfWXetIrlJDxYJJqwGsDFPWOHqYoixXHXRUBDqKBmxdReRsoejmMfPJFAQfzMkzWODGkRaxA", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "mAQQpmDalUHBLoegAWtHRKMIfoUuBqRtxCWAViJZTlwBWeScfflcIkOwjwhoBUXlhpHOEsHdMTXknppdlXLsLBppFAdXeXvDugtAuRPRDYHrlpnevhUkyfDtMfsjYnurmHVXvpbUlhLeZLWrnAAxGC", 
+        "created_at": "2013-10-21T17:19:17.003", 
+        "updated_at": "2013-10-21T17:19:17.003", 
+        "created_by": null, 
+        "accident_report": "tYjZcPFafwrhlWmqqcwckSNvMOkiYqBKMmGBiHZgIYBtATKImW", 
+        "police_car": 13, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 9, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "NuJiVtMHIMvYtQjokSYjDUNTHHXmvErSZFQTDKToJKFiVrLHkcrELWXoGexkscqgGqtKYLTrQGcJBFJwRXsvJtBnQpsKzRauKGgHUYLAiAaWjmKuqfDvQnILYVxEBhPupZhWivdQoWwZkgQXGUjdoo", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "rrhlTVMKvgEtfkCMmoAUBQYrtSiiOORVvMwHuZSSPoKcIxwqGhUDqRITeIzuWLeqwIDfiuecPqyDtjSLjQZfPcyxSVzzpiezFddjuVqToDABfeYIEjmGUHyNSxoTLqDTRUkgDDLbYvFgsJStTSUXsQ", 
+        "created_at": "2013-10-21T17:19:17.009", 
+        "updated_at": "2013-10-21T17:19:17.009", 
+        "created_by": null, 
+        "accident_report": "jRXZHEcwdnSfOlfVCVeyBPSVGCGtRlXTDkVPiHLjEQMCmVhrAr", 
+        "police_car": 14, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 10, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "BFgOliMkgMavTHSEJnOgEKUGsHWYHJacgRveKzQqkYBVKToHTuEcTIHPDqKbQxiPPeeaLXwPhJvZUfVgWySXvUakUTzCCLLvPKliOvndSqZwquQxtPVoTKEHoqmKIccuIacGmxBcLTOBvQeoORXiYR", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "jFiyvMOgOaSwwNIHRyBYpnBUFOxMGTFPqGniZfAmtxwGVGaXglgKkOKDavSpmaxquiJLryUkTIUMdUQvFvcXkECnBuJFmbxTMkUGMmHgrYlixgiOgmZakKpgufwFjDayMHYktlIqdmwcMLYHXZSjif", 
+        "created_at": "2013-10-21T17:19:17.014", 
+        "updated_at": "2013-10-21T17:19:17.015", 
+        "created_by": null, 
+        "accident_report": "LQhZxomMNBjxtEKScdSkqwuJmtiJOgyJWtTALUXTjeOQLPkcVI", 
+        "police_car": 15, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 1, 
+        "description": ""
+    }
+},
+{
+    "pk": 11, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "DcVSpxscsAxgfjkptVdnemCMcCtanafZTHRdWMrDQbhCEXMILpEtacokuDWiCLBtaGwbBslEAPTJaFFayNiycfPiIpPhuXFNrUcSmcZPWWSrgYaKigmSLDRRreuXdGVbzjrKyCpAvScEYQYCSQpgIT", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "yvqkYvCELwKHSzeIXDfGhMnLxwJbsVEbdlNBOpgOIYWlpelZxtHuEAeIhlAieYwCIRJLyQHqfWnmGUIAoBjlpyEyOdIsoiRZNnezBblxqetdeAxWhlCZAIdqgQEeJjBMiIfLEifiFVDTouifzfdFIl", 
+        "created_at": "2013-10-21T17:19:17.026", 
+        "updated_at": "2013-10-21T17:19:17.027", 
+        "created_by": null, 
+        "accident_report": "YNoUIykgLmxPKaVgZOlRNKobrevwXhoGbXjcbCUMOHYGzZOWJI", 
+        "police_car": 16, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 12, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "wGdjjJIMcjdmVUKVDWJQdcBZvBFpLbdwkVBbFFynErVNxzeAmfXhzGIQAQItTrZGfPhcpNJDhwmUMUNcFHFGIaHVNZvAJNdseJxwMwZyTUXkybSQXQqPpHfjBHuJIwvYHRbPOKeDBrzYCBTgWGgODX", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "LHJQHwfNYwRujldhGylYzicStSUTwjmecsFNMTcveqemtnXSanhLeVXxMgOQWrZqDKGlBdREFJQoYWyuajicvDMwQyrpCxzffDSxivcXAXrgqJcGiRqfCPvTAknJVUQnCjjjyTAKmmiNveArOKsdWa", 
+        "created_at": "2013-10-21T17:19:17.031", 
+        "updated_at": "2013-10-21T17:19:17.031", 
+        "created_by": null, 
+        "accident_report": "mAKEUhjNaXfihsBDfeCiMDqPlaVlzRjiZPQgeYmQiyDqDLZBVn", 
+        "police_car": 17, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 13, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "jEqLbVdaQSEJCujrhrZGzEpByFXfWmKApGTofipblSQNvLtIwdZctMUwQspmaiAQrPjnBRzdtjVTemnlKaqRjKRzeznhPByGCCiNoHvNTuWOGsfvPbbmHORSfyahKopTuKqTpDzlzufPMwTWpAhnAA", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "jUWxLjzMEskADEFRybdeIjqvUCHUxlndTHUVqFBKfKpevbXloubmEOlwdqtOayrXacaEiRjhuQpmDnCoSyhbTsKXMjzKwMyqmvIZZlWzhoIslqacyVaJlsjMrboeVknWuSroJAYXSsxdvMoqWQHjhN", 
+        "created_at": "2013-10-21T17:19:17.035", 
+        "updated_at": "2013-10-21T17:19:17.035", 
+        "created_by": null, 
+        "accident_report": "TaBWtIckalbPjxUcuvoPSIjStHyzIFeNpjtEjkGLyqyNiFepjA", 
+        "police_car": 18, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 14, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "iNsVukkkgOTjgSASKXDCyHgWINRmpbvOYBBzRTSOsAISWMxgeqmTASAEePnVrEVFbRSBixyJTSvXWWPnyfrylMUrFwriwhHbAAdguaFfOmcuHpKFawSorKiwyxDxCWLDOlbGyLoaqJzYQudiyoSDmC", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "NShAjBAKtWmVZlHHdPONtvjoJwFYfdLDSYLcpTQmuQcrkFCgSXysKafzcELdrVVlHTrwfzncePEGcrQTxfhyUHFZGjEpPCEZwUALQhabcCtBJxrrdFsaQQLINUxoQbBLruoRcktlgeJQHWqvWzQsYK", 
+        "created_at": "2013-10-21T17:19:17.040", 
+        "updated_at": "2013-10-21T17:19:17.040", 
+        "created_by": null, 
+        "accident_report": "ffySVFYQaHrQyZGTgyWcmXnZxjyeZQLetWfnjRwFLTjGsNCbKG", 
+        "police_car": 19, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 15, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "aIaMrGrRinXFWtjodNoBLzpFGdFmrrcdHPUjIQfShTbzpnHMPHsGsubAKiSqRVycLXGrocymzOrYzUmfVGcUNPqyXgOfXvAywXzEaGwRrMHmuqLxXBNmJQkxBcqmHTAsuIGkzVdkBrzQJRbIguFiFN", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "MGyPqDHWTkINQvLWUaFJKGPhCTspVkyMFofOzDuUxxEtkVyCtiLjEJRnUDgWIgcdrIDYkSUuXjsgmHLgTrdmfpGwnQJOHNquHbcKTHvaPZTCiIgsouNOLNnHCkQWDaMCqwbJVPbCldSovJhwDuLQoJ", 
+        "created_at": "2013-10-21T17:19:17.046", 
+        "updated_at": "2013-10-21T17:19:17.046", 
+        "created_by": null, 
+        "accident_report": "mYHDkMHHvbRdOpYkZPLWiwZyIppCrFmnUjkmqusXeVgYiUAmXA", 
+        "police_car": 20, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 16, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "FlTmONFyrtLTdeGhwOAWrOKehoYsSEKioyMDaImTwutEBtwqOMXYeHFKraoozQUDedDsJykZiPnRGSvMHtDaFdRexqnOcIjytmKwqUgGleUxkDmxRbBHswTULmwUlOYKIKSyTNLIVGRbWuSLcTNUFc", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "eDtSOaZHrHmVUsiERNzSAbgvHaqusQUTBxiVvUCiDwNkVpwxDsGLAGmfPmPCxTiWVaonAPEzkYXqcajaZNQgmbNElqtuDmBMjdoyLbSsNElQYqNAcTLKnZFsqnQpXwHCMrqDNYUDlJxqrcyCwLovTz", 
+        "created_at": "2013-10-21T17:19:17.051", 
+        "updated_at": "2013-10-21T17:19:17.051", 
+        "created_by": null, 
+        "accident_report": "IOxziwMUTyubrWynyvRXqHkqGNVHSRqVuODjcccNjMoXrNCatd", 
+        "police_car": 21, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 17, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "SJDHqiJEaqthZaxPxJPZOGstGXxNkrQCjJmAingDtMrOapdCThWnCxYZcbMplRcySZrpLHepOQQfazzCfGpdGQnIQMhJkWAZHNLYWQHFMXfKkmLUvZnWcPThsQHkfmdtTgIBRPjMEdmEzKMtJQryyt", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "zIkdPelXgHPfjIBtPuXhNuqlklqNMLhesmSetQDnaiKdmgwNMKmEpiONjfjiKrnNDRxwtKRclfnlaEQhaceQnTnFJBxLJWFuLGdvipKgrJdpRdkEfBHHHnlnHLlXnBMQAXVvsrwhUmNloqZuomAcxP", 
+        "created_at": "2013-10-21T17:19:17.056", 
+        "updated_at": "2013-10-21T17:19:17.056", 
+        "created_by": null, 
+        "accident_report": "ghOHeIcMduOyArOqndIrRGEzCqSVjRiOsCWtfJRkPzQppNhJUu", 
+        "police_car": 22, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 18, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "srXiTVlAkhFMcXLbaLDlQdXYCRDiMyWQwtBlPBUAyCyIYvVlBYSVeDqaCQumePLkqCzvXwPYUTjJsUtLoMVBilliYLnRiQqpzHOwPDIGewlnUDDnEgoXKXsOZDvxYYbjBUZxVfvNgjeCbDVicJfuib", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "JFPGicBqNMBZuYnFmfDXjDrTrooCUiCyitEFlQOALrWWxdhCHaHrnarzIVDqnrhSEqYWwljEMislXcUxlVsQnezTGlqJQsXRjNHLHimnmdWHTpypXQcuzOxqTeCzvqhPtXXUvlDuuOJHyNaFMWGMeZ", 
+        "created_at": "2013-10-21T17:19:17.061", 
+        "updated_at": "2013-10-21T17:19:17.061", 
+        "created_by": null, 
+        "accident_report": "OUDrMjKkyDMgSesaXoniNzJRhyoZKMIFMhOsmZvMcHDBaoYMAh", 
+        "police_car": 23, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 19, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "GdrLiBoxFScXwRzQldtZsJBGJxfkLTldiCPvPGiwHszUcbJlEFqNAgGPNUbXjrvaGMZtRdUtBtziVaCOZTplbFFyqPfVCzmyeVViQFmEOAcvrusIgInDFiYEcQkctSbZPrsOVxWgpCctaGahpqlnxi", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "gmfqKnEzTZuULiSavCFQscfohaStRzLiqdzDgibTplHGjInUrQSuKoznvPkqQIiqxmpiNjBKHklIUPxiXhtlboRMIbGVILxREiraQNBhgmxPAiyCAfvCzWbNiGaGKfsFGIBOYfZOWwOmgvdCqRotSz", 
+        "created_at": "2013-10-21T17:19:17.065", 
+        "updated_at": "2013-10-21T17:19:17.065", 
+        "created_by": null, 
+        "accident_report": "AdlMGtYZBGLpBNAxoYJaWNDNjDASyjZXjeLNzpHIRKuLKnEQZi", 
+        "police_car": 24, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 20, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "VRdVSsRyUiEGNYYNWxSSASLDWaYkiVPlHKECXfRSnAhgiOnoHXJjMEyiGJcrLUuuqOmfghZsHSyhPQSUxAtrpZfQHiXxkVHmIoDhjFgazZTCuQsIXgxFkivIZMEQUBLNmqlNiXDtdamWJMJVKBeDoG", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "IaQLoZqlYHgDngpxIYbNLCzgKXSkHbPPigwgInOgzOEbEaVihErMkYDmKqLvqluPlsVOVBQJFLpTjryfMQvivumCtuoGvbyBSzdOFlEbFTkifXQDjsKgOuxbdVmRIaqIgtdWewDpMxqrYUxCvHJVqU", 
+        "created_at": "2013-10-21T17:19:17.071", 
+        "updated_at": "2013-10-21T17:19:17.071", 
+        "created_by": null, 
+        "accident_report": "QZfomTHneSPEjpUyGFtexuDogoBuoCZxGVoQbdMICckWiIreym", 
+        "police_car": 25, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 2, 
+        "description": ""
+    }
+},
+{
+    "pk": 21, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "YDUoeUVRKRbJIyvebDbNAqHSnpGQfkRVScfhfjMDWyNsToyKPzPspsmpzatiSfQFNztOwvHQXAsVXxOXGZhLQcyxGAqRmozuFaWiansTpQIOJJQFGIoTqZeYujgeDDnmzUziNffHyJnFKLEoXnTDxC", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "uBpyjDkjgarRflkIhwdmlyzztcieCYOQkKuiEYpSHpRZSVcfDHEgerNGaBGeHSTWNZWeDCZCzCnuJAmAQAMSGQTwnRMTNKgyiHsifMkTbGivzWcZPDNKFdDerHDTrpBwsckVvFYlsgyKOAdonQdbbe", 
+        "created_at": "2013-10-21T17:19:17.078", 
+        "updated_at": "2013-10-21T17:19:17.078", 
+        "created_by": null, 
+        "accident_report": "ZPzTwJsmsINZkTCzhqmucoQzUtkBftpaLvQuMiyDQkPIhpRmAv", 
+        "police_car": 26, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 22, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "RGSbXXcHTqkOdZfbPBrDnuuyiRZQMELaVWsQThOODsVMMXiIUqBILgTPTlNxkTUblfGHaiRKpnVlhnwGvsRZmmoZpHdQqmNqkhAXtBuUtNNHVbQPKCkPxCDZuicoLfFQHlsHXTTagUJVvnyHOIHzcn", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "wxhpcSlVALSQOdSghlaWLRoRbBqLYRzjQcZAQaTuQwqEDponBndiZVtxoXkXBFDUwqrDCRjbugoZFvmUjKlkMHctFWClBgxhVsVqDyYFJqkfnTIrtkBUKdCWHnQcxBLyzxNomruHkBuxYyCVpjNeXs", 
+        "created_at": "2013-10-21T17:19:17.083", 
+        "updated_at": "2013-10-21T17:19:17.083", 
+        "created_by": null, 
+        "accident_report": "iUHMItScfKFpSRIPxzXzzbgVtXIgiayPpiAvcuLvSvelDnyChX", 
+        "police_car": 27, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 23, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "CUhFPGYTgcAJrqwEzmItxUhkGfJKyUAqVSHfDZpLYhRpPDYAXCpalBdQDQNKWrkfHfbVsIMGmMtyQqqxcByFLKWHOPXAsWUjnlZUmTIohmapVdcISedQKZrAhEZRxkRHURFONhqHCsLdPNrSTHryRU", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "uthYxvIvMWyWkcmjzutpVLmssiqAhvRXjtGWSsrgviEekKbHQCYFcrPSDTeMEEoJwpnJsrhcHrUyUiZMHUVZyWbijrPVNsdOnUDUMtCumpCXUcMeHgKtkCAkwUddTbitaExepBwygaJqfYcwxyttBo", 
+        "created_at": "2013-10-21T17:19:17.088", 
+        "updated_at": "2013-10-21T17:19:17.088", 
+        "created_by": null, 
+        "accident_report": "CkNmxTdYXHouYrKJRvtzdOnrbFdtSNLQInKkkYRnKatBvTFPmq", 
+        "police_car": 28, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 24, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "nDVszFhkKfcgaHKzKSsJRBVahFByFKyvsbZTzgDWloyYQAFcZGAEOVhUvmgJMHtNUCrGECgRDJKCnWmYOhGLFsMlaMLcTnJDqbYkpqmsavIDwqvvFcpofhDqxYkSCaMMoCECKrVVoPRLIlmlQPyLZE", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "lBnhOczUNMjRlfxiKyksMQRnflZZBsYmJQQxusDdRUDitMFWUisXpsoCqLbhODctJNKiRnLllyjFBDzKTkDOwsySBRmZOIjOkfpnADAAiAQyesiWPVHQNkzxEpWeIOVhhbwLNnMJPviXRrnfTWrGkQ", 
+        "created_at": "2013-10-21T17:19:17.093", 
+        "updated_at": "2013-10-21T17:19:17.093", 
+        "created_by": null, 
+        "accident_report": "cYivMoRYTjWXNRvgfATSfcpeocmLqkWTsDajGarxMquLvhREMH", 
+        "police_car": 29, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 25, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "tesIylzHJVPDNulenvjKfbZjbOWwQjnpUSzTFPdVFucNfREJzNxpVkBGJpmJTFyWxQtIoZsJQwdlszXdmKWKjQRgvtEFZIjiSrNnJxIsuPYmFNfFxWyfDteAHTfkVZeDtPjpFKgQRQdEaGxQNqbKRZ", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "mbmWJtGNYFHlbedZOOioNjitVYWDMLLScsHZVErnrZKbLCgCirXcavOyMJrZjqEhgEkzCBoLTVTtJGBiOXUEOJNASCuSZNxbNJmvgsZEPhichhfJjvjzcfxAWSngDycakBSqQzCyDcvbAJVylyDKcd", 
+        "created_at": "2013-10-21T17:19:17.098", 
+        "updated_at": "2013-10-21T17:19:17.098", 
+        "created_by": null, 
+        "accident_report": "HKjqkeIAxUkNxnSaOpdicIAHEQwkshvzHDUSExqiejnMjfclcf", 
+        "police_car": 30, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 26, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "YCZrIJkZqOmOjBByavxymslUQKhFxUbQmNBZKztWWcUMDDzpZLUUgTwyGXprqJNADKEWVLpHHDHyFwyVhhrwHMNRwsdiJxKftCZSxRPAKOsYemzxBQwTpsmppaanRWSlIeBdGAFWfUuZEJJiBppMHx", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "yhblyQDOYxNDcDkRznLUhglqUERVbtrZJTFxbWWQWaYxSTApcURlXiCMQltQvJWnDXJMhSFwAeWInjteUCACmLzYPNzKFHobXFIHtNlZljVSNalfNLRwwyHqnqcITGYqFkcdhHvfEuzXDxjwMgwmoZ", 
+        "created_at": "2013-10-21T17:19:17.103", 
+        "updated_at": "2013-10-21T17:19:17.103", 
+        "created_by": null, 
+        "accident_report": "nKckcXPEtvMSfdDUHhrOYGbyegylFchKxJWHieALAouEIsSNjB", 
+        "police_car": 31, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 27, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "fTdBpbigquPiYymQCFaycWCscLKavLDcqYwaWgRuKOnyCLvaSwMkbIRJPovaGtSURgRaphzyHfEfSHhtiJWcPGCvbqhNUfMJVYSBUiayrQEItjtROneXAdVfKInmsmpDTlkAlJQBPKDQgyAXGbBFDb", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "rmWJGkjhCuWtlNkFFFHIWTrivqIhFaxzLBSkXjASxKaKaOczglOCnPMNHtxKHDxCNOzYzyRzLUSYlYMHLdYoPqoTEHjrRRgtUzTXdcSHsdmlcAmIEqkgrQKqGhVAgbWiZGqqkLPkVOwhkSnWclTYNK", 
+        "created_at": "2013-10-21T17:19:17.108", 
+        "updated_at": "2013-10-21T17:19:17.108", 
+        "created_by": null, 
+        "accident_report": "jVMmIkgnrtQhsXFfBVAzNHIykDNfIneqVERImDhRPwsdYXWRGL", 
+        "police_car": 32, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 28, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "JRRoaTmmmBhJLlJERigaDCnSVLHwPjSZcWAEmWJQhZVolzoigNrmxezXYkCUIOEpwgOAVxJUrYVBbXxBbeJngoEzXZjnPmPXnCvAgpDOYbuRGrTCotnWwsqQrnCJtLPATEEThdhCbJqgPTPqOZGCTh", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "BRvXuwzOPUQvpaxdyMTQDbydFHQxfjkPdyZlWsUByZHjklAUGaYRjRwnMKvOMuLuuVxLlzNiFRVrLUSbTEhqKYMjTFuJXetYjrkeKpDbcUNCBiDsMBWQMtMatjFxQIdwhMLiqlebFjtsLxQAZFxSSz", 
+        "created_at": "2013-10-21T17:19:17.112", 
+        "updated_at": "2013-10-21T17:19:17.112", 
+        "created_by": null, 
+        "accident_report": "YaiNuZAwceUnUkfYtpNKENDBTQETgcFZwUJsHWKVtcQduqlxnl", 
+        "police_car": 33, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 29, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "fyKOQkgQsPqiFGSiBAEFxnXFKJwldTuioJGWxsIZnlxkTIVNSZDHCnnivympJDImKErptyLfgXzdBKFzjPKGCUISqaJulPaJuhwWHjRjCUgNMeQUSQGnxLKQYYgDqGzpowUDpzUmzgyYfPYQpTPfaJ", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "eLlwZJcueKzPOzLKahzAxOeUGWTUuQAJfsFcFfOIHphegLtoZcmhlxtDoEZsBzoZvYuqZkTUGpCucqhbXqWwcbYSogukRBNigwyPkLnKgZlSeFEJRTNIapywZctwAHEJknXqhnraTnWsUrviZGDKJO", 
+        "created_at": "2013-10-21T17:19:17.118", 
+        "updated_at": "2013-10-21T17:19:17.118", 
+        "created_by": null, 
+        "accident_report": "VugpbyFBumaZwVkUmeEgaixHPUQBNmJfQQQGpuQrBBQTZyfVhC", 
+        "police_car": 34, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 30, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "sjsuXNszyewduckUqPWRwvRwewqIwevNPvGWoJtEDwwmBaKllNVRtqkNlXsUgsztrPrjQvngBEYqQboWMOGqnJrcEZMVXkaYcgfvZVbwMMWnrFrESwiUqIantYbXubqhFDoMSaNqgnexsEJhvFiChv", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "rmQeCVNpWAxXQFQgrEXsRiMSgFkIEJaFrXCgTrbHHsylXsxnzMgimydrFDRByufcsGmxQRukNuuanWDqlolNYlXeYxNXxjjcXrqQcNxvZuysoNrlDhrWTEpvABajYgyZwYVpjzpYrThlNlqeLrmqIF", 
+        "created_at": "2013-10-21T17:19:17.123", 
+        "updated_at": "2013-10-21T17:19:17.123", 
+        "created_by": null, 
+        "accident_report": "MaNIUntZxpawqWCGGABZDcBVHGqMpjsRmCjwUiDhQuSfQMOget", 
+        "police_car": 35, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 3, 
+        "description": ""
+    }
+},
+{
+    "pk": 31, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "PdluUKUenoXanKDKIEgNfjqROuwFzdFNfcBsNtwfnNcBFNbSiHuxukoLwYcfSRbeyMqlnFnKxRtRBcHwdjQoMPgBwYgKosXOqfTRiIFVvywYqMocmxXdYwTTXXnfjwiXyPEKLxCMeBuKyYVFHEJJUs", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "ZSUPwOuzIdfHcrIkCjJJjfXbaHGLOqyGVFKhvxNOkOtmMMKSEVooPTTmMMKYtfUvQtXIabNlbfbANEhHMAHmtZoAJmAkBAiITqOiDPerlILvBGqSYlxwcpKXqUvNDXcOgfbMiOFwGSPBwiBngiRfkX", 
+        "created_at": "2013-10-21T17:19:17.129", 
+        "updated_at": "2013-10-21T17:19:17.129", 
+        "created_by": null, 
+        "accident_report": "irbBwNubXEWLwKHtQMGSnHelunEuzyDjQKwyjOInAbUmZwKbsp", 
+        "police_car": 36, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 32, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "PLVcEauWqwlUkzxtqhsabMKFYnZyQDiZsoDVQEIpDQgvMfuTcauhWVOfzMGhFkUCxcoNpHKDZvIyqWwAacPQMhJsyFbAYTQpNoxsFELlpzAIswKryXLEXTmWzuPGOyGuZozlXPtzzwgGAuAplBWuAx", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "nekDTuESvPxDiQMTSFfcNdzHmVDEPVOLjdiWlDjIoRJUYyXXooLDIUMjvokQUXZllZbDHefDzIqUjFpkdOLVHhhMPmOKiNlVhyiTssGalXpppisHrkJEuddJaAkPGUkyHvFqKScFSQASzUKgZAEzLs", 
+        "created_at": "2013-10-21T17:19:17.133", 
+        "updated_at": "2013-10-21T17:19:17.133", 
+        "created_by": null, 
+        "accident_report": "ofVPVZiHhmVVdoMLEynfuIoXueSDvEGyvGBSUucAdbcIypyCxZ", 
+        "police_car": 37, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 33, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "rPgBnhtddIzcZAYtdFJdKVFRWtuCNcYzrINbGeIppQGgfJcBRPWUWYCBCgKjnzbMhIoOgyNqwoeRuUHuPOovxSCdavcqxqYsYKQNRoulkASOIjSWLbGdZlmlGpqhZasMxFWhjfRjbcfitEBUMdDeLk", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "WBJDfsSMUqBHHUvOlPGDwVnSreMgqHrvgQCNpDkbOQrwlclpoIsiyNWaOmWXboCdzZrTcpwfwrRXiBfZvxEMSOQZcBdGhlOkOhfshKzjJmeCiZALqWJaPLzucOHHliyZWEOWXbdQDWmAgJqtXclFzu", 
+        "created_at": "2013-10-21T17:19:17.138", 
+        "updated_at": "2013-10-21T17:19:17.138", 
+        "created_by": null, 
+        "accident_report": "HjEVzwipREHMOcjJrurDkVkQVMBWNcGNkUvfGAiOmyYunrBRiq", 
+        "police_car": 38, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 34, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "cZoacazGzIVNiNziKdfukQnavThXjZGOhczULTloLidgjegqBRQwkGRpSWlDHNTkmAJuVMsVDCKTCUoBBrObEVMPZwvBmWiGGbopGqoyYqwdITvXBuJyiugZlfhoFwoweIKaytYDFQtJQSObgMrQiZ", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "AajCnQjDKhMYLpuxWBXNNOPHzqcxSGDldEsEjsRTssIVhaTKUArThNVqEhyRMMTxyBsWMIqEXWTDVJcREdfqUAqHHLTvLKPEoGAgdzszGbSWQnZHySlTVGWqqckSRBDfRCSYQqjZCKPbrrZTUyBVyz", 
+        "created_at": "2013-10-21T17:19:17.142", 
+        "updated_at": "2013-10-21T17:19:17.142", 
+        "created_by": null, 
+        "accident_report": "yyYSIVGPcseVDNuccfPmhjCBBQSnhYKbQZGeLABKshhuXjWOlS", 
+        "police_car": 39, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 35, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "tVKCbHQLqMXEctclpFRXWkkZudVBomvjgsukFBkGpHBMVkiuTDoinXzDHVQvhRUyWZMIVcMxFwvPfZAKsEwtbBeSGTUXoLTcQkSZzFfxVjlWtWLlkWAdNUJYIpnqvCIbkQaXtFQejqRYFgytVvWVHS", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "RhriCQUePifCGPQqFxnPStuqDqRZryBdWLvexrvHsRQtzRELHRxPMmmdNHZkSlpYOirMLefgxHpWDNSpqRxWFBnatkhIEArZvIvmDldifJWvtDigRMsMcvJYSIlsQoOWZxIrJTzeJcjEViqXZtmXbc", 
+        "created_at": "2013-10-21T17:19:17.147", 
+        "updated_at": "2013-10-21T17:19:17.147", 
+        "created_by": null, 
+        "accident_report": "dhwcPkikpjJQZaLgGrdcdvjKETiIuiHgtxhANNNZLzeOIblzKZ", 
+        "police_car": 40, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 36, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "gavaolhoDStJwxLTfgOxGLHAZJIbVjnlVhNpJzrWHuBPSmDBgKXbwQmQJsHPdxOalyxiHsHKIJUZCZGTcNEhWKdhiRzEfGgrqOtYrlPNiZbEHcCoIKnIWLrYCqYCtZsDEBfqilAjLCshBFrsUwHURa", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "KIHorNLzJyiDuJZDWfvRvPcPPlZlVvgBvostMaafuWlsYmXlzegRtmdQmctlbYIWbUhJbbyKBuszopVnAOmzliDSjMZMrLPzjabWoZmLURRdMswWXJDFPWepFbJRhmaersYBHbHhCpnDbvVcvKPNup", 
+        "created_at": "2013-10-21T17:19:17.152", 
+        "updated_at": "2013-10-21T17:19:17.152", 
+        "created_by": null, 
+        "accident_report": "MZvkTTKkFqVFPDHjHxaLpRqHraGNaYBxGWQOAerpNMCIerrEsc", 
+        "police_car": 41, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 37, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "ExkdQjSPqRpRjjSRAWvDWglBMYcQTpZaStmAYDMceAFMtTxSgDKgXMTQHGDgSjnpilcQvODxVouRsoIYsIbiRJfImIjeMyBJiGWNwTUoteZGHPKtopQJNosDVDecLtNjjemRqZCcfdSxjttjdxIXRY", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "riPCrirWQjQBUmPBbLgCgmrvgcCRSzachewISsxRxtfqpiXXYBFdoxFkPxIImoMkqIxIUSMIxvBxuhkObZIYMyUHEXNUGaKZGyBdujYUZxLgPSUqpKhJQZydhiFguPnRBWlnVvXLrAIljevUcFxPgC", 
+        "created_at": "2013-10-21T17:19:17.157", 
+        "updated_at": "2013-10-21T17:19:17.157", 
+        "created_by": null, 
+        "accident_report": "jasdVHZcgfFQScYOnZXQOnBBOpekCVvvMOQIrsWgnifQKAlKxK", 
+        "police_car": 42, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 38, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "fLeErTKFkArROUwqYzOsKpsyVeuYXjdJfwqOFLiWsrjBATGZzYYIfxlQWuLdadxJwBBlRmvIwglBDuNTZSzNkwXKlzsZvlpgBTfpLvExiXSGqnbBYvjkvFhGMWnbEefnWIVyNCnWFafUlipiNfXAnV", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "jTbFQmLSUlOUJaYdnJABsbdTtjXYMKQxvGnBebFaHGmprSpDCpKgYjqrNiYNrzZwkzvziHTIZBdnvzWmvpexsLYLwUCstvUIctiDaNQygsToIfokXsewgSqopJlmbMvnDEfWwPAqtWbooZNDVtAAHr", 
+        "created_at": "2013-10-21T17:19:17.163", 
+        "updated_at": "2013-10-21T17:19:17.163", 
+        "created_by": null, 
+        "accident_report": "WiGsfklgPKUibjaSNhqqsigEmcXagpMkWfHokwfYBzWpSPjgLX", 
+        "police_car": 43, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 39, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "jfNqyTlWJARlBdVETjPPfjqHepDZLYDLpKScByrrPfhBPckjtRPiOctjamBDmpJQWKpPVAghQLWkTfVmtFujdVQMCpaBepnRvhjclCjbPmTAlCMLbqsGosnwFnUDIwzyVWciiMvWgwPdNqzYVmbaPo", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "VVwwzAmAsivyxROhNSMTPWyTnOIBCwDBUJWbTolZsfzLmYxXSnrVxbYaJvGfODlejxoaNdgWGNRPyaQTnAfiFpjpqevdYObVqQVGBTLZJiwyYtQdQbWHNltWrtEJfUmEYcuSEaswzLnhJuDQHSZAVr", 
+        "created_at": "2013-10-21T17:19:17.168", 
+        "updated_at": "2013-10-21T17:19:17.168", 
+        "created_by": null, 
+        "accident_report": "kecCOzHbufpuMSvvxlfEHkEknpaepRXGIZGzUCyJnnKlNPCQax", 
+        "police_car": 44, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 40, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "PkZMLcEdOhxyGnTemEMuwQVEOXYaxbiuHaQIoWwYiOjsTuYMMfXfcmqTApGiyMnkGhnFQLNuOsUwVpuqkhyVehoXmJlUadAegUlHhTTcrhvCfSWpcZJgtkQwYEeAXhzpWNWOPVSBnLwlggcbGuWlnk", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "aSOtqqxpaazmdEqnwDPiXFbKNdhFrmoItDhhnDDQZubQbZCTOBjvKolmUtEbMRkgjoYfNyjZpAYcQBMCAuliFzOgNfBrqszjdMGIJKWLfMeXxHsOPGVEvlxVEOGdnaEYreNkfyfXwpacTnScxShNDm", 
+        "created_at": "2013-10-21T17:19:17.172", 
+        "updated_at": "2013-10-21T17:19:17.172", 
+        "created_by": null, 
+        "accident_report": "ygkvonFHclZGkgKfZcqhIMsvpywFRnvYxnvFYLXyLbtxlkWrHK", 
+        "police_car": 45, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 4, 
+        "description": ""
+    }
+},
+{
+    "pk": 41, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "fzqKOvSdtwHGvMpvMNTfYCieKYGFmHluagxBuffIQKmrqOlcywRXjmNWFParafYyjNEVtGCkOgsUIHFGSTCqXOFUImEiPBvVbMlxUisZawNsAiSJPcdOdJbjjZmQuAmTMzkmpfSIEtoXsPwPtisXbD", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "mjxVOEZhleXESoojlEBFQjnnCxqVdbiaVJsrBaOOfnDpavEFNTvVMNwaUZssILJDcKciBWGhndpiLeGDhplprHsRYluezszrUxXLJMdxxStxjqNhwPrBAVxWTnuQuNtoLipYkYSWiugcWjKpFhfUvJ", 
+        "created_at": "2013-10-21T17:19:17.179", 
+        "updated_at": "2013-10-21T17:19:17.179", 
+        "created_by": null, 
+        "accident_report": "fgKRXXAeLidLGwMbgAmOMkCumBBTvCIFoVqsmNQgijSScVTVPy", 
+        "police_car": 46, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 42, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "hIzRRJMiMkIDUEhdqrGmxFKwKWXACowDJcafENPGWCxtNgCdTqXwZlqrISTeqsTocGqTvRZetujtIgaDwxOEnbiiHyMxnnODhByOoqdsYpMdDVIGkgHSeaPTNdviBkbDsFnTrJEssYBGjtzxuEAsBP", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "pJYUvJWbZahIyWFEQTSlGuPkKzhabOAHoUKBwiBUuRMfmoLvxaxJZyWQrOBgZZfkfbebtRtKUDjWtsSTXzQuTvQkrIBKUNmmmwIxVDZzwTLlwvKXhqDFZvElybUbGQqyihfcwJgxkMVlKUVhkARBeM", 
+        "created_at": "2013-10-21T17:19:17.185", 
+        "updated_at": "2013-10-21T17:19:17.185", 
+        "created_by": null, 
+        "accident_report": "KQVdoDmwqZoTnFPTLlkkVKBhJZudkNhmzeWahOHLTAtINTiWFk", 
+        "police_car": 47, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 43, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "jczRyAxssKnSLNnqILcXCVhZNFidddthSGaOvCXobLsWhtXXQZwcFSmBSnkYJuhqxEGWYpkcGZdTrUGYcAqTjEbylRPukSDQRGucaYIrYjoxGNhfPKGTEfPcFbMFcSZkWHsaJhNQUvZqMXDqgKLJvt", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "FfmXUlBTwugZGFTjuoWBuNZJrcPaWuWBFXoqkAAUPrCVrmnqJbVeReTcAJMGqJNKisydgAibgxXpvGymQMyASxEwJAWayYYxCVXqfHFbwBRsrZjJmFyXDFrhGQGFMnbgWZcTHVeGQesZuMwzJUzRlt", 
+        "created_at": "2013-10-21T17:19:17.190", 
+        "updated_at": "2013-10-21T17:19:17.190", 
+        "created_by": null, 
+        "accident_report": "RiTYBFiDVpscpnjMcTRDUokMyGKMJcelWbXWWqERfevccnoYeH", 
+        "police_car": 48, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 44, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "WgcobdbWICaoWdYpibjDviabQvXOuyyomWQUJLxWAphlINbOTqGNpshGxMLQbxAMzmMGvOFUDGYVccZmLxCngRENayLhHXWzbVBSKOgloisTUSVsqbPhiRrZeBJAtCaDyZrbtGTCPcBGhizKxHlTcj", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "atgpyjnjlXNiRvUXkeTdSOOLZsqiuTzxQXOcAuKKUOFkyGsierQHrTdWnGVYukJItRkNwQxBzJmZzFLaYQvAswbWhmTQlFIWqpbFogFZArpClgCcBeXRiTfeTikPUgpNAhkVnprdeimxnpqPqzpmGW", 
+        "created_at": "2013-10-21T17:19:17.198", 
+        "updated_at": "2013-10-21T17:19:17.198", 
+        "created_by": null, 
+        "accident_report": "HuzNOLnwBSCzJYctvREdRPgrDIZrJrRxMlBEtQnWOCRcFoImtN", 
+        "police_car": 49, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 45, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "JJdmsQkALbvENfrQFTojzUUsHTgWENtsZnhVPmsVJbGviPSFSGhjPslpJgevNCwfJcVPTMGNXiqmHXKiVFrrbPTmKopQJevdWvuJbTDvszOLvkAFxZmtuKXLxjXUsoRhLwYHAwplHpPCUDHbVTQbKQ", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "aedKeURUFjBEvufzTDVJwOrVaCaEoRhfETTibSYRUJIYlTgydphrmrxvIZcYvscRDemfuWrKoiPnQARZCHxTtNvyNLAMZuSgPZNarjUxmRQlnSlrUxrwjzHRZoseBQroTISZBTKPimDyQxLZxBNpxg", 
+        "created_at": "2013-10-21T17:19:17.202", 
+        "updated_at": "2013-10-21T17:19:17.202", 
+        "created_by": null, 
+        "accident_report": "SsFmnTXGlUCpNVCweCMMYAuxXbjndHaDlsycyTTATtZFCxhyLY", 
+        "police_car": 50, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 46, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "HOKDkiUIECKWotIaZchMoEFcQrGHrIxOxJNkkCyumJYrDQhrCZDLOGlLgRKVFgDkwhGWunnEbvcWIAIynCLGfqJEeziFftHugsJBvaXECocDYXxYNsfanLMhOgOiUoxGHLIeiSNYcsIEONTkiBpdeA", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "tDirHyTPVrKVJRIcmQIbGoGCmPWiAfFadUCcDPGcKQTFjuoIkzMceOLnfzXKJyfiSmpxMXTUrupRSuxjvsqVqcormBqsWkGCHrCTIibeklxgFDuEAsiFVwSUvRFGWMRgKhEWaJvynpZgKNOPWCrZfl", 
+        "created_at": "2013-10-21T17:19:17.206", 
+        "updated_at": "2013-10-21T17:19:17.206", 
+        "created_by": null, 
+        "accident_report": "NiqskVnvmDNzgfvQNoVPWvxpEXVpiaGXKjMbCsQHBKZKLhZMmA", 
+        "police_car": 51, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 47, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "jIzYgTibnMEpFkVhFvGzNzDkhTKMkefzxhfYrgxFmgBUcxXSBOJJHrhjGYjTnPYvWUvVLszJbHIBigdPggUfhHcPNvDuswDxWaUaqRiGWffdjbawMLOmPTfClaPkODekAeWWYCwlUQONmqJjCUHxRK", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "jmtMXAepDeWFBosqrkMqUyrCIwXbvKstZBmTfIMAVRvabjJFjDSLtqDqknlyNSzOlwPeSzIjYscuxwoNnYYpcdHscmjGArgEAiAYYuUTFLxtYycifcMWJUbcSpOILTnIBkcTTrBDSOHTxEASNEfqLE", 
+        "created_at": "2013-10-21T17:19:17.211", 
+        "updated_at": "2013-10-21T17:19:17.211", 
+        "created_by": null, 
+        "accident_report": "TAPsmQdpNuWrfvbwfHZjqYRTiCXADqrUiHtjpKxGmtHgyXsHdJ", 
+        "police_car": 52, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 48, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "bftzpDkGyQxKzRUPautRZoSGTAYsYmXuMVKbwuZKydEaeWmubfXzqQpuaTyJVzajebhqnLZTCeIbOeWMXjPpHmzxZMgLZyoUZwPBHSCFsHHTCUENzGysbOWlSudPWRJrJfJwtatHGboIRbmtqxWTxD", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "pEIqLwBgWYzvchFEkfUmajCFLzdprezPoNhWOxLajsjiYhriUcNtciYLincbxudkwbZJFBDURwdrxCdbZsByCmfaEJzQYZbTOEaGCLazGrvRfDfYocdsgEeTEimKatGOKUHWKZhYwjSgPdlYeOHxZk", 
+        "created_at": "2013-10-21T17:19:17.216", 
+        "updated_at": "2013-10-21T17:19:17.216", 
+        "created_by": null, 
+        "accident_report": "vHORDFPlrbVGaSvDrTUOsNtYLElWMhDqhQWhpnEpCToQsdLAEt", 
+        "police_car": 53, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 49, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "WLkXHJrvEnhbiUjEPgXeZvzhpIeBNPLkLceRSDwupoiEIWXOshHeOKmiHebTpehrICeQfcUIjCJGPRRDXtrYAwKWcFUOjjPparmvspuyqATFyiAWPxviKjVVikBqHfvuNiNafZiByhJlqZYBwZJvsT", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "jrtZkHSebAkozcXHRzoOBIPCqeEfoZfSHUQpnEcHRfzxPVPTOkLZwRgqfvKHkxWjXFcnfKqMqIZbnOTLfGGKteHgyKBjCMIQySRpzbfTkZqpiAWByFOzdEEkgXyluEPIvjHNDOTDfVyovyaHSaMOiF", 
+        "created_at": "2013-10-21T17:19:17.221", 
+        "updated_at": "2013-10-21T17:19:17.221", 
+        "created_by": null, 
+        "accident_report": "yhFiQpIuqJtvPscAvDkWFoWNJjXsgoUGAcawFkmpORwRfNFOsn", 
+        "police_car": 54, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+},
+{
+    "pk": 50, 
+    "model": "core.occurrence", 
+    "fields": {
+        "relevant_information": "enIgnUqtBWtdEHwfojdFTPIPWpurflyGrlvZirNTXxIJmcTTRFhlwdclHjgEbzPIgSmLYWVuwFWAXkJakLHRropBCVdCJmkfhWFVTNMzbwhZlRZgLkNMJCVOFgmTlMLIaZxXFHvMMKkIAhJloNDBiR", 
+        "status": null, 
+        "school": null, 
+        "updated_by": null, 
+        "nature": "npBKDFCJajpekkcvykqRohXsvdrDbZxpyzfOpofQPpscgXEImCuuzAMCGFtkjEHHGOgsafbHPhFUJQaeBxGqjkEYjgBdAAewSyWqermiMmYuRkpdwIGLCetpfRFHVKjKdiFHxkiZoeTKlcInUekWgs", 
+        "created_at": "2013-10-21T17:19:17.226", 
+        "updated_at": "2013-10-21T17:19:17.226", 
+        "created_by": null, 
+        "accident_report": "HPUXdneDfATpvasMucvfFnttjkridxmOHrndZPNcyBDuTXMqSE", 
+        "police_car": 55, 
+        "address": null, 
+        "type": null, 
+        "attended_public": 5, 
+        "description": ""
+    }
+}
+]
