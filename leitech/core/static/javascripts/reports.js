@@ -105,36 +105,7 @@ function selectHandler() {
          ['Estadual',32]
    
      ]);*/
-     
-     var json21 = {
-         cols: [
-                
-                {id: '', label: 'Ocorências', type: 'string'},
-                {id: '', label: 'Via Pública', type: 'number'},
-                {id: '', label: 'Federal', type: 'number'},                
-                {id: '', label: 'Particular', type: 'number'},
-                {id: '', label: 'Municipal', type: 'number'},
-                {id: '', label: 'Estadual', type: 'number'}
-                ],
-         rows: [
-               {
-                   c:[{v:'Público Atendido'},{v:39},{v:0},{v:13},{v:6},{v:32}]} 
-               ]
-         
-                 
-     };
-     var json22 = {
-        cols: [
-                {id: '', label: 'Público Atendido', type: 'string'},
-                {id: '', label: 'Ocorrências', type: 'number'}],
-           rows: [
-              {c:[{v: 'Via Pública'}, {v: 39}]},
-              {c:[{v: 'Federal'}, {v: 0}]},
-              {c:[{v: 'Particular'}, {v: 13}]},
-              {c:[{v: 'Municipal'}, {v: 6}]},
-              {c:[{v: 'Estadual'}, {v: 32}]}
-             ]
-            } ;
+       
      
      var json31 = {
          cols: [
@@ -152,22 +123,11 @@ function selectHandler() {
          
                  
      };
-     var json32 = {
-        cols: [
-                {id: '', label: 'Região', type: 'string'},
-                {id: '', label: 'Ocorrências', type: 'number'}],
-           rows: [
-              {c:[{v: 'Oeste'}, {v: 18}]},
-              {c:[{v: 'Leste'}, {v: 36}]},
-              {c:[{v: 'Sul'}, {v: 16}]},
-              {c:[{v: 'Norte'}, {v: 20}]}
-             ]
-            } ;            
+                 
      
-     var data21 = new google.visualization.DataTable(json21);
-     var data22 = new google.visualization.DataTable(json22);
+     
      var data31 = new google.visualization.DataTable(json31);
-     var data32 = new google.visualization.DataTable(json32);
+     
 
      /*
      var data3 = google.visualization.arrayToDataTable([
@@ -181,16 +141,11 @@ function selectHandler() {
                   hAxis: {title: "Número de assaltos"}
            };
         // Create and draw the visualization.
-         var chart21 = new google.visualization.BarChart(document.getElementById('bar_G021'));
-            chart21.draw(data21,options);
-  
-         var chart22 = new google.visualization.BarChart(document.getElementById('bar_G022'));
-           chart22.draw(data22,options); 
+        
            
          var chart31 = new google.visualization.BarChart(document.getElementById('bar_G031'));
            chart31.draw(data31,options);
-         var chart32 = new google.visualization.BarChart(document.getElementById('bar_G032'));
-           chart32.draw(data32,options);   
+    
       }
       
 //Executa chamada para execução da função drawVisualization e carregamento dos graficos 
