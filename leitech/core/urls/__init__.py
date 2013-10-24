@@ -12,4 +12,5 @@ urlpatterns = patterns('',
 	url(r'^', include('core.urls.occurrence_type')),
 	url(r'^', include('core.urls.occurrence_status')),
 	url(r'^', include('core.urls.occurrence')),
+	url(r'^', include('core.urls.report')),
 )

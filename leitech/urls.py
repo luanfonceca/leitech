@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     # Aplicações
-    url(r'^$', TemplateView.as_view(template_name="base.html"), name="dashboard"),
+    url(r'^$', TemplateView.as_view(template_name="dashboard.html"), name="dashboard"),
     url(r'^', include('core.urls')),
     url(r'^accounts/', include('accounts.urls')),
     url(r'^', include('materials.urls')),

@@ -31,7 +31,48 @@ class Address(HistoryModel):
         max_length=60, 
         null=True, 
         blank=True, 
-        verbose_name=_(u'Bairro')
+        verbose_name=_(u'Bairro'),
+        choices=[
+            ('alecrim', 'Alecrim'),
+            ('areia preta', 'Areia Preta'),
+            ('bairro nordeste', 'Bairro Nordeste'),
+            ('barro vermelho', 'Barro Vermelho'),
+            ('bom pastor', 'Bom Pastor'),
+            ('candelária', 'Candelária'),
+            ('capim macio', 'Capim Macio'),
+            ('cidade alta', 'Cidade Alta'),
+            ('cidade da esperança', 'Cidade da Esperança'),
+            ('cidade nova', 'Cidade Nova'),
+            ('dix-sept rosado', 'Dix-Sept Rosado'),
+            ('felipe camarão', 'Felipe Camarão'),
+            ('guarapes', 'Guarapes'),
+            ('igapó', 'Igapó'),
+            ('lagoa azul', 'Lagoa Azul'),
+            ('lagoa nova', 'Lagoa Nova'),
+            ('lagoa seca', 'Lagoa Seca'),
+            ('mãe luíza', 'Mãe Luíza'),
+            ('mirassol', 'Mirassol'),
+            ('neópolis', 'Neópolis'),
+            ('nossa senhora da apresentação', 'Nossa Senhora da Apresentação'),
+            ('nossa senhora de nazaré', 'Nossa Senhora de Nazaré'),
+            ('nova descoberta', 'Nova Descoberta'),
+            ('pajuçara', 'Pajuçara'),
+            ('petrópolis', 'Petrópolis'),
+            ('pirangi', 'Pirangi'),
+            ('pitimbu', 'Pitimbu'),
+            ('planalto', 'Planalto'),
+            ('ponta negra', 'Ponta Negra'),
+            ('potengi', 'Potengi'),
+            ('praia do meio', 'Praia do Meio'),
+            ('quintas', 'Quintas'),
+            ('redinha', 'Redinha'),
+            ('ribeira', 'Ribeira'),
+            ('rocas', 'Rocas'),
+            ('salinas', 'Salinas'),
+            ('santos reis', 'Santos Reis'),
+            ('satélite', 'Satélite'),
+            ('tirol', 'Tirol'),
+        ]
     )
     zipcode = models.CharField(
         max_length=8, 
@@ -57,7 +98,19 @@ class Address(HistoryModel):
         blank=True, 
         verbose_name=_(u'Número')
     )
-    
+    region = models.CharField(
+        max_length=10, 
+        null=True, 
+        blank=False, 
+        verbose_name=_(u'Região'),
+        choices=[
+            ('norte', 'Norte'),
+            ('sul', 'Sul'),
+            ('leste', 'Leste'),
+            ('oeste', 'Oeste'),
+        ],
+    )
+
     class Meta:
         db_table = 'address'
         verbose_name = _(u'Endereço')

@@ -10,7 +10,6 @@ from django.utils import timezone
 from django.core.mail import send_mail
 from django import forms
 
-
 def now():
     return timezone.now()
 
@@ -22,3 +21,4 @@ class HistoryModelForm(forms.ModelForm):
             if not self.instance.pk:
                 self.instance.created_by = self.instance.updated_by
         return super(HistoryModelForm, self).save(*args, **kwargs)
+
