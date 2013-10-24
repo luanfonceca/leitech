@@ -1,4 +1,4 @@
-/*-------------------------------*/
+/*-------------------------------
 
    var data;
    var chart;
@@ -36,7 +36,7 @@ function drawChart() {
           ['Local B', 10],
           ['Local C', 30],
           ['Local N', 35]
-        ]);*/
+        ]);
 
         // Set chart options
         var options = {'title':'Grafico modo pizza',
@@ -52,7 +52,7 @@ function drawChart() {
 		// Instantiate and draw our chart, passing in some options.
         /*var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         google.visualization.events.addListener(chart, 'select', selectHandler);
-        chart.draw(data, options);*/
+        chart.draw(data, options);
 		
 }
 function selectHandler() {
@@ -60,20 +60,11 @@ function selectHandler() {
     var value = data.getValue(selectedItem.row, 0);
     alert('The user selected ' + value);
 }          
- 
+ */
 
- function drawVisualization() {
-  /*  var data = new google.visualization.DataTable();
-     data.addColumn('string','Bairro');
-     data.addColumn('number','Ocorrências');
-     data.addRows([
-         ['Via Pública',39],
-         ['Federal',0],
-         ['Particular',13],
-         ['Municipal',6],
-         ['Estadual',32]
-   
-     ]);*/
+/*
+function drawVisualization() {
+  
      
      var json21 = {
          cols: [
@@ -142,7 +133,7 @@ function selectHandler() {
      var data3 = google.visualization.arrayToDataTable([
           ['Ocorrência', 'Via Pública', 'Federal', 'Particular', 'Municipal', 'Estadual'],
           ['Ocorrência', 39, 0, 13, 6, 32]
-          ]);*/
+          ]);
          var options = {
                   title:"Assaltos registrados",
                   width:800, height:400,
@@ -161,7 +152,101 @@ function selectHandler() {
          var chart32 = new google.visualization.BarChart(document.getElementById('bar_G032'));
            chart32.draw(data32,options);   
       }
-      
-//Executa chamada para execução da função drawVisualization e carregamento dos graficos 
-google.setOnLoadCallback(drawVisualization);
+
+                /\                        /\
+                ||------ [DESATIVO]-------||
+                ||                        || 
+ */
+        //Carrega o pacote da API 
+        google.load('visualization', '1', {'packages':['corechart']});
+//JSON      
+       var json21 = {
+         cols: [
+                
+                {id: '', label: 'Ocorências', type: 'string'},
+                {id: '', label: 'Via Pública', type: 'number'},
+                {id: '', label: 'Federal', type: 'number'},                
+                {id: '', label: 'Particular', type: 'number'},
+                {id: '', label: 'Municipal', type: 'number'},
+                {id: '', label: 'Estadual', type: 'number'}
+                ],
+         rows: [
+               {
+                   c:[{v:'Público Atendido'},{v:39},{v:0},{v:13},{v:6},{v:32}]} 
+               ]
+         
+                 
+     };
+     var json22 = {
+        cols: [
+                {id: '', label: 'Público Atendido', type: 'string'},
+                {id: '', label: 'Ocorrências', type: 'number'}],
+           rows: [
+              {c:[{v: 'Via Pública'}, {v: 39}]},
+              {c:[{v: 'Federal'}, {v: 0}]},
+              {c:[{v: 'Particular'}, {v: 13}]},
+              {c:[{v: 'Municipal'}, {v: 6}]},
+              {c:[{v: 'Estadual'}, {v: 32}]}
+             ]
+            } ;
+     
+     var json31 = {
+         cols: [
+                
+                {id: '', label: 'Ocorências', type: 'string'},
+                {id: '', label: 'Oeste', type: 'number'},
+                {id: '', label: 'Leste', type: 'number'},                
+                {id: '', label: 'Sul', type: 'number'},
+                {id: '', label: 'Norte', type: 'number'}
+                ],
+         rows: [
+               {
+                   c:[{v:'Ocorrências'},{v:18},{v:36},{v:16},{v:20}]} 
+               ]
+         
+                 
+     };
+     var json32 = {
+        cols: [
+                {id: '', label: 'Região', type: 'string'},
+                {id: '', label: 'Ocorrências', type: 'number'}],
+           rows: [
+              {c:[{v: 'Oeste'}, {v: 18}]},
+              {c:[{v: 'Leste'}, {v: 36}]},
+              {c:[{v: 'Sul'}, {v: 16}]},
+              {c:[{v: 'Norte'}, {v: 20}]}
+             ]
+            } ;
+//FIM MODELO JSON 
+ 
+google.setOnLoadCallback(carrega);//se colocar a função com paramentro
+// não roda!(isso especificamente para o setOnLoadCallback) 
+
+//Essa função carrega pode ficar mais orientada vai depender da maneira que vcs queiram
+function carrega(){
+    
+   var option = {
+                  title:"Assaltos registrados",
+                  width:800, height:400,
+                  vAxis: {title: ""},
+                  hAxis: {title: "Número de assaltos"}
+           };           
+           
+GeraGraph(json21,option,'bar_G021');
+GeraGraph(json22,option,'bar_G022');
+GeraGraph(json31,option,'bar_G031');
+GeraGraph(json32,option,'bar_G032');
+
+
+}
+
+//Função genérica onde recebe como parametros os dados a serem gerados as options/conf
+// para o gráfico e qual local será exibido o gráfico
+function GeraGraph(dados,options,divGera){
+
+    var dataJSON = new google.visualization.DataTable(dados);
+    var chart = new google.visualization.BarChart(document.getElementById(divGera));
+            chart.draw(dataJSON,options);
+
+}
 
