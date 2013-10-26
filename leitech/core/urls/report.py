@@ -14,4 +14,10 @@ urlpatterns = patterns('core.views.report',
         view='ajax_report02', 
         name='ajax_report02'
     ),
+
+    url(
+        regex=r'^occurrences/report03/?$', 
+        view='ajax_report03', 
+        name='ajax_report03'
+    ),
 )
