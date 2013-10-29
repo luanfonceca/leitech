@@ -260,7 +260,7 @@
 var json62 ={
     cols:[
           {id: '', label: 'Dias da Semana', type: 'string'},
-          {id: '', label: 'Ocorrências', type: 'number'},          
+          {id: '', label: 'Ocorrências', type: 'number'}          
     ],
     rows:[
           {c:[{v:'Segunda-feira'},{v:14}]},
@@ -272,6 +272,77 @@ var json62 ={
           {c:[{v:'Domingo'},{v:0}]}
     ]
 };
+ 
+var json71 = {
+    cols:[
+        {id: '', label: 'Horário da Ocorrência', type: 'string'},
+        {id: '', label: '23h', type: 'number'},
+        {id: '', label: '22h', type: 'number'},
+        {id: '', label: '21h', type: 'number'},
+        {id: '', label: '20h', type: 'number'},
+        {id: '', label: '19h', type: 'number'},
+        {id: '', label: '18h', type: 'number'},
+        {id: '', label: '17h', type: 'number'},
+        {id: '', label: '16h', type: 'number'},
+        {id: '', label: '15h', type: 'number'},
+        {id: '', label: '14h', type: 'number'},
+        {id: '', label: '13h', type: 'number'},
+        {id: '', label: '12h', type: 'number'},
+        {id: '', label: '11h', type: 'number'},
+        {id: '', label: '10h', type: 'number'},
+        {id: '', label: '9h', type: 'number'},
+        {id: '', label: '8h', type: 'number'},
+        {id: '', label: '7h', type: 'number'},
+        {id: '', label: '6h', type: 'number'},
+        {id: '', label: '5h', type: 'number'},
+        {id: '', label: '4h', type: 'number'},
+        {id: '', label: '3h', type: 'number'},
+        {id: '', label: '2h', type: 'number'},
+        {id: '', label: '1h', type: 'number'},
+        {id: '', label: '0h', type: 'number'}
+
+    ],
+    rows:[
+        {c:[{v:''},{v:0},{v:4},{v:2},{v:6},{v:9},{v:4},{v:8},{v:7},{v:10}
+            ,{v:9},{v:7},{v:4},{v:4},{v:11},{v:1},{v:4},{v:0},{v:0},{v:0}
+        ,{v:0},{v:0},{v:0},{v:0},{v:0}]}
+    ]
+}; 
+ 
+var json72 ={
+    cols:[
+       {id: '', label: 'Horário da Ocorrência', type: 'string'},
+       {id: '', label: 'Ocorrência', type: 'number'},
+    ],
+    rows:[
+       {c:[{v:'23h'},{v:0}]},
+       {c:[{v:'22h'},{v:4}]},
+       {c:[{v:'21h'},{v:2}]},
+       {c:[{v:'20h'},{v:6}]},
+       {c:[{v:'19h'},{v:9}]},
+       {c:[{v:'18h'},{v:4}]},
+       {c:[{v:'17h'},{v:8}]},
+       {c:[{v:'16h'},{v:7}]},
+       {c:[{v:'15h'},{v:10}]},
+       {c:[{v:'14h'},{v:9}]},
+       {c:[{v:'13h'},{v:7}]},
+       {c:[{v:'12h'},{v:4}]},
+       {c:[{v:'11h'},{v:4}]},
+       {c:[{v:'10h'},{v:11}]},
+       {c:[{v:'9h'},{v:1}]},
+       {c:[{v:'8h'},{v:4}]},
+       {c:[{v:'7h'},{v:0}]},
+       {c:[{v:'6h'},{v:0}]},
+       {c:[{v:'5h'},{v:0}]},
+       {c:[{v:'4h'},{v:0}]},
+       {c:[{v:'3h'},{v:0}]},
+       {c:[{v:'2h'},{v:0}]},
+       {c:[{v:'1h'},{v:0}]},
+       {c:[{v:'0h'},{v:0}]}
+
+
+    ]
+}; 
  
 //FIM MODELO JSON 
  
@@ -293,6 +364,9 @@ GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrênci
 GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
 GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,400);
 GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400);
+GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600);
+GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600);
+
 
 
 }
