@@ -238,10 +238,41 @@
           {c: [{v:'Abordagem à Veículo'},{v:1}]}      
      ]     
  }
- /*
- {v:5},{v:0},{v:4},{v:0},{v:0},{v:0},{v:2},{v:16},{v:1},{v:4}
-           ,{v:0},{v:3},{v:1},{v:6},{v:0},{v:1},{v:6},{v:3},{v:7},{v:0}
-           ,{v:1},{v:1},{v:10},{v:4},{v:2},{v:11},{v:0},{v:0},{v:1}*/
+
+ var json61 ={
+         cols:[
+            {id: '', label: 'Dias da Semana', type: 'string'},
+            {id: '', label: 'Segunda-feira', type: 'number'},
+            {id: '', label: 'Terça-feira', type: 'number'},
+            {id: '', label: 'Quarta-feira', type: 'number'},
+            {id: '', label: 'Quinta-feira', type: 'number'},
+            {id: '', label: 'Sexta-feira', type: 'number'},
+            {id: '', label: 'Sábado', type: 'number'},
+            {id: '', label: 'Domingo', type: 'number'}
+
+   
+         ],
+         rows:[
+           {c:[{v:'Ocorrências'},{v:14},{v:16},{v:19},{v:20},{v:21},{v:0}
+               ,{v:0}]} 
+         ]
+ };
+var json62 ={
+    cols:[
+          {id: '', label: 'Dias da Semana', type: 'string'},
+          {id: '', label: 'Ocorrências', type: 'number'},          
+    ],
+    rows:[
+          {c:[{v:'Segunda-feira'},{v:14}]},
+          {c:[{v:'Terça-feira'},{v:16}]},
+          {c:[{v:'Quarta-feira'},{v:19}]},
+          {c:[{v:'Quinta-feira'},{v:20}]},
+          {c:[{v:'Sexta-feira'},{v:21}]},
+          {c:[{v:'Sábado'},{v:0}]},
+          {c:[{v:'Domingo'},{v:0}]}
+    ]
+};
+ 
 //FIM MODELO JSON 
  
 google.setOnLoadCallback(carrega);//se colocar a função com paramentro
@@ -260,6 +291,8 @@ GeraGraph(json41,'bar_G041','','Bairros','Quantidade de Ocorrências',1200,1000)
 GeraGraph(json42,'bar_G042','','Bairros','Quantidade de Ocorrências',1200,1300);
 GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
 GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
+GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,400);
+GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400);
 
 
 }
