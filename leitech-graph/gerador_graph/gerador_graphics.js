@@ -1,7 +1,7 @@
         //Carrega o pacote da API 
         google.load('visualization', '1', {'packages':['corechart']});
 //JSON      
-       var json21 = {
+ var json21 = {
          cols: [
                 
                 {id: '', label: 'Ocorências', type: 'string'},
@@ -17,8 +17,8 @@
                ]
          
                  
-     };
-     var json22 = {
+     } ;
+ var json22 = {
         cols: [
                 {id: '', label: 'Público Atendido', type: 'string'},
                 {id: '', label: 'Ocorrências', type: 'number'}],
@@ -29,9 +29,8 @@
               {c:[{v: 'Municipal'}, {v: 6}]},
               {c:[{v: 'Estadual'}, {v: 32}]}
              ]
-            } ;
-     
-     var json31 = {
+            } ;     
+ var json31 = {
          cols: [
                 
                 {id: '', label: 'Ocorências', type: 'string'},
@@ -46,8 +45,8 @@
                ]
          
                  
-     };
-     var json32 = {
+     } ;
+ var json32 = {
         cols: [
                 {id: '', label: 'Região', type: 'string'},
                 {id: '', label: 'Ocorrências', type: 'number'}],
@@ -58,7 +57,7 @@
               {c:[{v: 'Norte'}, {v: 20}]}
              ]
             } ;
-     var json41 ={
+ var json41 = {
          cols:[
              {id: '', label: 'Ocorrências', type: 'string'},
              {id: '', label: 'Tirol', type: 'number'},
@@ -112,8 +111,8 @@
                     ]
                 } 
          ]
-     };  
-  var json42 = {
+     } ;  
+ var json42 = {
         cols: [
                 {id: '', label: 'Bairro', type: 'string'},
                 {id: '', label: 'Ocorrências', type: 'number'}],
@@ -157,7 +156,92 @@
               {c:[{v: 'Areia Preta'}, {v: 0}]},
               {c:[{v: 'Alecrim'}, {v: 7}]}
              ]
-            } 
+            } ;
+ var json51 = {
+     cols:[
+          {id: '', label: 'Ocorrência', type: 'string'},
+          {id: '', label: 'Vias de Fato', type: 'number'},
+          {id: '', label: 'Vandalismo', type: 'number'},
+          {id: '', label: 'Tráfico', type: 'number'},
+          {id: '', label: 'Tentativa de Homicídio', type: 'number'},
+          {id: '', label: 'Tentativa de Estrupro', type: 'number'},
+          {id: '', label: 'Tentativa de Assalto', type: 'number'},
+          {id: '', label: 'Solicitação de Policiamento', type: 'number'},
+          {id: '', label: 'Roubo', type: 'number'},
+          {id: '', label: 'Prestação de Socorro', type: 'number'},
+          {id: '', label: 'Porte Ilegal de Arma', type: 'number'},
+          {id: '', label: 'Ocorrência de Trânsito', type: 'number'},
+          {id: '', label: 'Lesão Corporal', type: 'number'},
+          {id: '', label: 'Homicídio', type: 'number'},
+          {id: '', label: 'Furto', type: 'number'},
+          {id: '', label: 'Falsidade Ideológica', type: 'number'},
+          {id: '', label: 'Estrupo', type: 'number'},
+          {id: '', label: 'Desordem', type: 'number'},
+          {id: '', label: 'Danos ao Patrimônio Público', type: 'number'},
+          {id: '', label: 'Consumo de Entorpecentes', type: 'number'},
+          {id: '', label: 'Condução de Aluno até a Residência', type: 'number'},
+          {id: '', label: 'Atrito Verbal', type: 'number'},
+          {id: '', label: 'Atos Libidinosos', type: 'number'},
+          {id: '', label: 'Ato de Suspeição', type: 'number'},
+          {id: '', label: 'Assistência Policial', type: 'number'},
+          {id: '', label: 'Apoio Policial', type: 'number'},
+          {id: '', label: 'Ameaça', type: 'number'},
+          {id: '', label: 'Aliciamento de Menor', type: 'number'},
+          {id: '', label: 'Agressão', type: 'number'},
+          {id: '', label: 'Abordagem à Veículo', type: 'number'}
+
+     ],
+     rows:[
+        {c:[{v:'Ocorrências'},{v:5},{v:0},{v:4},{v:0},{v:0},{v:0},{v:2},{v:16},{v:1},{v:4}
+           ,{v:0},{v:3},{v:1},{v:6},{v:0},{v:1},{v:6},{v:3},{v:7},{v:0}
+           ,{v:1},{v:1},{v:10},{v:4},{v:2},{v:11},{v:0},{v:0},{v:1}
+           ]}
+     ]        
+     
+ } ;  
+ 
+ var json52 = {
+     cols:[
+            {id: '', label: 'Bairro', type: 'string'},
+            {id: '', label: 'Ocorrências', type: 'number'}
+
+          ],
+     rows:[
+          {c: [{v:'Vias de Fato'}, {v:5}]},
+          {c: [{v:'Vandalismo'}, {v:0}]},
+          {c: [{v:'Tráfico'}, {v:4}]},
+          {c: [{v:'Tentativa de Homicídio'}, {v:0}]},
+          {c: [{v:'Tentativa de Estrupro'},{v:0} ]},
+          {c: [{v:'Tentativa de Assalto'}, {v:0}]},
+          {c: [{v: 'Solicitação de Policiamento'}, {v:2}]},
+          {c: [{v: 'Roubo'}, {v:16}]},
+          {c: [{v: 'Prestação de Socorro'}, {v:1}]},
+          {c: [{v:'Porte Ilegal de Arma'},{v:4}]},
+          {c: [{v:'Ocorrência de Trânsito'},{v:0}]},
+          {c: [{v:'Lesão Corporal'},{v:3}]},
+          {c: [{v:'Homicídio'},{v:1}]},
+          {c: [{v:'Furto'},{v:6}]},
+          {c: [{v:'Falsidade Ideológica'},{v:0}]},
+          {c: [{v:'Estrupo'},{v:1}]},
+          {c: [{v:'Desordem'},{v:6}]},
+          {c: [{v:'Danos ao Patrimônio Público'},{v:3}]},
+          {c: [{v:'Consumo de Entorpecentes'},{v:7}]},
+          {c: [{v:'Condução de Aluno até a Residência'},{v:0}]},
+          {c: [{v:'Atrito Verbal'},{v:1}]},
+          {c: [{v:'Atos Libidinosos'},{v:1}]},
+          {c: [{v:'Ato de Suspeição'},{v:10}]},
+          {c: [{v:'Assistência Policial'},{v:4}]},
+          {c: [{v:'Apoio Policial'},{v:2}]},
+          {c: [{v:'Ameaça'},{v:11}]},
+          {c: [{v:'Aliciamento de Menor'},{v:0}]},
+          {c: [{v:'Agressão'},{v:0}]},
+          {c: [{v:'Abordagem à Veículo'},{v:1}]}      
+     ]     
+ }
+ /*
+ {v:5},{v:0},{v:4},{v:0},{v:0},{v:0},{v:2},{v:16},{v:1},{v:4}
+           ,{v:0},{v:3},{v:1},{v:6},{v:0},{v:1},{v:6},{v:3},{v:7},{v:0}
+           ,{v:1},{v:1},{v:10},{v:4},{v:2},{v:11},{v:0},{v:0},{v:1}*/
 //FIM MODELO JSON 
  
 google.setOnLoadCallback(carrega);//se colocar a função com paramentro
@@ -174,6 +258,8 @@ GeraGraph(json31,'bar_G031','','','',800,400);
 GeraGraph(json32,'bar_G032','','','',800,400);
 GeraGraph(json41,'bar_G041','','Bairros','Quantidade de Ocorrências',1200,1000);
 GeraGraph(json42,'bar_G042','','Bairros','Quantidade de Ocorrências',1200,1300);
+GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
+GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
 
 
 }
