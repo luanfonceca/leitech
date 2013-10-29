@@ -1,6 +1,26 @@
         //Carrega o pacote da API 
-        google.load('visualization', '1', {'packages':['corechart']});
+        google.load('visualization', '1', {'packages':['corechart']},{'packages':['linechart']});
 //JSON      
+
+ var json11 ={
+        cols: [
+                {id: '', label: 'Mês', type: 'string'},
+                {id: '', label: 'Ocorrências', type: 'number'}],
+           rows: [
+              {c:[{v: 'Fevereiro'}, {v: 3}]},
+              {c:[{v: 'Março'}, {v: 14}]},
+              {c:[{v: 'Abril'}, {v: 15}]},
+              {c:[{v: 'Maio'}, {v: 15}]},
+              {c:[{v: 'Junho'}, {v: 4}]},
+              {c:[{v: 'Julho'}, {v: 9}]},
+              {c:[{v: 'Agosto'}, {v: 17}]},
+              {c:[{v: 'Setembro'}, {v: 10}]},
+              {c:[{v: 'Outubro'}, {v: 3}]},
+              {c:[{v: 'Novembro'}, {v: 0}]},
+              {c:[{v: 'Dezembro'}, {v: 0}]},
+
+          ]       
+ };
  var json21 = {
          cols: [
                 
@@ -353,19 +373,19 @@ google.setOnLoadCallback(carrega);//se colocar a função com paramentro
 function carrega(){
     
            
-           
-GeraGraph(json21,'bar_G021','','','',800,400);
-GeraGraph(json22,'bar_G022','','','',800,400);
-GeraGraph(json31,'bar_G031','','','',800,400);
-GeraGraph(json32,'bar_G032','','','',800,400);
-GeraGraph(json41,'bar_G041','','Bairros','Quantidade de Ocorrências',1200,1000);
-GeraGraph(json42,'bar_G042','','Bairros','Quantidade de Ocorrências',1200,1300);
-GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
-GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300);
-GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,400);
-GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400);
-GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600);
-GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600);
+GeraGraph(json11,'bar_G011','','','',800,400,2,'bottom');           
+GeraGraph(json21,'bar_G021','','','',800,400,1);
+GeraGraph(json22,'bar_G022','','','',800,400,1);
+GeraGraph(json31,'bar_G031','','','',800,400,1);
+GeraGraph(json32,'bar_G032','','','',800,400,1);
+GeraGraph(json41,'bar_G041','','Bairros','Quantidade de Ocorrências',1200,1000,1);
+GeraGraph(json42,'bar_G042','','Bairros','Quantidade de Ocorrências',1200,1300,1);
+GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300,1);
+GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300,1);
+GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
+GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
+GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600,1);
+GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600,1);
 
 
 
@@ -373,17 +393,30 @@ GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,
 
 //Função genérica onde recebe como parametros os dados a serem gerados as options/conf
 // para o gráfico e qual local será exibido o gráfico
-function GeraGraph(dados,divGera,title,titleVAxis,titlehAxis,width,heigth){
+function GeraGraph(dados,divGera,title,titleVAxis,titlehAxis,width,heigth,modExibicao,legend,tridimensional){
        var options = {
                   title: title,
                   width:width, height:heigth,
                   vAxis: {title: titleVAxis},
-                  hAxis: {title: titlehAxis}
+                  hAxis: {title: titlehAxis},
+                  legend: legend,
+                  Is3D: tridimensional
            };
 
     var dataJSON = new google.visualization.DataTable(dados);
+
+   if(modExibicao == 1){//exibi o gráfico em barra lateral        
     var chart = new google.visualization.BarChart(document.getElementById(divGera));
             chart.draw(dataJSON,options);
-
+   }
+   else if(modExibicao==2){//exibi o gráfico em modelo linear
+        var chart = new google.visualization.LineChart(document.getElementById(divGera));
+            chart.draw(dataJSON,options);
+   }
+   else if(modExibicao==3){//exibi o gráfico em modelo de pizza
+        var chart = new google.visualization.PieChart(document.getElementById(divGera));
+            chart.draw(dataJSON,options);
+   }
+   
 }
 
