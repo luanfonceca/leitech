@@ -379,6 +379,20 @@ var jsonE01 = {
             
 };
 
+var jsonE02 = {
+     cols: [
+             {id: 'local', label: 'Área Ocorrência', type: 'string'},
+             {id: 'local', label: 'Ocorrências', type: 'number'}
+         ],
+     rows: [
+               {c:[{v: 'Norte'}, {v: 65}]},
+               {c:[{v: 'Sul'}, {v: 62}]},
+               {c:[{v: 'Leste'}, {v: 119}]},
+               {c:[{v: 'Oeste'}, {v:74}]}
+       ]
+            
+};
+
 //FIM MODELO JSON 
  
 google.setOnLoadCallback(carrega);//se colocar a função com paramentro
@@ -402,6 +416,7 @@ GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,4
 GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600,1);
 GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600,1);
 GeraGraph(jsonE01,'bar_GE01','Ocorrências','','',800,400,3,'',true);           
+GeraGraph(jsonE02,'bar_GE02','Ocorrências','','',800,400,3);           
 
 
 
