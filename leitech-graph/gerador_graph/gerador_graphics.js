@@ -363,7 +363,22 @@ var json72 ={
 
     ]
 }; 
- 
+
+var jsonE01 = {
+     cols: [
+             {id: 'local', label: 'Público Alvo', type: 'string'},
+             {id: 'local', label: 'Ocorrências', type: 'number'}
+         ],
+     rows: [
+               {c:[{v: 'Estadual'}, {v: 129}]},
+               {c:[{v: 'Municipal'}, {v: 36}]},
+               {c:[{v: 'Via Pública'}, {v: 102}]},
+               {c:[{v: 'Particular'}, {v:52}]},
+               {c:[{v: 'Federal'}, {v:1}]}
+       ]
+            
+};
+
 //FIM MODELO JSON 
  
 google.setOnLoadCallback(carrega);//se colocar a função com paramentro
@@ -386,6 +401,7 @@ GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,4
 GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
 GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600,1);
 GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600,1);
+GeraGraph(jsonE01,'bar_GE01','Ocorrências','','',800,400,3,'',true);           
 
 
 
@@ -400,7 +416,7 @@ function GeraGraph(dados,divGera,title,titleVAxis,titlehAxis,width,heigth,modExi
                   vAxis: {title: titleVAxis},
                   hAxis: {title: titlehAxis},
                   legend: legend,
-                  Is3D: tridimensional
+                  is3D: tridimensional
            };
 
     var dataJSON = new google.visualization.DataTable(dados);
