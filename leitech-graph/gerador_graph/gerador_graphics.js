@@ -395,9 +395,6 @@
 
 //FIM MODELO JSON 
  
-//google.setOnLoadCallback(carrega);//se colocar a função com paramentro
-// não roda!(isso especificamente para o setOnLoadCallback) 
-
 function graph1(){
     GeraGraph(json11,'bar_G011','title','tituloV','tituloH',800,400,2,'');
 }
