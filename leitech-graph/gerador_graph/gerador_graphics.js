@@ -61,7 +61,7 @@
                 ],
          rows: [
                {
-                   c:[{v:'Ocorrências'},{v:18},{v:36},{v:16},{v:20}]} 
+                   c:[{v:''},{v:18},{v:36},{v:16},{v:20}]} 
                ]
          
                  
@@ -277,7 +277,7 @@
                ,{v:0}]} 
          ]
  };
-var json62 ={
+ var json62 ={
     cols:[
           {id: '', label: 'Dias da Semana', type: 'string'},
           {id: '', label: 'Ocorrências', type: 'number'}          
@@ -293,7 +293,7 @@ var json62 ={
     ]
 };
  
-var json71 = {
+ var json71 = {
     cols:[
         {id: '', label: 'Horário da Ocorrência', type: 'string'},
         {id: '', label: '23h', type: 'number'},
@@ -329,7 +329,7 @@ var json71 = {
     ]
 }; 
  
-var json72 ={
+ var json72 ={
     cols:[
        {id: '', label: 'Horário da Ocorrência', type: 'string'},
        {id: '', label: 'Ocorrência', type: 'number'},
@@ -364,7 +364,7 @@ var json72 ={
     ]
 }; 
 
-var jsonE01 = {
+ var jsonE01 = {
      cols: [
              {id: 'local', label: 'Público Alvo', type: 'string'},
              {id: 'local', label: 'Ocorrências', type: 'number'}
@@ -379,7 +379,7 @@ var jsonE01 = {
             
 };
 
-var jsonE02 = {
+ var jsonE02 = {
      cols: [
              {id: 'local', label: 'Área Ocorrência', type: 'string'},
              {id: 'local', label: 'Ocorrências', type: 'number'}
@@ -395,30 +395,72 @@ var jsonE02 = {
 
 //FIM MODELO JSON 
  
-google.setOnLoadCallback(carrega);//se colocar a função com paramentro
+//google.setOnLoadCallback(carrega);//se colocar a função com paramentro
 // não roda!(isso especificamente para o setOnLoadCallback) 
 
-//Essa função carrega pode ficar mais orientada vai depender da maneira que vcs queiram
-function carrega(){
-    
-           
-GeraGraph(json11,'bar_G011','','','',800,400,2,'bottom');           
-GeraGraph(json21,'bar_G021','','','',800,400,1);
-GeraGraph(json22,'bar_G022','','','',800,400,1);
-GeraGraph(json31,'bar_G031','','','',800,400,1);
-GeraGraph(json32,'bar_G032','','','',800,400,1);
-GeraGraph(json41,'bar_G041','','Bairros','Quantidade de Ocorrências',1200,1000,1);
-GeraGraph(json42,'bar_G042','','Bairros','Quantidade de Ocorrências',1200,1300,1);
-GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300,1);
-GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300,1);
-GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
-GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
-GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600,1);
-GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600,1);
-GeraGraph(jsonE01,'bar_GE01','Ocorrências','','',800,400,3,'',true);           
-GeraGraph(jsonE02,'bar_GE02','Ocorrências','','',800,400,3);           
+function graph1(){
+    GeraGraph(json11,'bar_G011','title','tituloV','tituloH',800,400,2,'');
+}
+function graph21(){
+    GeraGraph(json21,'bar_G021','','','',800,400,1);
+}
+function graph22(){
+    GeraGraph(json22,'bar_G022','','','',800,400,1);
+}
+function graph31(){
+    GeraGraph(json31,'bar_G031','','','',800,400,1);
+}
+function graph32(){
+    GeraGraph(json32,'bar_G032','','','',800,400,1);
+}
+function graph41(){
+    GeraGraph(json41,'bar_G041','','Bairros','Quantidade de Ocorrências',1200,1000,1,'bottom');
+}
+function graph42(){
+    GeraGraph(json42,'bar_G042','','Bairros','Quantidade de Ocorrências',1200,1300,1);
+}
+function graph51(){
+    GeraGraph(json51,'bar_G051','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300,1);
+}
+function graph52(){
+    GeraGraph(json52,'bar_G052','Tipos de Ocorrências','','Quantidade de Ocorrências',1200,1300,1);
+}
+function graph61(){
+    GeraGraph(json61,'bar_G061','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
+}
+function graph62(){
+    GeraGraph(json62,'bar_G062','Ocorrências','Dias da Semana','Ocorrências',800,400,1);
+}
+function graph71(){
+    GeraGraph(json71,'bar_G071','Ocorrências','Horário do dia','Ocorrências',900,600,1);
+}
+function graph72(){
+    GeraGraph(json72,'bar_G072','Ocorrências','Horário do dia','Ocorrências',900,600,1);
+}
+function graphE01(){
+    GeraGraph(jsonE01,'bar_GE01','Ocorrências','','',800,400,3,'',true);           
+}
+function graphE02(){
+    GeraGraph(jsonE02,'bar_GE02','Ocorrências','','',800,400,3);           
+}
 
 
+function carregaTodos(){
+    graph1();
+    graph21();
+    graph22();
+    graph31();
+    graph32();
+    graph41();
+    graph42();
+    graph51();
+    graph52();
+    graph61();
+    graph62();
+    graph71();
+    graph72();
+    graphE01();
+    graphE02();
 
 }
 
@@ -430,7 +472,7 @@ function GeraGraph(dados,divGera,title,titleVAxis,titlehAxis,width,heigth,modExi
                   width:width, height:heigth,
                   vAxis: {title: titleVAxis},
                   hAxis: {title: titlehAxis},
-                  legend: legend,
+                  legend: legend,//posicionamento das colunas
                   is3D: tridimensional
            };
 
