@@ -20,3 +20,7 @@ def ajax_report03(request):
     data = Occurrence.objects.values_list('address__region')\
                              .annotate(Count('address__region'))
     return JsonHttpResponse(list(data))    
+def ajax_report04(request):
+    data = Occurrence.objects.values_list('address__region')\
+                             .annotate(Count('address__region'))
+    return JsonHttpResponse(list(data))    
