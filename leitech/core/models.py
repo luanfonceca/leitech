@@ -92,8 +92,8 @@ class Occurrence(HistoryModel):
     )
     accident_report = models.CharField(
         max_length=50, 
-        null=False, 
-        blank=False, 
+        null=True, 
+        blank=True, 
         verbose_name=_(u'Boletim de Ocorrência')
     )
     description = models.TextField(
