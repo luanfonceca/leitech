@@ -35,9 +35,6 @@ def ajax_report05(request):
     return JsonHttpResponse(list(data))    
 
 def ajax_report06(request):
-    # data = Occurrence.objects.filter(created_by__isnull=False)\
-    #                          .values_list('created_at')\
-    #                          .annotate(Count('id'))
     data = []
     weekdays = {
         0: u'Domingo', 
@@ -57,3 +54,16 @@ def ajax_report06(request):
         )
         
     return JsonHttpResponse(data)    
+
+def ajax_report07(request):
+    data = []
+    hours_dict = {}
+    def update_hour(hour):
+        hours_dict.update({hour: ["%sh" % hour, 0]})
+    map(update_hour, range(0, 24))
+
+    for date in Occurrence.objects.values_list('created_at', flat=True):
+        hours_dict[date.hour][1] += 1
+
+    data = hours_dict.values()
+    return JsonHttpResponse(data)
