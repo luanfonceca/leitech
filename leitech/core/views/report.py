@@ -11,7 +11,6 @@ from core.models import Occurrence
 def JsonHttpResponse(data, **kw):
 	return HttpResponse(json_dumps(data, encoding='utf-8', **kw))
 
-
 def ajax_report02(request):
     data = Occurrence.objects.values_list('attended_public__name')\
                              .annotate(Count('attended_public'))
@@ -20,6 +19,7 @@ def ajax_report03(request):
     data = Occurrence.objects.values_list('address__region')\
                              .annotate(Count('address__region'))
     return JsonHttpResponse(list(data))    
+
 def ajax_report04(request):
     data = Occurrence.objects.values_list('address__region')\
                              .annotate(Count('address__region'))
