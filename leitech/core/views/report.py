@@ -23,6 +23,7 @@ def ajax_report03(request):
     return JsonHttpResponse(list(data))    
 
 def ajax_report04(request):
-    data = Occurrence.objects.values_list('address__region')\
-                             .annotate(Count('address__region'))
+    data = Occurrence.objects.filter(address__region__isnull=False)\
+                             .values_list('address__neighborhood')\
+                             .annotate(Count('address__neighborhood'))
     return JsonHttpResponse(list(data))    
