@@ -79,11 +79,39 @@ function draw_report04() {
     });
 }
 
+function draw_report05() {
+    $.getJSON("/occurrences/report05", function(json_data){
+        data = {
+            cols: [{label: 'Ocorências', type: 'string'}],
+            rows: [{c: [{v: 'Tipos'}]}]
+        };
+        for (var i = json_data.length - 1; i >= 0; i--) {
+            data.cols.push({
+                label: json_data[i][0], 
+                type: 'number'
+            });
+            data.rows[0].c.push({
+                v: json_data[i][1]
+            });
+        };
+        data = new google.visualization.DataTable(data);
+
+        // Instantiate and draw our chart, passing in some options.
+        var options = {height: 1200};
+        var chart = new google.visualization.BarChart(
+            document.getElementById('id_report05')
+        );
+
+        chart.draw(data, options);
+    });
+}
+
 function draw_reports() {
     var reports = [
         draw_report02, 
         draw_report03,
-        draw_report04
+        draw_report04,
+        draw_report05
     ];
 
     for (var i = reports.length - 1; i >= 0; i--) {

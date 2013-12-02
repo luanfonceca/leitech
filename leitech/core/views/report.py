@@ -27,3 +27,9 @@ def ajax_report04(request):
                              .values_list('address__neighborhood')\
                              .annotate(Count('address__neighborhood'))
     return JsonHttpResponse(list(data))    
+
+def ajax_report05(request):
+    data = Occurrence.objects.filter(type__isnull=False)\
+                             .values_list('type__name')\
+                             .annotate(Count('type'))
+    return JsonHttpResponse(list(data))    
