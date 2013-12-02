@@ -15,8 +15,10 @@ def ajax_report02(request):
     data = Occurrence.objects.values_list('attended_public__name')\
                              .annotate(Count('attended_public'))
     return JsonHttpResponse(list(data))
+
 def ajax_report03(request):
-    data = Occurrence.objects.values_list('address__region')\
+    data = Occurrence.objects.filter(address__region__isnull=False)\
+                             .values_list('address__region')\
                              .annotate(Count('address__region'))
     return JsonHttpResponse(list(data))    
 
