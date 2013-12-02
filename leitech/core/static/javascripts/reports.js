@@ -176,4 +176,51 @@ function draw_reports() {
     };
 }
 
+function draw_report08() {
+    $.getJSON("/occurrences/report08", function(json_data){
+        data = {
+            cols: [
+                {label: 'Público Alvo', type: 'string'},
+                {label: 'Ocorrências', type: 'number'}
+            ],
+            rows: []
+        }
+        for (var i = json_data.length - 1; i >= 0; i--) {
+            data.rows[i] = {
+                c: [
+                    {v: json_data[i][0]}, 
+                    {v: json_data[i][1]}
+                ]
+            };
+        };
+        
+        data = new google.visualization.DataTable(data);
+
+        // Instantiate and draw our chart, passing in some options.
+        var options = {height: 400};
+        var chart = new google.visualization.PieChart(
+            document.getElementById('id_report08')
+        );
+
+        chart.draw(data, options);
+    });
+}
+
+function draw_reports() {
+    var reports = [
+        draw_report02, 
+        draw_report03,
+        draw_report04,
+        draw_report05,
+        draw_report06,
+        draw_report07,
+        draw_report08,
+    ];
+
+    for (var i = reports.length - 1; i >= 0; i--) {
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.setOnLoadCallback(reports[i]);
+    };
+}
+
 draw_reports();

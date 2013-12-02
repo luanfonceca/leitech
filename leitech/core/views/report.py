@@ -67,3 +67,10 @@ def ajax_report07(request):
 
     data = hours_dict.values()
     return JsonHttpResponse(data)
+
+def ajax_report08(request):
+    data = Occurrence.objects.filter(attended_public__isnull=False)\
+                             .values_list('attended_public__name')\
+                             .annotate(Count('attended_public'))
+    return JsonHttpResponse(list(data))    
+
