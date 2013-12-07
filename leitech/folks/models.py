@@ -11,116 +11,11 @@ from django.utils.translation import ugettext as _
 from django_localflavor_br.br_states import STATE_CHOICES as BR_STATE_CHOICES
 
 from utils import now, send_mail
-from core.models import HistoryModel
-
-class Address(HistoryModel):
-    state = models.CharField(
-        max_length=3, 
-        null=True, 
-        blank=True, 
-        choices=BR_STATE_CHOICES,
-        verbose_name=_(u'UF')
-    )
-    city = models.CharField(
-        max_length=60, 
-        null=True, 
-        blank=True, 
-        verbose_name=_(u'Cidade')
-    )
-    neighborhood = models.CharField(
-        max_length=60, 
-        null=True, 
-        blank=True, 
-        verbose_name=_(u'Bairro'),
-        choices=[
-            ('alecrim', 'Alecrim'),
-            ('areia preta', 'Areia Preta'),
-            ('bairro nordeste', 'Bairro Nordeste'),
-            ('barro vermelho', 'Barro Vermelho'),
-            ('bom pastor', 'Bom Pastor'),
-            ('candelária', 'Candelária'),
-            ('capim macio', 'Capim Macio'),
-            ('cidade alta', 'Cidade Alta'),
-            ('cidade da esperança', 'Cidade da Esperança'),
-            ('cidade nova', 'Cidade Nova'),
-            ('dix-sept rosado', 'Dix-Sept Rosado'),
-            ('felipe camarão', 'Felipe Camarão'),
-            ('guarapes', 'Guarapes'),
-            ('igapó', 'Igapó'),
-            ('lagoa azul', 'Lagoa Azul'),
-            ('lagoa nova', 'Lagoa Nova'),
-            ('lagoa seca', 'Lagoa Seca'),
-            ('mãe luíza', 'Mãe Luíza'),
-            ('mirassol', 'Mirassol'),
-            ('neópolis', 'Neópolis'),
-            ('nossa senhora da apresentação', 'Nossa Senhora da Apresentação'),
-            ('nossa senhora de nazaré', 'Nossa Senhora de Nazaré'),
-            ('nova descoberta', 'Nova Descoberta'),
-            ('pajuçara', 'Pajuçara'),
-            ('petrópolis', 'Petrópolis'),
-            ('pirangi', 'Pirangi'),
-            ('pitimbu', 'Pitimbu'),
-            ('planalto', 'Planalto'),
-            ('ponta negra', 'Ponta Negra'),
-            ('potengi', 'Potengi'),
-            ('praia do meio', 'Praia do Meio'),
-            ('quintas', 'Quintas'),
-            ('redinha', 'Redinha'),
-            ('ribeira', 'Ribeira'),
-            ('rocas', 'Rocas'),
-            ('salinas', 'Salinas'),
-            ('santos reis', 'Santos Reis'),
-            ('satélite', 'Satélite'),
-            ('tirol', 'Tirol'),
-        ]
-    )
-    zipcode = models.CharField(
-        max_length=8, 
-        null=True, 
-        blank=True, 
-        verbose_name=_(u'CEP')
-    )
-    street = models.CharField(
-        max_length=150, 
-        null=False, 
-        blank=False, 
-        verbose_name=_(u'Rua')
-    )
-    complement = models.CharField(
-        max_length=150, 
-        null=True, 
-        blank=True, 
-        verbose_name=_(u'Complemento')
-    )
-    number = models.CharField(
-        max_length=10, 
-        null=True, 
-        blank=True, 
-        verbose_name=_(u'Número')
-    )
-    region = models.CharField(
-        max_length=10, 
-        null=True, 
-        blank=False, 
-        verbose_name=_(u'Região'),
-        choices=[
-            ('norte', 'Norte'),
-            ('sul', 'Sul'),
-            ('leste', 'Leste'),
-            ('oeste', 'Oeste'),
-        ],
-    )
-
-    class Meta:
-        db_table = 'address'
-        verbose_name = _(u'Endereço')
-        verbose_name_plural = _(u'Endereços')
-
-    def __unicode__(self):
-        return u'%s' % self.street
+from core.models import HistoryModel, AddressedModel
 
 
-class School(HistoryModel):
+
+class School(HistoryModel, AddressedModel):
     name = models.CharField(
         max_length=150, 
         null=False, 
@@ -135,10 +30,10 @@ class School(HistoryModel):
     )
 
     # Relations
-    address = models.OneToOneField(
-        to='folks.Address',
-        verbose_name=_(u'Endereço')   
-    )
+    # address = models.OneToOneField(
+    #     to='folks.Address',
+    #     verbose_name=_(u'Endereço')   
+    # )
     
     class Meta:
         db_table = 'school'

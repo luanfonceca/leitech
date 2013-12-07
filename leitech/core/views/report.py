@@ -17,15 +17,15 @@ def ajax_report02(request):
     return JsonHttpResponse(list(data))
 
 def ajax_report03(request):
-    data = Occurrence.objects.filter(address__region__isnull=False)\
-                             .values_list('address__region')\
-                             .annotate(Count('address__region'))
+    data = Occurrence.objects.filter(region__isnull=False)\
+                             .values_list('region')\
+                             .annotate(Count('region'))
     return JsonHttpResponse(list(data))    
 
 def ajax_report04(request):
-    data = Occurrence.objects.filter(address__region__isnull=False)\
-                             .values_list('address__neighborhood')\
-                             .annotate(Count('address__neighborhood'))
+    data = Occurrence.objects.filter(region__isnull=False)\
+                             .values_list('neighborhood')\
+                             .annotate(Count('neighborhood'))
     return JsonHttpResponse(list(data))    
 
 def ajax_report05(request):

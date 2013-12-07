@@ -76,92 +76,6 @@
 },
 {
     "pk": 1, 
-    "model": "folks.address", 
-    "fields": {
-        "city": "Natal", 
-        "neighborhood": "potengi", 
-        "updated_by": [
-            "admin@admin.com"
-        ], 
-        "created_at": "2013-08-08T23:02:24.786", 
-        "updated_at": "2013-10-21T23:07:04.179", 
-        "created_by": null, 
-        "zipcode": "3890-303", 
-        "state": "RN", 
-        "street": "Rua Planalto Baiano, 1161", 
-        "number": "378393", 
-        "region": "norte", 
-        "complement": "complemento"
-    }
-},
-{
-    "pk": 2, 
-    "model": "folks.address", 
-    "fields": {
-        "city": "Natal", 
-        "neighborhood": "pitimbu", 
-        "updated_by": [
-            "admin@admin.com"
-        ], 
-        "created_at": "2013-10-21T22:23:28.524", 
-        "updated_at": "2013-10-21T23:06:38.584", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "zipcode": "38793093", 
-        "state": "RN", 
-        "street": "Rua do Ing\u00e1", 
-        "number": "11324", 
-        "region": "sul", 
-        "complement": "Cidade Sat\u00e9lite"
-    }
-},
-{
-    "pk": 3, 
-    "model": "folks.address", 
-    "fields": {
-        "city": "Natal", 
-        "neighborhood": "cidade da esperan\u00e7a", 
-        "updated_by": [
-            "admin@admin.com"
-        ], 
-        "created_at": "2013-10-21T22:31:13.116", 
-        "updated_at": "2013-10-21T23:06:46.099", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "zipcode": "37398093", 
-        "state": "RN", 
-        "street": "Avenida Paraiba", 
-        "number": "385", 
-        "region": "oeste", 
-        "complement": ""
-    }
-},
-{
-    "pk": 4, 
-    "model": "folks.address", 
-    "fields": {
-        "city": "Natal", 
-        "neighborhood": "alecrim", 
-        "updated_by": [
-            "admin@admin.com"
-        ], 
-        "created_at": "2013-10-21T22:35:04.344", 
-        "updated_at": "2013-10-21T23:06:51.285", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "zipcode": "3890-303", 
-        "state": "RN", 
-        "street": "Rua dos Canind\u00e9s", 
-        "number": "1101", 
-        "region": "leste", 
-        "complement": ""
-    }
-},
-{
-    "pk": 1, 
     "model": "folks.school", 
     "fields": {
         "name": "Escola Municipal Professora Adelina Fernandes", 
@@ -169,8 +83,15 @@
         "updated_at": "2013-08-08T23:02:26.524", 
         "created_by": null, 
         "phone": "4879830903", 
-        "address": 1, 
-        "updated_by": null
+        "updated_by": null,
+        "city": "Natal", 
+        "neighborhood": "potengi",
+        "zipcode": "3890-303", 
+        "state": "RN", 
+        "street": "Rua Planalto Baiano, 1161", 
+        "number": "378393", 
+        "region": "norte", 
+        "complement": "complemento"
     }
 },
 {

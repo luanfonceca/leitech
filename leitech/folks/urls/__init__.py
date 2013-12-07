@@ -13,5 +13,5 @@ urlpatterns = patterns('',
 	url(r'^', include('folks.urls.police_car')),
 	url(r'^', include('folks.urls.school')),
 	url(r'^', include('folks.urls.attended_public')),
-	url(r'^', include('folks.urls.address')),
+	# url(r'^', include('folks.urls.address')),
 )

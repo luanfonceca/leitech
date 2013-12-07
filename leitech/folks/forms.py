@@ -31,6 +31,6 @@ class AttendedPublicForm(HistoryModelForm):
         model = AttendedPublic
 
 
-class AddressForm(HistoryModelForm):
-    class Meta:
-        model = Address
+# class AddressForm(HistoryModelForm):
+#     class Meta:
+#         model = Address
