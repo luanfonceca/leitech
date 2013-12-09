@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>leitech.utils</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="leitech-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="leitech-module.html">Package&nbsp;leitech</a> ::
+        Module&nbsp;utils
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="leitech.utils-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="leitech.utils-module.html">Module leitech.utils</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-comment"># encoding: utf-8</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">utils.py</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">Criado por Luan Fonseca em 17/06/2013.</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Module leitech.utils=leitech.utils-module.html"><a title="leitech.utils" class="py-name" href="#" onclick="return doclink('link-0', 'utils', 'link-0');">utils</a></tt> <tt class="py-keyword">import</tt> <tt class="py-name">timezone</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Package leitech.core=leitech.core-module.html"><a title="leitech.core" class="py-name" href="#" onclick="return doclink('link-1', 'core', 'link-1');">core</a></tt><tt class="py-op">.</tt><tt class="py-name">mail</tt> <tt class="py-keyword">import</tt> <tt class="py-name">send_mail</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt> <tt class="py-keyword">import</tt> <tt id="link-2" class="py-name" targets="Module leitech.accounts.forms=leitech.accounts.forms-module.html,Module leitech.core.forms=leitech.core.forms-module.html,Module leitech.folks.forms=leitech.folks.forms-module.html,Module leitech.materials.forms=leitech.materials.forms-module.html"><a title="leitech.accounts.forms
+leitech.core.forms
+leitech.folks.forms
+leitech.materials.forms" class="py-name" href="#" onclick="return doclink('link-2', 'forms', 'link-2');">forms</a></tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="now"></a><div id="now-def"><a name="L13"></a><tt class="py-lineno">13</tt> <a class="py-toggle" href="#" id="now-toggle" onclick="return toggle('now');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="leitech.utils-module.html#now">now</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="now-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="now-expanded"><a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">timezone</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Function leitech.utils.now()=leitech.utils-module.html#now"><a title="leitech.utils.now" class="py-name" href="#" onclick="return doclink('link-3', 'now', 'link-3');">now</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"> </tt>
+<a name="HistoryModelForm"></a><div id="HistoryModelForm-def"><a name="L17"></a><tt class="py-lineno">17</tt> <a class="py-toggle" href="#" id="HistoryModelForm-toggle" onclick="return toggle('HistoryModelForm');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.utils.HistoryModelForm-class.html">HistoryModelForm</a><tt class="py-op">(</tt><tt class="py-base-class">forms</tt><tt class="py-op">.</tt><tt class="py-base-class">ModelForm</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="HistoryModelForm-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="HistoryModelForm-expanded"><a name="HistoryModelForm.save"></a><div id="HistoryModelForm.save-def"><a name="L18"></a><tt class="py-lineno">18</tt> <a class="py-toggle" href="#" id="HistoryModelForm.save-toggle" onclick="return toggle('HistoryModelForm.save');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="leitech.utils.HistoryModelForm-class.html#save">save</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">user</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-param">args</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">kwargs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="HistoryModelForm.save-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="HistoryModelForm.save-expanded"><a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">user</tt><tt class="py-op">:</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">instance</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Variable accounts.models.User.updated_by=accounts.models.User-class.html#updated_by,Variable core.models.Occurrence.updated_by=core.models.Occurrence-class.html#updated_by,Variable core.models.OccurrenceStatus.updated_by=core.models.OccurrenceStatus-class.html#updated_by,Variable core.models.OccurrenceType.updated_by=core.models.OccurrenceType-class.html#updated_by,Variable folks.models.AttendedPublic.updated_by=folks.models.AttendedPublic-class.html#updated_by,Variable folks.models.Police.updated_by=folks.models.Police-class.html#updated_by,Variable folks.models.PoliceCar.updated_by=folks.models.PoliceCar-class.html#updated_by,Variable folks.models.School.updated_by=folks.models.School-class.html#updated_by,Variable leitech.core.models.HistoryModel.updated_by=leitech.core.models.HistoryModel-class.html#updated_by,Variable materials.models.OccurrenceSeizedMaterial.updated_by=materials.models.OccurrenceSeizedMaterial-class.html#updated_by,Variable materials.models.SeizedMaterial.updated_by=materials.models.SeizedMaterial-class.html#updated_by,Variable materials.models.SeizedMaterialType.updated_by=materials.models.SeizedMaterialType-class.html#updated_by"><a title="accounts.models.User.updated_by
+core.models.Occurrence.updated_by
+core.models.OccurrenceStatus.updated_by
+core.models.OccurrenceType.updated_by
+folks.models.AttendedPublic.updated_by
+folks.models.Police.updated_by
+folks.models.PoliceCar.updated_by
+folks.models.School.updated_by
+leitech.core.models.HistoryModel.updated_by
+materials.models.OccurrenceSeizedMaterial.updated_by
+materials.models.SeizedMaterial.updated_by
+materials.models.SeizedMaterialType.updated_by" class="py-name" href="#" onclick="return doclink('link-4', 'updated_by', 'link-4');">updated_by</a></tt> <tt class="py-op">=</tt> <tt class="py-name">user</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">instance</tt><tt class="py-op">.</tt><tt class="py-name">pk</tt><tt class="py-op">:</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">instance</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Variable accounts.models.User.created_by=accounts.models.User-class.html#created_by,Variable core.models.Occurrence.created_by=core.models.Occurrence-class.html#created_by,Variable core.models.OccurrenceStatus.created_by=core.models.OccurrenceStatus-class.html#created_by,Variable core.models.OccurrenceType.created_by=core.models.OccurrenceType-class.html#created_by,Variable folks.models.AttendedPublic.created_by=folks.models.AttendedPublic-class.html#created_by,Variable folks.models.Police.created_by=folks.models.Police-class.html#created_by,Variable folks.models.PoliceCar.created_by=folks.models.PoliceCar-class.html#created_by,Variable folks.models.School.created_by=folks.models.School-class.html#created_by,Variable leitech.core.models.HistoryModel.created_by=leitech.core.models.HistoryModel-class.html#created_by,Variable materials.models.OccurrenceSeizedMaterial.created_by=materials.models.OccurrenceSeizedMaterial-class.html#created_by,Variable materials.models.SeizedMaterial.created_by=materials.models.SeizedMaterial-class.html#created_by,Variable materials.models.SeizedMaterialType.created_by=materials.models.SeizedMaterialType-class.html#created_by"><a title="accounts.models.User.created_by
+core.models.Occurrence.created_by
+core.models.OccurrenceStatus.created_by
+core.models.OccurrenceType.created_by
+folks.models.AttendedPublic.created_by
+folks.models.Police.created_by
+folks.models.PoliceCar.created_by
+folks.models.School.created_by
+leitech.core.models.HistoryModel.created_by
+materials.models.OccurrenceSeizedMaterial.created_by
+materials.models.SeizedMaterial.created_by
+materials.models.SeizedMaterialType.created_by" class="py-name" href="#" onclick="return doclink('link-5', 'created_by', 'link-5');">created_by</a></tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">instance</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name"><a title="accounts.models.User.updated_by
+core.models.Occurrence.updated_by
+core.models.OccurrenceStatus.updated_by
+core.models.OccurrenceType.updated_by
+folks.models.AttendedPublic.updated_by
+folks.models.Police.updated_by
+folks.models.PoliceCar.updated_by
+folks.models.School.updated_by
+leitech.core.models.HistoryModel.updated_by
+materials.models.OccurrenceSeizedMaterial.updated_by
+materials.models.SeizedMaterial.updated_by
+materials.models.SeizedMaterialType.updated_by" class="py-name" href="#" onclick="return doclink('link-6', 'updated_by', 'link-4');">updated_by</a></tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">super</tt><tt class="py-op">(</tt><tt id="link-7" class="py-name" targets="Class leitech.utils.HistoryModelForm=leitech.utils.HistoryModelForm-class.html"><a title="leitech.utils.HistoryModelForm" class="py-name" href="#" onclick="return doclink('link-7', 'HistoryModelForm', 'link-7');">HistoryModelForm</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method leitech.materials.forms.OccurrenceSeizedMaterialFormSet.save()=leitech.materials.forms.OccurrenceSeizedMaterialFormSet-class.html#save,Method leitech.utils.HistoryModelForm.save()=leitech.utils.HistoryModelForm-class.html#save"><a title="leitech.materials.forms.OccurrenceSeizedMaterialFormSet.save
+leitech.utils.HistoryModelForm.save" class="py-name" href="#" onclick="return doclink('link-8', 'save', 'link-8');">save</a></tt><tt class="py-op">(</tt><tt class="py-op">*</tt><tt class="py-name">args</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">kwargs</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="leitech-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Dec  9 16:53:53 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

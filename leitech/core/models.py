@@ -186,6 +186,13 @@ class OccurrenceType(HistoryModel):
 
 
 class Occurrence(HistoryModel, AddressedModel):
+    """
+    Model para a tabela de Ocorrência, que visa por
+    gerenciar as Ocorrências atendidas pelo RONDA.
+
+    @cvar nature: Natureza da Ocorrência.
+    @type nature: Texto
+    """
     nature = models.CharField(
         max_length=150, 
         null=False, 

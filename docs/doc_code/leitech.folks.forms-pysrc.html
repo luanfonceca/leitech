@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>leitech.folks.forms</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="leitech-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="leitech-module.html">Package&nbsp;leitech</a> ::
+        <a href="leitech.folks-module.html">Package&nbsp;folks</a> ::
+        Module&nbsp;forms
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="leitech.folks.forms-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="leitech.folks.forms-module.html">Module leitech.folks.forms</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-comment"># encoding: utf-8</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">u"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">forms.py</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">Criado por Luan Fonseca em 08/08/2013.</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt> <tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Module leitech.accounts.forms=leitech.accounts.forms-module.html,Module leitech.core.forms=leitech.core.forms-module.html,Module leitech.folks.forms=leitech.folks.forms-module.html,Module leitech.materials.forms=leitech.materials.forms-module.html"><a title="leitech.accounts.forms
+leitech.core.forms
+leitech.folks.forms
+leitech.materials.forms" class="py-name" href="#" onclick="return doclink('link-0', 'forms', 'link-0');">forms</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1" class="py-name" targets="Package leitech.folks=leitech.folks-module.html"><a title="leitech.folks" class="py-name" href="#" onclick="return doclink('link-1', 'folks', 'link-1');">folks</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module leitech.accounts.models=leitech.accounts.models-module.html,Module leitech.core.models=leitech.core.models-module.html,Module leitech.folks.models=leitech.folks.models-module.html,Module leitech.materials.models=leitech.materials.models-module.html"><a title="leitech.accounts.models
+leitech.core.models
+leitech.folks.models
+leitech.materials.models" class="py-name" href="#" onclick="return doclink('link-2', 'models', 'link-2');">models</a></tt> <tt class="py-keyword">import</tt> <tt class="py-op">*</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-3" class="py-name" targets="Module leitech.utils=leitech.utils-module.html"><a title="leitech.utils" class="py-name" href="#" onclick="return doclink('link-3', 'utils', 'link-3');">utils</a></tt> <tt class="py-keyword">import</tt> <tt id="link-4" class="py-name" targets="Class leitech.utils.HistoryModelForm=leitech.utils.HistoryModelForm-class.html"><a title="leitech.utils.HistoryModelForm" class="py-name" href="#" onclick="return doclink('link-4', 'HistoryModelForm', 'link-4');">HistoryModelForm</a></tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"> </tt>
+<a name="PoliceCarForm"></a><div id="PoliceCarForm-def"><a name="L14"></a><tt class="py-lineno">14</tt> <a class="py-toggle" href="#" id="PoliceCarForm-toggle" onclick="return toggle('PoliceCarForm');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.PoliceCarForm-class.html">PoliceCarForm</a><tt class="py-op">(</tt><tt class="py-base-class">HistoryModelForm</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="PoliceCarForm-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="PoliceCarForm-expanded"><a name="PoliceCarForm.Meta"></a><div id="PoliceCarForm.Meta-def"><a name="L15"></a><tt class="py-lineno">15</tt> <a class="py-toggle" href="#" id="PoliceCarForm.Meta-toggle" onclick="return toggle('PoliceCarForm.Meta');">-</a><tt class="py-line">    <tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.PoliceCarForm.Meta-class.html">Meta</a><tt class="py-op">:</tt> </tt>
+</div><div id="PoliceCarForm.Meta-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="PoliceCarForm.Meta-expanded"><a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">        <tt class="py-name">model</tt> <tt class="py-op">=</tt> <tt id="link-5" class="py-name" targets="Class folks.models.PoliceCar=folks.models.PoliceCar-class.html"><a title="folks.models.PoliceCar" class="py-name" href="#" onclick="return doclink('link-5', 'PoliceCar', 'link-5');">PoliceCar</a></tt> </tt>
+</div></div><a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="PoliceForm"></a><div id="PoliceForm-def"><a name="L19"></a><tt class="py-lineno">19</tt> <a class="py-toggle" href="#" id="PoliceForm-toggle" onclick="return toggle('PoliceForm');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.PoliceForm-class.html">PoliceForm</a><tt class="py-op">(</tt><tt class="py-base-class">HistoryModelForm</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="PoliceForm-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="PoliceForm-expanded"><a name="PoliceForm.Meta"></a><div id="PoliceForm.Meta-def"><a name="L20"></a><tt class="py-lineno">20</tt> <a class="py-toggle" href="#" id="PoliceForm.Meta-toggle" onclick="return toggle('PoliceForm.Meta');">-</a><tt class="py-line">    <tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.PoliceForm.Meta-class.html">Meta</a><tt class="py-op">:</tt> </tt>
+</div><div id="PoliceForm.Meta-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="PoliceForm.Meta-expanded"><a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">        <tt class="py-name">model</tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name" targets="Class folks.models.Police=folks.models.Police-class.html"><a title="folks.models.Police" class="py-name" href="#" onclick="return doclink('link-6', 'Police', 'link-6');">Police</a></tt> </tt>
+</div></div><a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"> </tt>
+<a name="SchoolForm"></a><div id="SchoolForm-def"><a name="L24"></a><tt class="py-lineno">24</tt> <a class="py-toggle" href="#" id="SchoolForm-toggle" onclick="return toggle('SchoolForm');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.SchoolForm-class.html">SchoolForm</a><tt class="py-op">(</tt><tt class="py-base-class">HistoryModelForm</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="SchoolForm-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="SchoolForm-expanded"><a name="SchoolForm.Meta"></a><div id="SchoolForm.Meta-def"><a name="L25"></a><tt class="py-lineno">25</tt> <a class="py-toggle" href="#" id="SchoolForm.Meta-toggle" onclick="return toggle('SchoolForm.Meta');">-</a><tt class="py-line">    <tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.SchoolForm.Meta-class.html">Meta</a><tt class="py-op">:</tt> </tt>
+</div><div id="SchoolForm.Meta-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="SchoolForm.Meta-expanded"><a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">        <tt class="py-name">model</tt> <tt class="py-op">=</tt> <tt id="link-7" class="py-name" targets="Class folks.models.School=folks.models.School-class.html"><a title="folks.models.School" class="py-name" href="#" onclick="return doclink('link-7', 'School', 'link-7');">School</a></tt> </tt>
+</div></div><a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"> </tt>
+<a name="AttendedPublicForm"></a><div id="AttendedPublicForm-def"><a name="L29"></a><tt class="py-lineno">29</tt> <a class="py-toggle" href="#" id="AttendedPublicForm-toggle" onclick="return toggle('AttendedPublicForm');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.AttendedPublicForm-class.html">AttendedPublicForm</a><tt class="py-op">(</tt><tt class="py-base-class">HistoryModelForm</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="AttendedPublicForm-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="AttendedPublicForm-expanded"><a name="AttendedPublicForm.Meta"></a><div id="AttendedPublicForm.Meta-def"><a name="L30"></a><tt class="py-lineno">30</tt> <a class="py-toggle" href="#" id="AttendedPublicForm.Meta-toggle" onclick="return toggle('AttendedPublicForm.Meta');">-</a><tt class="py-line">    <tt class="py-keyword">class</tt> <a class="py-def-name" href="leitech.folks.forms.AttendedPublicForm.Meta-class.html">Meta</a><tt class="py-op">:</tt> </tt>
+</div><div id="AttendedPublicForm.Meta-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="AttendedPublicForm.Meta-expanded"><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-name">model</tt> <tt class="py-op">=</tt> <tt id="link-8" class="py-name" targets="Class folks.models.AttendedPublic=folks.models.AttendedPublic-class.html"><a title="folks.models.AttendedPublic" class="py-name" href="#" onclick="return doclink('link-8', 'AttendedPublic', 'link-8');">AttendedPublic</a></tt> </tt>
+</div></div><a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"><tt class="py-comment"># class AddressForm(HistoryModelForm):</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"><tt class="py-comment">#     class Meta:</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"><tt class="py-comment">#         model = Address</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="leitech-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Dec  9 16:53:54 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

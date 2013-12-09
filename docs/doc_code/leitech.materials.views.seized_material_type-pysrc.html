@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>leitech.materials.views.seized_material_type</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="leitech-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="leitech-module.html">Package&nbsp;leitech</a> ::
+        <a href="leitech.materials-module.html">Package&nbsp;materials</a> ::
+        <a href="leitech.materials.views-module.html">Package&nbsp;views</a> ::
+        Module&nbsp;seized_material_type
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="leitech.materials.views.seized_material_type-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="leitech.materials.views.seized_material_type-module.html">Module leitech.materials.views.seized_material_type</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment"># encoding: utf-8</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">u"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">seized_material_type.py</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">Criado por Luan Fonseca em 08/08/2013.</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">shortcuts</tt> <tt class="py-keyword">import</tt> <tt class="py-name">render</tt><tt class="py-op">,</tt> <tt class="py-name">redirect</tt><tt class="py-op">,</tt> <tt class="py-name">get_object_or_404</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Package leitech.core=leitech.core-module.html"><a title="leitech.core" class="py-name" href="#" onclick="return doclink('link-0', 'core', 'link-0');">core</a></tt><tt class="py-op">.</tt><tt class="py-name">paginator</tt> <tt class="py-keyword">import</tt> <tt class="py-name">Paginator</tt><tt class="py-op">,</tt> <tt class="py-name">EmptyPage</tt><tt class="py-op">,</tt> <tt class="py-name">PageNotAnInteger</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">contrib</tt> <tt class="py-keyword">import</tt> <tt class="py-name">messages</tt><tt class="py-op">,</tt> <tt class="py-name">auth</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">contrib</tt><tt class="py-op">.</tt><tt class="py-name">auth</tt><tt class="py-op">.</tt><tt class="py-name">decorators</tt> <tt class="py-keyword">import</tt> <tt class="py-name">login_required</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1" class="py-name" targets="Package leitech.materials=leitech.materials-module.html"><a title="leitech.materials" class="py-name" href="#" onclick="return doclink('link-1', 'materials', 'link-1');">materials</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module leitech.accounts.forms=leitech.accounts.forms-module.html,Module leitech.core.forms=leitech.core.forms-module.html,Module leitech.folks.forms=leitech.folks.forms-module.html,Module leitech.materials.forms=leitech.materials.forms-module.html"><a title="leitech.accounts.forms
+leitech.core.forms
+leitech.folks.forms
+leitech.materials.forms" class="py-name" href="#" onclick="return doclink('link-2', 'forms', 'link-2');">forms</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Class leitech.materials.forms.SeizedMaterialTypeForm=leitech.materials.forms.SeizedMaterialTypeForm-class.html"><a title="leitech.materials.forms.SeizedMaterialTypeForm" class="py-name" href="#" onclick="return doclink('link-3', 'SeizedMaterialTypeForm', 'link-3');">SeizedMaterialTypeForm</a></tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-4" class="py-name"><a title="leitech.materials" class="py-name" href="#" onclick="return doclink('link-4', 'materials', 'link-1');">materials</a></tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Module leitech.accounts.models=leitech.accounts.models-module.html,Module leitech.core.models=leitech.core.models-module.html,Module leitech.folks.models=leitech.folks.models-module.html,Module leitech.materials.models=leitech.materials.models-module.html"><a title="leitech.accounts.models
+leitech.core.models
+leitech.folks.models
+leitech.materials.models" class="py-name" href="#" onclick="return doclink('link-5', 'models', 'link-5');">models</a></tt> <tt class="py-keyword">import</tt> <tt id="link-6" class="py-name" targets="Class materials.models.SeizedMaterialType=materials.models.SeizedMaterialType-class.html"><a title="materials.models.SeizedMaterialType" class="py-name" href="#" onclick="return doclink('link-6', 'SeizedMaterialType', 'link-6');">SeizedMaterialType</a></tt> </tt>
+<a name="list"></a><div id="list-def"><a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-decorator">@</tt><tt class="py-decorator">login_required</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt> <a class="py-toggle" href="#" id="list-toggle" onclick="return toggle('list');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="leitech.materials.views.seized_material_type-module.html#list">list</a><tt class="py-op">(</tt><tt class="py-param">request</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="list-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="list-expanded"><a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">    <tt class="py-name">paginator</tt> <tt class="py-op">=</tt> <tt class="py-name">Paginator</tt><tt class="py-op">(</tt><tt id="link-7" class="py-name"><a title="materials.models.SeizedMaterialType" class="py-name" href="#" onclick="return doclink('link-7', 'SeizedMaterialType', 'link-6');">SeizedMaterialType</a></tt><tt class="py-op">.</tt><tt class="py-name">objects</tt><tt class="py-op">.</tt><tt class="py-name">all</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-number">10</tt><tt class="py-op">)</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">    <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">        <tt class="py-name">seized_material_types</tt> <tt class="py-op">=</tt> <tt class="py-name">paginator</tt><tt class="py-op">.</tt><tt class="py-name">page</tt><tt class="py-op">(</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">            <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">GET</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-string">'page'</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">        <tt class="py-op">)</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">    <tt class="py-keyword">except</tt> <tt class="py-op">(</tt><tt class="py-name">EmptyPage</tt><tt class="py-op">,</tt> <tt class="py-name">PageNotAnInteger</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">        <tt class="py-name">messages</tt><tt class="py-op">.</tt><tt class="py-name">error</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> <tt class="py-string">u"A p&#225;gina que voc&#234; tentou acessar est&#225; vazia. Voc&#234; foi redirecionado para a primeira p&#225;gina."</tt><tt class="py-op">)</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'seized_material_type_list'</tt><tt class="py-op">)</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">     </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">    <tt class="py-name">template_context</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">        <tt class="py-string">'seized_material_types'</tt><tt class="py-op">:</tt> <tt class="py-name">seized_material_types</tt><tt class="py-op">,</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">    <tt class="py-op">}</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">render</tt><tt class="py-op">(</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">        <tt class="py-name">request</tt><tt class="py-op">=</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">        <tt class="py-name">template_name</tt><tt class="py-op">=</tt><tt class="py-string">'seized_material_type/list.html'</tt><tt class="py-op">,</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">        <tt class="py-name">dictionary</tt><tt class="py-op">=</tt><tt class="py-name">template_context</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+</div><a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"> </tt>
+<a name="add"></a><div id="add-def"><a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt class="py-decorator">@</tt><tt class="py-decorator">login_required</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt> <a class="py-toggle" href="#" id="add-toggle" onclick="return toggle('add');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="leitech.materials.views.seized_material_type-module.html#add">add</a><tt class="py-op">(</tt><tt class="py-param">request</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="add-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="add-expanded"><a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">    <tt class="py-name">seized_material_type_form</tt> <tt class="py-op">=</tt> <tt id="link-8" class="py-name"><a title="leitech.materials.forms.SeizedMaterialTypeForm" class="py-name" href="#" onclick="return doclink('link-8', 'SeizedMaterialTypeForm', 'link-3');">SeizedMaterialTypeForm</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">        <tt class="py-name">data</tt><tt class="py-op">=</tt><tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">POST</tt> <tt class="py-keyword">or</tt> <tt class="py-name">None</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">seized_material_type_form</tt><tt class="py-op">.</tt><tt class="py-name">is_valid</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-name">seized_material_type_form</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method leitech.materials.forms.OccurrenceSeizedMaterialFormSet.save()=leitech.materials.forms.OccurrenceSeizedMaterialFormSet-class.html#save,Method leitech.utils.HistoryModelForm.save()=leitech.utils.HistoryModelForm-class.html#save"><a title="leitech.materials.forms.OccurrenceSeizedMaterialFormSet.save
+leitech.utils.HistoryModelForm.save" class="py-name" href="#" onclick="return doclink('link-9', 'save', 'link-9');">save</a></tt><tt class="py-op">(</tt><tt class="py-name">auth</tt><tt class="py-op">.</tt><tt class="py-name">get_user</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">        <tt class="py-name">messages</tt><tt class="py-op">.</tt><tt class="py-name">success</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> <tt class="py-string">u"Tipo de Material salvo com sucesso."</tt><tt class="py-op">)</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'seized_material_type_list'</tt><tt class="py-op">)</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">     </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">    <tt class="py-name">template_context</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-string">'seized_material_type_form'</tt><tt class="py-op">:</tt> <tt class="py-name">seized_material_type_form</tt><tt class="py-op">,</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">    <tt class="py-op">}</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">render</tt><tt class="py-op">(</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">        <tt class="py-name">request</tt><tt class="py-op">=</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">        <tt class="py-name">template_name</tt><tt class="py-op">=</tt><tt class="py-string">'seized_material_type/add.html'</tt><tt class="py-op">,</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-name">dictionary</tt><tt class="py-op">=</tt><tt class="py-name">template_context</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+</div><a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"> </tt>
+<a name="edit"></a><div id="edit-def"><a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"><tt class="py-decorator">@</tt><tt class="py-decorator">login_required</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt> <a class="py-toggle" href="#" id="edit-toggle" onclick="return toggle('edit');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="leitech.materials.views.seized_material_type-module.html#edit">edit</a><tt class="py-op">(</tt><tt class="py-param">request</tt><tt class="py-op">,</tt> <tt class="py-param">pk</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="edit-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="edit-expanded"><a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">    <tt id="link-10" class="py-name" targets="Module leitech.materials.views.seized_material_type=leitech.materials.views.seized_material_type-module.html"><a title="leitech.materials.views.seized_material_type" class="py-name" href="#" onclick="return doclink('link-10', 'seized_material_type', 'link-10');">seized_material_type</a></tt> <tt class="py-op">=</tt> <tt class="py-name">get_object_or_404</tt><tt class="py-op">(</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">        <tt class="py-name">klass</tt><tt class="py-op">=</tt><tt id="link-11" class="py-name"><a title="materials.models.SeizedMaterialType" class="py-name" href="#" onclick="return doclink('link-11', 'SeizedMaterialType', 'link-6');">SeizedMaterialType</a></tt><tt class="py-op">,</tt>  </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-name">pk</tt><tt class="py-op">=</tt><tt class="py-name">pk</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">    <tt class="py-name">seized_material_type_form</tt> <tt class="py-op">=</tt> <tt id="link-12" class="py-name"><a title="leitech.materials.forms.SeizedMaterialTypeForm" class="py-name" href="#" onclick="return doclink('link-12', 'SeizedMaterialTypeForm', 'link-3');">SeizedMaterialTypeForm</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">        <tt class="py-name">data</tt><tt class="py-op">=</tt><tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">POST</tt> <tt class="py-keyword">or</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">        <tt class="py-name">instance</tt><tt class="py-op">=</tt><tt id="link-13" class="py-name"><a title="leitech.materials.views.seized_material_type" class="py-name" href="#" onclick="return doclink('link-13', 'seized_material_type', 'link-10');">seized_material_type</a></tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">seized_material_type_form</tt><tt class="py-op">.</tt><tt class="py-name">is_valid</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">        <tt class="py-name">seized_material_type_form</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="leitech.materials.forms.OccurrenceSeizedMaterialFormSet.save
+leitech.utils.HistoryModelForm.save" class="py-name" href="#" onclick="return doclink('link-14', 'save', 'link-9');">save</a></tt><tt class="py-op">(</tt><tt class="py-name">auth</tt><tt class="py-op">.</tt><tt class="py-name">get_user</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-name">messages</tt><tt class="py-op">.</tt><tt class="py-name">success</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> <tt class="py-string">u"Tipo de Material editado com sucesso."</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'seized_material_type_list'</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">    <tt class="py-name">template_context</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">        <tt class="py-string">'seized_material_type'</tt><tt class="py-op">:</tt> <tt id="link-15" class="py-name"><a title="leitech.materials.views.seized_material_type" class="py-name" href="#" onclick="return doclink('link-15', 'seized_material_type', 'link-10');">seized_material_type</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">        <tt class="py-string">'seized_material_type_form'</tt><tt class="py-op">:</tt> <tt class="py-name">seized_material_type_form</tt><tt class="py-op">,</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">    <tt class="py-op">}</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">render</tt><tt class="py-op">(</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-name">request</tt><tt class="py-op">=</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">        <tt class="py-name">template_name</tt><tt class="py-op">=</tt><tt class="py-string">'seized_material_type/edit.html'</tt><tt class="py-op">,</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">        <tt class="py-name">dictionary</tt><tt class="py-op">=</tt><tt class="py-name">template_context</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+</div><a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"> </tt>
+<a name="delete"></a><div id="delete-def"><a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"><tt class="py-decorator">@</tt><tt class="py-decorator">login_required</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt> <a class="py-toggle" href="#" id="delete-toggle" onclick="return toggle('delete');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="leitech.materials.views.seized_material_type-module.html#delete">delete</a><tt class="py-op">(</tt><tt class="py-param">request</tt><tt class="py-op">,</tt> <tt class="py-param">pk</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="delete-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="delete-expanded"><a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">    <tt id="link-16" class="py-name"><a title="leitech.materials.views.seized_material_type" class="py-name" href="#" onclick="return doclink('link-16', 'seized_material_type', 'link-10');">seized_material_type</a></tt> <tt class="py-op">=</tt> <tt class="py-name">get_object_or_404</tt><tt class="py-op">(</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">        <tt class="py-name">klass</tt><tt class="py-op">=</tt><tt id="link-17" class="py-name"><a title="materials.models.SeizedMaterialType" class="py-name" href="#" onclick="return doclink('link-17', 'SeizedMaterialType', 'link-6');">SeizedMaterialType</a></tt><tt class="py-op">,</tt>  </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">        <tt class="py-name">pk</tt><tt class="py-op">=</tt><tt class="py-name">pk</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">method</tt> <tt class="py-op">==</tt> <tt class="py-string">'POST'</tt><tt class="py-op">:</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">        <tt id="link-18" class="py-name"><a title="leitech.materials.views.seized_material_type" class="py-name" href="#" onclick="return doclink('link-18', 'seized_material_type', 'link-10');">seized_material_type</a></tt><tt class="py-op">.</tt><tt id="link-19" class="py-name" targets="Function leitech.accounts.views.delete()=leitech.accounts.views-module.html#delete,Function leitech.core.views.occurrence.delete()=leitech.core.views.occurrence-module.html#delete,Function leitech.core.views.occurrence_status.delete()=leitech.core.views.occurrence_status-module.html#delete,Function leitech.core.views.occurrence_type.delete()=leitech.core.views.occurrence_type-module.html#delete,Function leitech.folks.views.attended_public.delete()=leitech.folks.views.attended_public-module.html#delete,Function leitech.folks.views.police.delete()=leitech.folks.views.police-module.html#delete,Function leitech.folks.views.police_car.delete()=leitech.folks.views.police_car-module.html#delete,Function leitech.folks.views.school.delete()=leitech.folks.views.school-module.html#delete,Function leitech.materials.views.seized_material.delete()=leitech.materials.views.seized_material-module.html#delete,Function leitech.materials.views.seized_material_type.delete()=leitech.materials.views.seized_material_type-module.html#delete"><a title="leitech.accounts.views.delete
+leitech.core.views.occurrence.delete
+leitech.core.views.occurrence_status.delete
+leitech.core.views.occurrence_type.delete
+leitech.folks.views.attended_public.delete
+leitech.folks.views.police.delete
+leitech.folks.views.police_car.delete
+leitech.folks.views.school.delete
+leitech.materials.views.seized_material.delete
+leitech.materials.views.seized_material_type.delete" class="py-name" href="#" onclick="return doclink('link-19', 'delete', 'link-19');">delete</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">        <tt class="py-name">messages</tt><tt class="py-op">.</tt><tt class="py-name">success</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> <tt class="py-string">u"Tipo de Material removido com sucesso."</tt><tt class="py-op">)</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'seized_material_type_list'</tt><tt class="py-op">)</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">     </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">    <tt class="py-name">template_context</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">        <tt class="py-string">'seized_material_type'</tt><tt class="py-op">:</tt> <tt id="link-20" class="py-name"><a title="leitech.materials.views.seized_material_type" class="py-name" href="#" onclick="return doclink('link-20', 'seized_material_type', 'link-10');">seized_material_type</a></tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">    <tt class="py-op">}</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">render</tt><tt class="py-op">(</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">        <tt class="py-name">request</tt><tt class="py-op">=</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">        <tt class="py-name">template_name</tt><tt class="py-op">=</tt><tt class="py-string">'seized_material_type/delete.html'</tt><tt class="py-op">,</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">        <tt class="py-name">dictionary</tt><tt class="py-op">=</tt><tt class="py-name">template_context</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">    <tt class="py-op">)</tt> </tt>
+</div><a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="leitech-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Dec  9 16:53:54 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
