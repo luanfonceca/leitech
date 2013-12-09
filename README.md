@@ -24,3 +24,13 @@ Como Instalar e Configurar
 
 - você pode mudar a  *porta* na qual o django rodará seu projeto: 
     - ```python manage.py runserver 8080``` --> ```127.0.0.1:8080```
+
+Gerar Documentação do Código
+===============
+1. Clone ou Baixe esse repositório;
+2. Entre na pasta do projeto, onde se encontra os códigos:
+    - `$ cd leitech/leitech`
+3. Use o comando `autodocs` para gerar as páginas html:
+    - `$ python manage.py autodocs`
+4. Acesse a pasta e abra em seu navegador o arquivo `index.html`:
+    - `$ open ../docs/doc_code/index.html`
