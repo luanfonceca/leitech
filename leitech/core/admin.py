@@ -10,7 +10,10 @@ from django.contrib import admin
 from django.contrib.auth.models import Permission, Group
 from django.contrib.contenttypes.models import ContentType
 
-admin.site.register(Permission)
+try:
+	admin.site.register(Permission)
+except:
+	pass
 
 # Registrando todas os Models da app na Admin.
 map(lambda x:
