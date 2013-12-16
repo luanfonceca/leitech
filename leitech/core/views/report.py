@@ -4,6 +4,8 @@
 from django.db.models.aggregates import Count
 from django.http import HttpResponse
 from simplejson import dumps as json_dumps
+from datetime import datetime
+now = datetime.now
 
 from core.models import Occurrence
 
@@ -12,24 +14,28 @@ def JsonHttpResponse(data, **kw):
 	return HttpResponse(json_dumps(data, encoding='utf-8', **kw))
 
 def ajax_report02(request):
-    data = Occurrence.objects.values_list('attended_public__name')\
+    data = Occurrence.objects.filter(created_at__month=now().month)\
+                             .values_list('attended_public__name')\
                              .annotate(Count('attended_public'))
     return JsonHttpResponse(list(data))
 
 def ajax_report03(request):
-    data = Occurrence.objects.filter(region__isnull=False)\
+    data = Occurrence.objects.filter(created_at__month=now().month)\
+                             .filter(region__isnull=False)\
                              .values_list('region')\
                              .annotate(Count('region'))
     return JsonHttpResponse(list(data))    
 
 def ajax_report04(request):
-    data = Occurrence.objects.filter(region__isnull=False)\
+    data = Occurrence.objects.filter(created_at__month=now().month)\
+                             .filter(region__isnull=False)\
                              .values_list('neighborhood')\
                              .annotate(Count('neighborhood'))
     return JsonHttpResponse(list(data))    
 
 def ajax_report05(request):
-    data = Occurrence.objects.filter(type__isnull=False)\
+    data = Occurrence.objects.filter(created_at__month=now().month)\
+                             .filter(type__isnull=False)\
                              .values_list('type__name')\
                              .annotate(Count('type'))
     return JsonHttpResponse(list(data))    
@@ -48,9 +54,8 @@ def ajax_report06(request):
     for day in weekdays.keys():
         data.append(
             (weekdays[day],
-            Occurrence.objects.filter(
-                created_at__week_day=day
-            ).count())
+            Occurrence.objects.filter(created_at__month=now().month)\
+                      .filter(created_at__week_day=day).count())
         )
         
     return JsonHttpResponse(data)    
@@ -62,14 +67,16 @@ def ajax_report07(request):
         hours_dict.update({hour: ["%sh" % hour, 0]})
     map(update_hour, range(0, 24))
 
-    for date in Occurrence.objects.values_list('created_at', flat=True):
+    for date in Occurrence.objects.filter(created_at__month=now().month)\
+                                  .values_list('created_at', flat=True):
         hours_dict[date.hour][1] += 1
 
     data = hours_dict.values()
     return JsonHttpResponse(data)
 
 def ajax_report08(request):
-    data = Occurrence.objects.filter(attended_public__isnull=False)\
+    data = Occurrence.objects.filter(created_at__month=now().month)\
+                             .filter(attended_public__isnull=False)\
                              .values_list('attended_public__name')\
                              .annotate(Count('attended_public'))
     return JsonHttpResponse(list(data))    
