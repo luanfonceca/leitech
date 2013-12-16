@@ -65,19 +65,27 @@
 									</li>
 
 									<li class="divider"></li>
-
-									<li>
-										<a href="{% url 'user_edit' request.user.pk %}">
-											<i class="icon-user"></i> 
-											<span>Perfil</span>
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'auth_logout' %}">
-											<i class="icon-off"></i> 
-											<span>Sair</span>
-										</a>
-									</li>
+									{% if not request.user.is_anonymous %}
+										<li>
+											<a href="{% url 'user_edit' request.user.pk %}">
+												<i class="icon-user"></i> 
+												<span>Perfil</span>
+											</a>
+										</li>
+										<li>
+											<a href="{% url 'auth_logout' %}">
+												<i class="icon-off"></i> 
+												<span>Sair</span>
+											</a>
+										</li>
+									{% else %}
+										<li>
+											<a href="{% url 'auth_login' %}">
+												<i class="icon-in"></i> 
+												<span>Fazer Login</span>
+											</a>
+										</li>
+									{% endif %}
 								</ul>
 							</li>
 						</ul>
