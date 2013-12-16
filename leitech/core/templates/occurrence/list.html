@@ -49,7 +49,7 @@
 					<table class="table table-normal">
 						<thead>
 						<tr>
-							<td>Nome</td>
+							<td>Descrição</td>
 							<td>Tipo</td>
 							<td style="width: 40px;"/>
 						</tr>
@@ -58,7 +58,15 @@
 						{% for occurrence in occurrences.object_list %}
 							<tr class="status-pending">
 								<td>
-									{{ occurrence.name }}
+									{% if occurrence.description %}
+										{{ occurrence.description|slice:"13" }}...
+									{% else %}
+										{% if occurrence.nature %}
+											{{ occurrence.nature|slice:"13" }}...
+										{% else %}
+											{{ occurrence.relevant_information|slice:"13" }}...
+										{% endif %}
+									{% endif %}
 								</td>
 								<td>
 									{{ occurrence.type|default:'-' }}
