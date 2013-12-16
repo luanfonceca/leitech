@@ -25,3 +25,11 @@ class OccurrenceForm(HistoryModelForm):
     class Meta:
         model = Occurrence
         exclude = ['seized_materials']
+        order = [
+            'nature', 'relevant_information',
+            'attended_public', 'state', 'city',
+            'neighborhood', 'zipcode', 'street',
+            'complement', 'number', 'region',
+            'school', 'type', 'police_car',
+            'description', 'seized_materials',
+        ]

@@ -74,8 +74,8 @@ function draw_report04() {
         var chart = new google.visualization.BarChart(
             document.getElementById('id_report04')
         );
-
-        chart.draw(data);
+        var options = {height: 1200};
+        chart.draw(data, options);
     });
 }
 
