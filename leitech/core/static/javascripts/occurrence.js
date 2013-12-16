@@ -1,5 +1,5 @@
 /* ---------- Custom JS ---------- */
-$('.add-formset').on("click", function(){
+$(document).on('click', '.add-formset', function(){
 	var regex = new RegExp('(-\\d+-)');
 	var elemt_filters = 'input, select';
 
@@ -23,12 +23,14 @@ $('.add-formset').on("click", function(){
 		}
 	}
 
-	tr_cloned.insertBefore('tr.actions-formset');
+	tr_cloned.insertBefore('.table-formset tbody tr:last');
 	var new_total = $("#id_occurrence_seized_material-TOTAL_FORMS").val();
 	$("#id_occurrence_seized_material-TOTAL_FORMS").val(parseInt(new_total) + 1);
 });
 
-$(".del-formset").on("click", function(){
+$(document).on('click', '.del-formset', function(){
+	console.log("AAAA");
+
 	if ($(".table-formset tr").length > 3){
 		$(this).parents('tr').remove();
 		var old_total = $("#id_occurrence_seized_material-TOTAL_FORMS").val();
