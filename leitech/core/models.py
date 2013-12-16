@@ -282,7 +282,10 @@ class Occurrence(HistoryModel, AddressedModel):
         verbose_name_plural = _(u'Ocorrências')
 
     def __unicode__(self):
-        return u'%s...' % self.description[:10]
+        if self.description:
+            return u'%s...' % self.description[:10]
+        else:
+            return self.nature
 
 
 @receiver(pre_save, sender=Occurrence)
