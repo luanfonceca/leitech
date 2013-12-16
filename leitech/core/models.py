@@ -7,6 +7,8 @@ Criado por Luan Fonseca em 17/06/2013.
 """
 
 from django.db import models
+from django.db.models.signals import post_save, pre_save
+from django.dispatch import receiver
 from django.utils.translation import ugettext as _
 from django_localflavor_br.br_states import STATE_CHOICES as BR_STATE_CHOICES
 
@@ -281,3 +283,20 @@ class Occurrence(HistoryModel, AddressedModel):
 
     def __unicode__(self):
         return u'%s...' % self.description[:10]
+
+
+@receiver(pre_save, sender=Occurrence)
+def update_occ_addresses(sender, **kwargs):
+    instance = kwargs.get('instance')
+    addr_keys = ["state", "city", "neighborhood", 
+        "zipcode", "street", "complement", 
+        "number", "region"
+    ]
+
+    if instance.school:
+        for key in addr_keys:
+            school_value = getattr(instance.school, key, None)
+            setattr(instance, key, school_value)
+        # instance.save()
+
+        

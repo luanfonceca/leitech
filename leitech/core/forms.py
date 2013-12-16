@@ -24,12 +24,12 @@ class OccurrenceStatusForm(HistoryModelForm):
 class OccurrenceForm(HistoryModelForm):
     class Meta:
         model = Occurrence
-        exclude = ['seized_materials']
+        exclude = [u'seized_materials']
         order = [
-            'nature', 'relevant_information',
-            'attended_public', 'state', 'city',
-            'neighborhood', 'zipcode', 'street',
-            'complement', 'number', 'region',
-            'school', 'type', 'police_car',
-            'description', 'seized_materials',
+            u'nature', u'relevant_information',
+            u'attended_public', u'state', u'city',
+            u'neighborhood', u'zipcode', u'street',
+            u'complement', u'number', u'region',
+            u'school', u'type', u'police_car',
+            u'description', u'seized_materials',
         ]

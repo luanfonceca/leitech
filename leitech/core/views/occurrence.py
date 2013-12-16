@@ -76,6 +76,7 @@ def edit(request, pk):
         instance=occurrence
     )
     if occurrence_form.is_valid():
+        
         occurrence_form.save(auth.get_user(request))
         messages.success(request, u"Material editado com sucesso.")
         return redirect('occurrence_list')

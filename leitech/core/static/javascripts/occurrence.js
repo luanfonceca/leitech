@@ -37,27 +37,30 @@ $(".del-formset").on("click", function(){
 	};
 });
 
-// var address_fields = [
-// 	"#id_state", "#id_city", "#id_neighborhood", 
-// 	"#id_zipcode", "#id_street", "#id_complement", 
-// 	"#id_number", "#id_region"
-// ];
-// for (var i = address_fields.length - 1; i >= 0; i--) {
-// 	$(address_fields[i]).parents('.control-group').hide()
-// };
 
-// $("#id_attended_public").change(function() {
-// 	var choice = $(this).find(
-// 		'option[value="'+ $(this).val() + '"]'
-// 	).text().toLowerCase();
+// Código utilizado para esconder e 
+// mostrar as Informações das Ocorrências.
+var address_fields = [
+	"#id_state", "#id_city", "#id_neighborhood", 
+	"#id_zipcode", "#id_street", "#id_complement", 
+	"#id_number", "#id_region"
+];
+for (var i = address_fields.length - 1; i >= 0; i--) {
+	$(address_fields[i]).parents('.control-group').hide()
+};
 
-// 	if (choice == "via pública" && !$("#id_school").val()) {
-// 		for (var i = address_fields.length - 1; i >= 0; i--) {
-// 			$(address_fields[i]).parents('.control-group').show()
-// 		};
-// 	} else {
-// 		for (var i = address_fields.length - 1; i >= 0; i--) {
-// 			$(address_fields[i]).parents('.control-group').hide()
-// 		};
-// 	};
-// });
+$("#id_attended_public").change(function() {
+	var choice = $(this).find(
+		'option[value="'+ $(this).val() + '"]'
+	).text().toLowerCase();
+
+	if (choice == "via pública" && !$("#id_school").val()) {
+		for (var i = address_fields.length - 1; i >= 0; i--) {
+			$(address_fields[i]).parents('.control-group').show()
+		};
+	} else {
+		for (var i = address_fields.length - 1; i >= 0; i--) {
+			$(address_fields[i]).parents('.control-group').hide()
+		};
+	};
+});
