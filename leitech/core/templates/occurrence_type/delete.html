@@ -2,13 +2,13 @@
 {% load bootstrap_toolkit %}
 
 {% block title %}
-	Remoção de Tipos Ocorrência
+	Remoção de Tipos de Ocorrência
 {% endblock title %}
 
 {% block subtitle %}
 	Página de remoção de todos os tipos de Ocorrências cadastrados
 	<br>
-	Perceba que você só poderá remover um material quando ele não fizer mais parte de nenhuma ocorrência.
+	Perceba que você só poderá remover um Tipo de Ocorrência quando ele não fizer mais parte de nenhuma ocorrência.
 {% endblock subtitle %}
 
 {% block breadcrumbs %}
@@ -24,7 +24,7 @@
 	<div class="breadcrumb-button blue">
 		<a href="{% url 'occurrence_type_list' %}">
 			<span class="breadcrumb-label">
-				<i class="icon-home"></i> Materiais
+				<i class="icon-home"></i> Tipos de Ocorrência
 			</span>
 			<span class="breadcrumb-arrow"><span></span></span>
 		</a>
@@ -47,7 +47,7 @@
 				<div class="box">
 					<div class="box-header">
 						<span class="title">
-							Remoção de Material
+							Remoção de Tipos de Ocorrência
 						</span>
 					</div>
 
@@ -58,7 +58,7 @@
 							<div class="padded">
 								<div class="alert alert-block">
 									<h4>Cuidado!</h4>
-									Você está prestes a remover o material <big>"{{ occurrence_type }}"</big>, caso realmente tenha certeza que é isso que você deseja, clique em "Confirmar" logo abaixo.
+									Você está prestes a remover o Tipos de Ocorrência <big>"{{ occurrence_type }}"</big>, caso realmente tenha certeza que é isso que você deseja, clique em "Confirmar" logo abaixo.
 								</div>
 							</div>
 							
