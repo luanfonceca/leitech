@@ -25,6 +25,11 @@ urlpatterns = patterns('accounts.views',
         name='user_edit'
     ),
     url(
+        regex=r'^user/password/edit/(?P<pk>[a-z\d]+)?$',
+        view='password_edit', 
+        name='user_password_edit'
+    ),
+    url(
         regex=r'^user/delete/(?P<pk>[a-z\d]+)?$',
         view='delete', 
         name='user_delete'

@@ -91,6 +91,10 @@ class User(HistoryModel, AbstractBaseUser, PermissionsMixin):
     def __unicode__(self):
         return self.email
 
+    def delete(self):
+        self.is_active = False
+        self.save()
+
     def get_full_name(self):
         return self.email
 

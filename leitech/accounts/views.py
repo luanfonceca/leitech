@@ -11,7 +11,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
-from accounts.forms import UserForm, UserEditForm
+from accounts.forms import UserForm, UserEditForm, UserEditPasswordForm
 from accounts.models import User
 
 @login_required
@@ -63,6 +63,10 @@ def edit(request, pk):
         data=request.POST or None,
         instance=user
     )
+    user_password_form = UserEditPasswordForm(
+        data=request.POST or None,
+        user=user
+    )
     if user_form.is_valid():
         user_form.save(auth.get_user(request))
         messages.success(request, u"Usuário editado com sucesso.")
@@ -71,10 +75,38 @@ def edit(request, pk):
     template_context = {
         'user': user,
         'user_form': user_form,
+        'user_password_form': user_password_form,
     }
     return render(
         request=request,
         template_name='edit.html',
+        dictionary=template_context
+    )
+
+
+@login_required
+def password_edit(request, pk):
+    user = get_object_or_404(
+        klass=User, 
+        pk=pk
+    )
+    
+    user_password_form = UserEditPasswordForm(
+        data=request.POST or None,
+        user=user
+    )
+    if user_password_form.is_valid():
+        user_password_form.save(auth.get_user(request))
+        messages.success(request, u"Usuário editado com sucesso.")
+        return redirect('user_password_edit', pk)
+
+    template_context = {
+        'user': user,
+        'user_password_form': user_password_form,
+    }
+    return render(
+        request=request,
+        template_name='password_edit.html',
         dictionary=template_context
     )
 
