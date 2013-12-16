@@ -6,18 +6,18 @@
 		<div class="row-fluid">
 			{% if account %}
 				<div class="alert alert-success">
-					{% trans "Account successfully activated" %}
+					Conta ativada com sucesso!
 				</div>
 				<hr>
 
 				<p>
 					<a href="{% url 'auth_login' %}">
-						{% trans "Log in" %}
+						Log in
 					</a>
 				</p>
 			{% else %}
 				<div class="alert alert-error">
-					{% trans "Account activation failed" %}
+					Ativação da conta falhou
 				</div>
 			{% endif %}
 		</div>

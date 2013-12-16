@@ -2,20 +2,20 @@
 {% load i18n %}
 
 {% block title %}
-	{% trans "Logged out" %}
+	Logged out
 {% endblock title %}
 
 {% block content %}
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="alert alert-info">
-				{% trans "Thanks for using our system" %}	
+				Obrigado por usar nosso sistema
 			</div>
 		</div>
 
 		<hr>
 		<a href="{% url 'auth_login' %}">
-			{% trans "Log in again" %}
+			Log in novamente
 		</a>
 	</div>			
 {% endblock %}

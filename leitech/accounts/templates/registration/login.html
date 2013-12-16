@@ -12,16 +12,16 @@
 
 		{{ form|as_bootstrap }}
 	
-		<input type="submit" class="btn btn btn-blue btn-block" value="{% trans 'Log in' %}" />
+		<input type="submit" class="btn btn btn-blue btn-block" value="Log in" />
 		<input type="hidden" name="next" value="{{ next }}" />
 	</form>
 	<hr>
 
 	<p>
-		{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!
+		Esqueceu a senha? <a href="{% url 'auth_password_reset' %}">Redefinir senha</a>!
 	</p>
 	<p>
-		{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!
+		Não é cadastrado? <a href="{% url 'registration_register' %}">Registrar-se</a>!
 	</p>
 
 {% endblock %}
