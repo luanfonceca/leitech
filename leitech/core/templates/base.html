@@ -50,7 +50,6 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<span>
 										<img class="menu-avatar" src="{{ STATIC_URL }}images/avatars/avatar1.jpg" /> <span>{{ request.user.full_name }} <i class="icon-caret-down"></i></span>
-										<span class="badge badge-dark-red">5</span>
 									</span>
 								</a>
 
@@ -68,21 +67,9 @@
 									<li class="divider"></li>
 
 									<li>
-										<a href="#">
+										<a href="{% url 'user_edit' request.user.pk %}">
 											<i class="icon-user"></i> 
 											<span>Perfil</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="icon-cog"></i> 
-											<span>Configurações</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="icon-envelope"></i> 
-											<span>Mensagem</span> <span class="label label-dark-red pull-right">5</span>
 										</a>
 									</li>
 									<li>

@@ -41,7 +41,7 @@ def add(request):
     )
     if user_form.is_valid():
         user_form.save(auth.get_user(request))
-        messages.success(request, u"Material salvo com sucesso.")
+        messages.success(request, u"Usuário salvo com sucesso.")
         return redirect('user_list')
     
     template_context = {
@@ -65,7 +65,7 @@ def edit(request, pk):
     )
     if user_form.is_valid():
         user_form.save(auth.get_user(request))
-        messages.success(request, u"Material editado com sucesso.")
+        messages.success(request, u"Usuário editado com sucesso.")
         return redirect('user_list')
 
     template_context = {
@@ -86,7 +86,7 @@ def delete(request, pk):
     )
     if request.method == 'POST':
         user.delete()
-        messages.success(request, u"Material removido com sucesso.")
+        messages.success(request, u"Usuário removido com sucesso.")
         return redirect('user_list')
     
     template_context = {
