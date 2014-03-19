@@ -68,20 +68,20 @@
 									{% if not request.user.is_anonymous %}
 										<li>
 											<a href="{% url 'user_edit' request.user.pk %}">
-												<i class="icon-user"></i> 
+												<i class="icon-user"></i>
 												<span>Perfil</span>
 											</a>
 										</li>
 										<li>
 											<a href="{% url 'auth_logout' %}">
-												<i class="icon-off"></i> 
+												<i class="icon-off"></i>
 												<span>Sair</span>
 											</a>
 										</li>
 									{% else %}
 										<li>
 											<a href="{% url 'auth_login' %}">
-												<i class="icon-in"></i> 
+												<i class="icon-in"></i>
 												<span>Fazer Login</span>
 											</a>
 										</li>
@@ -89,66 +89,6 @@
 								</ul>
 							</li>
 						</ul>
-
-						<form class="navbar-search pull-right">
-							<input type="text" class="search-query animated" placeholder="Search">
-							<i class="icon-search"></i>
-						</form>
-
-						<ul class="nav pull-right">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									Configurações <b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu">
-									{% if request.user.is_manager %}
-										<li>
-											<a href="{% url 'user_list' %}" title="Gerencie Usuarios">
-												Usuarios
-											</a>
-										</li>
-									{% endif %}
-									<li>
-										<a href="{% url 'seized_material_type_list' %}">
-											Tipos de Materiais
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'police_car_list' %}">
-											Viaturas
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'police_list' %}">
-											Policiais
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'occurrence_type_list' %}">
-											Tipos de Ocorrência
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'occurrence_status_list' %}">
-											Status da Ocorrência
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'school_list' %}">
-											Escolas
-										</a>
-									</li>
-									<li>
-										<a href="{% url 'attended_public_list' %}">
-											Público Atendido
-										</a>
-									</li>
-								</ul>
-							</li>
-
-
-						</ul>
-
 					</div>
 				</div>
 			</div>
@@ -162,58 +102,230 @@
 
 			<!-- Main nav -->
 			<ul class="nav nav-collapse collapse nav-collapse-primary">
-				<li class="dark-nav ">
-					<span class="glow"></span>
-					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#3hzyGPtrSk">
-						<i class="icon-beaker icon-2x"></i>
+				{% if request.user.is_manager %}
+					<li class="dark-nav ">
+						<span class="glow"></span>
+						<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_user">
+							<i class="icon-user icon-2x"></i>
 							<span>
-								Material
+								Usuarios
 								<i class="icon-caret-down"></i>
 							</span>
+						</a>
+						<ul id="dropdown_user" class="collapse ">
+							<li class="">
+								<a href="{% url 'user_add' %}">
+									<i class="icon-plus"></i> Adicionar
+								</a>
+							</li>
+							<li class="">
+								<a href="{% url 'user_list' %}">
+									<i class="icon-list"></i> Listar
+								</a>
+							</li>
+						</ul>
+					</li>
+				{% endif %}
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_police">
+						<i class="icon-group icon-2x"></i>
+						<span>
+							Viaturas
+							<i class="icon-caret-down"></i>
+						</span>
 					</a>
-
-					<ul id="3hzyGPtrSk" class="collapse ">
-				
+					<ul id="dropdown_police" class="collapse ">
+						<li class="">
+							<a href="{% url 'police_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'police_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_police">
+						<i class="icon-user-md icon-2x"></i>
+						<span>
+							Policiais
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_police" class="collapse ">
+						<li class="">
+							<a href="{% url 'police_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'police_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_school">
+						<i class="icon-book icon-2x"></i>
+						<span>
+							Escolas
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_school" class="collapse ">
+						<li class="">
+							<a href="{% url 'school_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'school_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_attended_public">
+						<i class="icon-briefcase icon-2x"></i>
+						<span>
+							Público Atendido
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_attended_public" class="collapse ">
+						<li class="">
+							<a href="{% url 'attended_public_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'attended_public_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_seized_material_type">
+						<i class="icon-medkit icon-2x"></i>
+						<span>
+							Tipos de Materiais
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_seized_material_type" class="collapse ">
+						<li class="">
+							<a href="{% url 'seized_material_type_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'seized_material_type_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_seized_material">
+						<i class="icon-beaker icon-2x"></i>
+						<span>
+							Material
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_seized_material" class="collapse ">
 						<li class="">
 							<a href="{% url 'seized_material_add' %}">
 								<i class="icon-plus"></i> Adicionar
 							</a>
 						</li>
-				
 						<li class="">
 							<a href="{% url 'seized_material_list' %}">
 								<i class="icon-list"></i> Listar
 							</a>
 						</li>
-				
 					</ul>
-
 				</li>
-
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_occurrence_type">
+						<i class="icon-legal icon-2x"></i>
+						<span>
+							Tipos de Ocorrência
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_occurrence_type" class="collapse ">
+						<li class="">
+							<a href="{% url 'occurrence_type_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'occurrence_type_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dark-nav ">
+					<span class="glow"></span>
+					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_occurrence_status">
+						<i class="icon-pushpin icon-2x"></i>
+						<span>
+							Status da Ocorrência
+							<i class="icon-caret-down"></i>
+						</span>
+					</a>
+					<ul id="dropdown_occurrence_status" class="collapse ">
+						<li class="">
+							<a href="{% url 'occurrence_status_add' %}">
+								<i class="icon-plus"></i> Adicionar
+							</a>
+						</li>
+						<li class="">
+							<a href="{% url 'occurrence_status_list' %}">
+								<i class="icon-list"></i> Listar
+							</a>
+						</li>
+					</ul>
+				</li>
 				<li class="dark-nav ">
 					<span class="glow"></span>
 					<a class="accordion-toggle collapsed " data-toggle="collapse" href="#dropdown_occurrence">
 						<i class="icon-phone icon-2x"></i>
-							<span>
-								Ocorrência
-								<i class="icon-caret-down"></i>
-							</span>
+						<span>
+							Ocorrência
+							<i class="icon-caret-down"></i>
+						</span>
 					</a>
 
 					<ul id="dropdown_occurrence" class="collapse ">
-				
+
 						<li class="">
 							<a href="{% url 'occurrence_add' %}">
 								<i class="icon-plus"></i> Adicionar
 							</a>
 						</li>
-				
+
 						<li class="">
 							<a href="{% url 'occurrence_list' %}">
 								<i class="icon-list"></i> Listar
 							</a>
 						</li>
-				
+
 					</ul>
 
 				</li>
@@ -260,7 +372,7 @@
 				</div>
 			</div>
 			{% block content %}
-				
+
 			{% endblock content %}
 		</div>
 	</body>
