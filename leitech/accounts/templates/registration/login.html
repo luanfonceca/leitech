@@ -7,11 +7,17 @@
 {% endblock title %}
 
 {% block content %}
+	<div class="alert alert-info">
+		<big><center>Acesse utilizando:</center></big>
+		<br><strong>email:</strong> admin@admin.com
+		<br><strong>senha:</strong> 123
+	</div>
+
 	<form class="form-vertical fill-up" method="POST">
 		{% csrf_token %}
 
 		{{ form|as_bootstrap }}
-	
+
 		<input type="submit" class="btn btn btn-blue btn-block" value="Log in" />
 		<input type="hidden" name="next" value="{{ next }}" />
 	</form>
