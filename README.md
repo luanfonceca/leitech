@@ -14,12 +14,10 @@ Como Instalar e Configurar
     - `cp settings_local.py.sample settings_local.py`
 6. Configure o `DATABASES`, dentro do arquivo [settings_local](https://github.com/Leitech/leitech/blob/master/leitech/settings_local.py.sample#L20) file.
 7. Sincronize o seu banco, com os Models e as Aplicações externas:
-    - ```python manage.py syncdb```
-8. Migre as tabelas do seu banco, com os Models e as Aplicações externas:
-    - ```python manage.py migrate```
-9. Rode o seu projeto:
+    - ```python manage.py syncdb --migrate```
+8. Rode o seu projeto:
     - ```python manage.py runserver```
-10. Veja ele rodando na `localhost`; 
+9. Veja ele rodando na `localhost`; 
     - ```127.0.0.1:8000```
 
 - você pode mudar a  *porta* na qual o django rodará seu projeto: 
