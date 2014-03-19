@@ -144,6 +144,7 @@ INSTALLED_APPS = (
     'south',
     'bootstrap_toolkit',
     'registration',
+    'gunicorn',
 
     # Aplicações internas
     'accounts',
