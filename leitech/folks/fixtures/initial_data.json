@@ -1,349 +1,46 @@
 [
 {
-    "pk": 1, 
-    "model": "folks.attendedpublic", 
+    "pk": 1,
+    "model": "folks.school",
     "fields": {
-        "name": "Estadual", 
-        "created_at": "2013-08-04T23:56:22.625", 
-        "updated_at": "2013-08-04T23:56:22.625", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 2, 
-    "model": "folks.attendedpublic", 
-    "fields": {
-        "name": "Via P\u00fablica", 
-        "created_at": "2013-08-05T00:00:54.255", 
-        "updated_at": "2013-08-05T00:00:54.255", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 3, 
-    "model": "folks.attendedpublic", 
-    "fields": {
-        "name": "Federal", 
-        "created_at": "2013-08-05T00:01:07.291", 
-        "updated_at": "2013-08-05T00:01:07.291", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 4, 
-    "model": "folks.attendedpublic", 
-    "fields": {
-        "name": "Particular", 
-        "created_at": "2013-08-05T00:01:14.035", 
-        "updated_at": "2013-08-05T00:01:14.035", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 5, 
-    "model": "folks.attendedpublic", 
-    "fields": {
-        "name": "Municipal", 
-        "created_at": "2013-08-05T00:01:22.507", 
-        "updated_at": "2013-08-05T00:01:22.507", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 1, 
-    "model": "folks.school", 
-    "fields": {
-        "name": "Escola Municipal Professora Adelina Fernandes", 
-        "created_at": "2013-08-08T23:02:26.524", 
-        "updated_at": "2013-08-08T23:02:26.524", 
-        "created_by": null, 
-        "phone": "4879830903", 
-        "updated_by": null,
-        "city": "Natal", 
+        "city": "Natal",
         "neighborhood": "potengi",
-        "zipcode": "3890-303", 
-        "state": "RN", 
-        "street": "Rua Planalto Baiano, 1161", 
-        "number": "378393", 
-        "region": "norte", 
-        "complement": "complemento"
+        "updated_by": null,
+        "updated_at": "2013-08-08T23:02:26.524",
+        "complement": "complemento",
+        "zipcode": "3890-303",
+        "created_by": null,
+        "number": "378393",
+        "phone": "4879830903",
+        "state": "RN",
+        "street": "Rua Planalto Baiano, 1161",
+        "created_at": "2013-08-08T23:02:26.524",
+        "region": "norte",
+        "name": "Escola Municipal Professora Adelina Fernandes"
     }
 },
 {
-    "pk": 1, 
-    "model": "folks.policecar", 
+    "pk": 2,
+    "model": "folks.school",
     "fields": {
-        "created_at": "2013-08-08T23:44:59.712", 
-        "ident": "15\u00baBPM-I da 1\u00ba Cia viatura 02", 
-        "updated_at": "2013-08-08T23:44:59.712", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
+        "city": "Natal",
+        "neighborhood": "tirol",
         "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 2, 
-    "model": "folks.policecar", 
-    "fields": {
-        "created_at": "2013-08-08T23:44:59.716", 
-        "ident": "12\u00baBPM-I da 2\u00ba Cia viatura 34", 
-        "updated_at": "2013-08-08T23:44:59.716", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 3, 
-    "model": "folks.policecar", 
-    "fields": {
-        "created_at": "2013-08-08T23:44:59.718", 
-        "ident": "92\u00baBPM-I da 3\u00ba Cia viatura 12", 
-        "updated_at": "2013-08-08T23:44:59.718", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 4, 
-    "model": "folks.policecar", 
-    "fields": {
-        "created_at": "2013-08-08T23:44:59.720", 
-        "ident": "02\u00baBPM-I da 4\u00ba Cia viatura 32", 
-        "updated_at": "2013-08-08T23:44:59.720", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ]
-    }
-},
-{
-    "pk": 1, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Cl\u00e1udio Roberto Pereira Silva", 
-        "created_at": "2013-08-08T23:28:53.036", 
-        "updated_at": "2013-08-08T23:28:53.036", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
+            "usuario@leitech.com.br"
         ],
-        "police_car": null
-    }
-},
-{
-    "pk": 2, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Daniel Alves Batista", 
-        "created_at": "2013-08-08T23:28:53.039", 
-        "updated_at": "2013-08-08T23:28:53.039", 
+        "updated_at": "2013-12-16T19:39:23.083",
+        "complement": "",
+        "zipcode": "",
         "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
+            "usuario@leitech.com.br"
         ],
-        "police_car": null
-    }
-},
-{
-    "pk": 3, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Genildo Miranda da Silva", 
-        "created_at": "2013-08-08T23:28:53.042", 
-        "updated_at": "2013-08-08T23:28:53.042", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 4, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Reginaldo Alves Miranda", 
-        "created_at": "2013-08-08T23:28:53.044", 
-        "updated_at": "2013-08-08T23:28:53.044", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 5, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Walison de Oliveira Gomes", 
-        "created_at": "2013-08-08T23:28:53.047", 
-        "updated_at": "2013-08-08T23:28:53.047", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 6, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Ana Paula Lima", 
-        "created_at": "2013-08-08T23:28:53.049", 
-        "updated_at": "2013-08-08T23:28:53.049", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 7, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Amarildo Cordeiro Duarte", 
-        "created_at": "2013-08-08T23:28:53.052", 
-        "updated_at": "2013-08-08T23:28:53.052", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 8, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Heber Cleber Rezende", 
-        "created_at": "2013-08-08T23:28:53.055", 
-        "updated_at": "2013-08-08T23:28:53.055", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 9, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Marcelo Guimar\u00e3es Barros", 
-        "created_at": "2013-08-08T23:28:53.057", 
-        "updated_at": "2013-08-08T23:28:53.057", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 10, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Jos\u00e9 Alberto Sousa Abreu da Mata", 
-        "created_at": "2013-08-08T23:28:53.059", 
-        "updated_at": "2013-08-08T23:28:53.059", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 11, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Elpides de Oliveira Silva", 
-        "created_at": "2013-08-08T23:28:53.062", 
-        "updated_at": "2013-08-08T23:28:53.062", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
-    }
-},
-{
-    "pk": 12, 
-    "model": "folks.police", 
-    "fields": {
-        "name": "Elizabeth Pereira Dias Oliveira", 
-        "created_at": "2013-08-08T23:28:53.064", 
-        "updated_at": "2013-08-08T23:28:53.064", 
-        "created_by": [
-            "admin@admin.com"
-        ], 
-        "updated_by": [
-            "admin@admin.com"
-        ],
-        "police_car": null
+        "number": "",
+        "phone": "",
+        "state": "RN",
+        "street": "",
+        "created_at": "2013-12-16T19:39:23.082",
+        "region": "sul",
+        "name": "Universidade Federal do Rio Grande do Norte"
     }
 }
 ]
