@@ -1,0 +1,5 @@
+-r requirements.txt
+bpython==0.12
+epydoc==3.0.1
+ipdb==0.7
+ipython==0.13.2
